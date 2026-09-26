@@ -5,6 +5,7 @@
   "description": "CRISPR-Cas9 as a Universal Programmable Biological Editing Platform - Interactive 13-Slide Master Deck",
   "scripts": {
     "dev": "node server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "echo Static site ready"
   }
 }
