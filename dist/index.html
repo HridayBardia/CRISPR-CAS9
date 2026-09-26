@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRISPR-Cas9: The Genetic Search-and-Replace Platform</title>
+  <meta name="description" content="A crystal-clear, executive 13-slide master presentation explaining CRISPR-Cas9 molecular biology, in vivo delivery, and curative clinical translation.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="presentation.css">
+</head>
+<body>
+
+  <!-- Top Global Navigation Bar -->
+  <header class="deck-header">
+    <div class="deck-brand">
+      <div class="brand-badge"><span class="pulse-dot"></span>CRISPR EXPLAINED</div>
+      <span class="deck-title-mini">The Genetic Search-and-Replace Revolution</span>
+      <span class="theme-pill navy-pill" id="current-theme-pill">GENOMIC NAVY</span>
+    </div>
+    <div class="deck-controls">
+      <button class="ctrl-btn" id="btn-prev" title="Previous Slide (← / Up)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="slide-indicator">
+        <span id="current-slide-num">01</span><span class="divider">/</span><span id="total-slide-num">13</span>
+      </div>
+      <button class="ctrl-btn" id="btn-next" title="Next Slide (→ / Down / Space)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+      <div class="ctrl-divider"></div>
+      <button class="ctrl-btn" id="btn-overview" title="Toggle Slide Grid (O / Tab)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        <span>Overview</span>
+      </button>
+      <button class="ctrl-btn" id="btn-fullscreen" title="Fullscreen Mode (F)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+      </button>
+      <button class="ctrl-btn highlight" id="btn-print" title="Export / Print Deck (P)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        <span>Export Deck</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Presentation Viewport (Full Proportional Expansion) -->
+  <main class="deck-stage" id="deck-stage">
+
+    <!-- SLIDE 1: Title Slide [Theme: Deep Genomic Navy #0B192C] -->
+    <section class="slide-wrapper active" data-slide="1" data-theme="GENOMIC NAVY">
+      <div class="slide-card theme-genomic-navy">
+        <div class="ambient-glow"></div>
+        
+        <div class="hero-content">
+          <div class="header-left">
+            <div class="badge-pill badge-cyan">
+              <span class="pulse-dot"></span>
+              <span>13-SLIDE MASTER SERIES • BIOLOGY EXPLAINED CLEARLY</span>
+            </div>
+            <div class="hero-title-group">
+              <h1 class="hero-main-title">
+                CRISPR-Cas9: The Genetic Search-and-Replace Platform
+              </h1>
+              <p class="hero-main-subtitle">
+                How scientists transformed a natural bacterial immune system into the most powerful precision molecular tool in human history.
+              </p>
+            </div>
+          </div>
+
+          <div class="hero-3-pillars">
+            <div class="hero-pillar-card">
+              <div class="card-top">
+                <div class="icon-box cyan-box">📍</div>
+                <div>
+                  <span class="card-kicker cyan-tag">THE TARGETING SYSTEM</span>
+                  <h3 class="card-title">The Guide RNA (GPS Map)</h3>
+                </div>
+              </div>
+              <div class="analogy-pill cyan-pill">🚗 The Genetic GPS</div>
+              <p class="card-desc">
+                A simple 20-letter RNA sequence that navigates 3 billion letters of human DNA to pinpoint one exact gene in seconds.
+              </p>
+              <div class="card-bottom-metric">
+                <span class="metric-big cyan-metric">20 Letters</span>
+                <span class="metric-lbl">Target address key length</span>
+              </div>
+            </div>
+
+            <div class="hero-pillar-card">
+              <div class="card-top">
+                <div class="icon-box cyan-box">✂️</div>
+                <div>
+                  <span class="card-kicker cyan-tag">THE CUTTING ENGINE</span>
+                  <h3 class="card-title">Cas9 Protein (Smart Scissors)</h3>
+                </div>
+              </div>
+              <div class="analogy-pill cyan-pill">✂️ Molecular Scissors</div>
+              <p class="card-desc">
+                A dual-blade enzyme that reads the DNA password (PAM) and makes a clean, surgical cut right where the GPS directs it.
+              </p>
+              <div class="card-bottom-metric">
+                <span class="metric-big cyan-metric">Dual Blades</span>
+                <span class="metric-lbl">Clean double-strand cut</span>
+              </div>
+            </div>
+
+            <div class="hero-pillar-card">
+              <div class="card-top">
+                <div class="icon-box cyan-box">💻</div>
+                <div>
+                  <span class="card-kicker cyan-tag">THE EXPANDED TOOLBOX</span>
+                  <h3 class="card-title">Base & Prime Editors</h3>
+                </div>
+              </div>
+              <div class="analogy-pill cyan-pill">📝 Genetic Word Processor</div>
+              <p class="card-desc">
+                Next-gen upgrades that fix single-letter typos or write new genetic sentences directly without breaking the DNA strand.
+              </p>
+              <div class="card-bottom-metric">
+                <span class="metric-big cyan-metric">Zero Breaks</span>
+                <span class="metric-lbl">Single-letter precision</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer-bar">
+          <span>Master Synthesis • From Molecular Architecture to Human Cures</span>
+          <span>Press <kbd>→</kbd> or <kbd>Space</kbd> to start presentation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 2: What is CRISPR? (The GPS + Scissors Analogy) [Theme: Dark Lab Slate #1E3E62] -->
+    <section class="slide-wrapper" data-slide="2" data-theme="LAB SLATE">
+      <div class="slide-card theme-lab-slate">
+        <div class="ambient-glow"></div>
+
+        <div class="slide-header">
+          <div class="header-left">
+            <span class="section-tag amber-tag">01 / CORE FOUNDATION</span>
+            <h2 class="slide-heading">What is CRISPR? The Molecular GPS & Scissors</h2>
+          </div>
+          <div class="badge-pill badge-amber">Simple Biological Operating System</div>
+        </div>
+
+        <div class="analogy-banner amber-theme">
+          <div class="analogy-icon">💡</div>
+          <div class="analogy-text">
+            <strong>The Core Analogy:</strong> Think of human DNA as a 3-billion-letter encyclopedia. CRISPR is like pressing <strong>Ctrl + F (Find)</strong> with a 20-letter keyword (Guide RNA) and using <strong>smart scissors (Cas9)</strong> to edit that exact paragraph.
+          </div>
+        </div>
+
+        <div class="content-area-expanded">
+          <div class="grid-3-cards">
+            <!-- Pillar 1: Software -->
+            <div class="glass-card">
+              <div class="card-top">
+                <div class="icon-box amber-box">🗺️</div>
+                <div>
+                  <span class="card-kicker amber-tag">COMPONENT 1</span>
+                  <h3 class="card-title">The Guide RNA (gRNA)</h3>
+                </div>
+              </div>
+              <div class="analogy-pill amber-pill">📍 The Exact GPS Coordinates</div>
+              <p class="card-desc">
+                A custom 20-letter sequence of RNA that matches the target gene. Because it follows natural base-pairing rules (A pairs with U, G pairs with C), it automatically sticks only to its mirror match.
+              </p>
+              <div class="bullet-points">
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Fast to make:</strong> Synthesized digitally in hours.</span></div>
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Ultra-specific:</strong> Ignores 99.999% of non-target DNA.</span></div>
+              </div>
+              <div class="card-bottom-metric">
+                <span class="metric-big amber-metric">1 in 3 Billion</span>
+                <span class="metric-lbl">Target pinpoint accuracy</span>
+              </div>
+            </div>
+
+            <!-- Pillar 2: Security Check -->
+            <div class="glass-card">
+              <div class="card-top">
+                <div class="icon-box amber-box">🔒</div>
+                <div>
+                  <span class="card-kicker amber-tag">COMPONENT 2</span>
+                  <h3 class="card-title">The PAM Password</h3>
+                </div>
+              </div>
+              <div class="analogy-pill amber-pill">🔑 The Molecular Safety Lock</div>
+              <p class="card-desc">
+                Cas9 won't touch DNA until it sees a tiny 3-letter signpost called <strong>5'-NGG</strong> right next to the target. This prevents the scissors from cutting the wrong location accidentally.
+              </p>
+              <div class="bullet-points">
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Safety checkpoint:</strong> Unzips DNA only after checking PAM.</span></div>
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Instant scanning:</strong> Tests thousands of PAMs per second.</span></div>
+              </div>
+              <div class="card-bottom-metric">
+                <span class="metric-big amber-metric">5'-NGG</span>
+                <span class="metric-lbl">Universal target signpost</span>
+              </div>
+            </div>
+
+            <!-- Pillar 3: Dual Cut -->
+            <div class="glass-card">
+              <div class="card-top">
+                <div class="icon-box amber-box">✂️</div>
+                <div>
+                  <span class="card-kicker amber-tag">COMPONENT 3</span>
+                  <h3 class="card-title">The Cas9 Enzyme</h3>
+                </div>
+              </div>
+              <div class="analogy-pill amber-pill">⚡ The Precision Cutting Tool</div>
+              <p class="card-desc">
+                Once the guide RNA locks in, Cas9 swings its two catalytic cutting blades (HNH and RuvC) to slice both strands of the DNA ladder, creating a clean double-strand break.
+              </p>
+              <div class="bullet-points">
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Surgical precision:</strong> Cuts exactly 3 letters before PAM.</span></div>
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Triggers repair:</strong> Hands off DNA to cell's repair team.</span></div>
+              </div>
+              <div class="card-bottom-metric">
+                <span class="metric-big amber-metric">3 Letters</span>
+                <span class="metric-lbl">Distance upstream of cut</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer-bar">
+          <span>Key Takeaway: Target specificity is software (RNA), while the cutting engine is universal hardware (Cas9).</span>
+          <span>Slide 02 / 13</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: How Cells Repair DNA (The Two Repair Crews) [Theme: Deep Genomic Navy #0B192C] -->
+    <section class="slide-wrapper" data-slide="3" data-theme="GENOMIC NAVY">
+      <div class="slide-card theme-genomic-navy">
+        <div class="ambient-glow"></div>
+
+        <div class="slide-header">
+          <div class="header-left">
+            <span class="section-tag cyan-tag">02 / CELLULAR MECHANISMS</span>
+            <h2 class="slide-heading">How Cells Repair DNA: The Two Repair Crews</h2>
+          </div>
+          <div class="badge-pill badge-cyan">Natural Biological Responses to Cuts</div>
+        </div>
+
+        <div class="analogy-banner cyan-theme">
+          <div class="analogy-icon">🛠️</div>
+          <div class="analogy-text">
+            <strong>The Core Concept:</strong> CRISPR does not actually glue DNA back together—it only makes the cut. The cell's own internal repair teams do the rest, choosing between a <strong>quick patch-up job</strong> or a <strong>careful rewrite</strong>.
+          </div>
+        </div>
+
+        <div class="content-area-expanded">
+          <div class="split-5050">
+            <!-- Crew 1: NHEJ -->
+            <div class="panel-container">
+              <div class="panel-title-bar">
+                <div class="panel-title-text">
+                  <span>🩹</span>
+                  <span>Crew 1: The Quick Patch-Up Team (NHEJ)</span>
+                </div>
+                <span class="badge-pill badge-cyan">Knockout Mode</span>
+              </div>
+              <div class="analogy-pill cyan-pill">🛑 Emergency Duct Tape & Glue</div>
+              <p class="card-desc">
+                <strong>Non-Homologous End Joining (NHEJ):</strong> The cell's rapid response team quickly glues the broken DNA ends back together without a reference template. This often causes tiny accidental spelling errors (indels).
+              </p>
+              <div class="step-stack">
+                <div class="step-card">
+                  <span class="step-num cyan-step-num">01</span>
+                  <div class="step-info">
+                    <strong>DNA Break Detected</strong>
+                    <p>Cell detects a blunt double-strand cut made by Cas9.</p>
+                  </div>
+                </div>
+                <div class="step-card">
+                  <span class="step-num cyan-step-num">02</span>
+                  <div class="step-info">
+                    <strong>Imperfect Rejoining</strong>
+                    <p>Ends are stitched together, inserting or deleting 1–2 letters.</p>
+                  </div>
+                </div>
+                <div class="step-card">
+                  <span class="step-num cyan-step-num">03</span>
+                  <div class="step-info">
+                    <strong>Gene Silenced (Turned Off)</strong>
+                    <p>The frameshift error disables harmful disease-causing genes permanently.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-bottom-metric">
+                <span class="metric-big cyan-metric">>90% Efficiency</span>
+                <span class="metric-lbl">Ideal for turning off toxic proteins</span>
+              </div>
+            </div>
+
+            <!-- Crew 2: HDR -->
+            <div class="panel-container">
+              <div class="panel-title-bar">
+                <div class="panel-title-text">
+                  <span>📐</span>
+                  <span>Crew 2: The Master Builder Team (HDR)</span>
+                </div>
+                <span class="badge-pill badge-cyan">Precision Rewrite Mode</span>
+              </div>
+              <div class="analogy-pill cyan-pill">📋 Copy-and-Paste from Blueprint</div>
+              <p class="card-desc">
+                <strong>Homology-Directed Repair (HDR):</strong> If scientists provide a donor DNA template alongside CRISPR, the cell uses this reference blueprint to flawlessly rewrite the damaged section with zero mistakes.
+              </p>
+              <div class="step-stack">
+                <div class="step-card">
+                  <span class="step-num cyan-step-num">01</span>
+                  <div class="step-info">
+                    <strong>Template Supplied</strong>
+                    <p>Scientists inject a corrective DNA patch with matching flank arms.</p>
+                  </div>
+                </div>
+                <div class="step-card">
+                  <span class="step-num cyan-step-num">02</span>
+                  <div class="step-info">
+                    <strong>High-Fidelity Copying</strong>
+                    <p>Cellular enzymes read the synthetic patch as the official blueprint.</p>
+                  </div>
+                </div>
+                <div class="step-card">
+                  <span class="step-num cyan-step-num">03</span>
+                  <div class="step-info">
+                    <strong>Exact Gene Correction</strong>
+                    <p>Installs healthy genetic instructions without any unwanted mutations.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-bottom-metric">
+                <span class="metric-big cyan-metric">100% Accuracy</span>
+                <span class="metric-lbl">Replaces mutated code with healthy genes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer-bar">
+          <span>Medical Utility: Use Crew 1 (NHEJ) to destroy bad genes; use Crew 2 (HDR) to install healthy new functions.</span>
+          <span>Slide 03 / 13</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4: Beyond Cutting (Dimmer Switches & Single-Letter Edits) [Theme: Dark Lab Slate #1E3E62] -->
+    <section class="slide-wrapper" data-slide="4" data-theme="LAB SLATE">
+      <div class="slide-card theme-lab-slate">
+        <div class="ambient-glow"></div>
+
+        <div class="slide-header">
+          <div class="header-left">
+            <span class="section-tag amber-tag">03 / ADVANCED EDITORS</span>
+            <h2 class="slide-heading">Beyond Cutting: Dimmer Switches & Single-Letter Editors</h2>
+          </div>
+          <div class="badge-pill badge-amber">Precision Surgery Without Double-Strand Breaks</div>
+        </div>
+
+        <div class="analogy-banner amber-theme">
+          <div class="analogy-icon">🎛️</div>
+          <div class="analogy-text">
+            <strong>The Evolution:</strong> Early CRISPR was like an axe cutting DNA. Today, scientists have turned Cas9 into <strong>molecular dimmer switches</strong> and <strong>pencils with erasers</strong> that fix single letters without ever cutting the DNA backbone.
+          </div>
+        </div>
+
+        <div class="content-area-expanded">
+          <div class="grid-2x2-clean">
+            <!-- Tool 1: Dimmer Switch -->
+            <div class="glass-card">
+              <div class="card-top">
+                <div class="icon-box amber-box">💡</div>
+                <div>
+                  <span class="card-kicker amber-tag">TOOL 01</span>
+                  <h3 class="card-title">CRISPRi / CRISPRa (Gene Dimmer Switch)</h3>
+                </div>
+              </div>
+              <div class="analogy-pill amber-pill">🎚️ Volume Knob for Genes</div>
+              <p class="card-desc">
+                By disabling Cas9's cutting blades (creating "dead" dCas9) and adding molecular dimmer switches, we can turn a gene's activity way down (CRISPRi) or way up (CRISPRa) reversibly.
+              </p>
+              <div class="bullet-points">
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Zero DNA Damage:</strong> Leaves DNA text 100% untouched.</span></div>
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Reversible:</strong> Gene levels return to normal once the tool degrades.</span></div>
+              </div>
+            </div>
+
+            <!-- Tool 2: Cytosine Base Editor -->
+            <div class="glass-card">
+              <div class="card-top">
+                <div class="icon-box amber-box">✏️</div>
+                <div>
+                  <span class="card-kicker amber-tag">TOOL 02</span>
+                  <h3 class="card-title">Cytosine Base Editors (C → T Swaps)</h3>
+                </div>
+              </div>
+              <div class="analogy-pill amber-pill">📝 Molecular Pencil (C to T)</div>
+              <p class="card-desc">
+                Fuses a gentler nickase Cas9 with a chemical eraser (deaminase). Directly transforms a target Cytosine (C) into Thymine (T) cleanly without double breaks.
+              </p>
+              <div class="bullet-points">
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>High Precision:</strong> Over 70% direct conversion rate.</span></div>
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Clean Outcome:</strong> Under 1% unwanted random insertion errors.</span></div>
+              </div>
+            </div>
+
+            <!-- Tool 3: Adenine Base Editor -->
+            <div class="glass-card">
+              <div class="card-top">
+                <div class="icon-box amber-box">✒️</div>
+                <div>
+                  <span class="card-kicker amber-tag">TOOL 03</span>
+                  <h3 class="card-title">Adenine Base Editors (A → G Swaps)</h3>
+                </div>
+              </div>
+              <div class="analogy-pill amber-pill">📝 Molecular Pencil (A to G)</div>
+              <p class="card-desc">
+                Chemically converts target Adenine (A) into Guanine (G). This single tool can potentially correct roughly half of all known single-letter genetic diseases in humans.
+              </p>
+              <div class="bullet-points">
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Disease Reversal:</strong> Fixes ~50% of human point mutations.</span></div>
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Ultra-gentle:</strong> Preserves chromosome structural integrity.</span></div>
+              </div>
+            </div>
+
+            <!-- Tool 4: Prime Editing -->
+            <div class="glass-card">
+              <div class="card-top">
+                <div class="icon-box amber-box">💻</div>
+                <div>
+                  <span class="card-kicker amber-tag">TOOL 04</span>
+                  <h3 class="card-title">Prime Editing (Search & Replace)</h3>
+                </div>
+              </div>
+              <div class="analogy-pill amber-pill">⌨️ Complete Word Processor</div>
+              <p class="card-desc">
+                The ultimate editor: writes new genetic text directly into the genome using a specialized guide (pegRNA) and reverse transcriptase. Handles all 12 letter swaps, inserts, and deletes.
+              </p>
+              <div class="bullet-points">
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>All 12 Swaps:</strong> Transitions and transversions handled easily.</span></div>
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Custom Inserts:</strong> Inserts or deletes sequences up to ~80 letters.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer-bar">
+          <span>Safety Leap: Base and prime editors eliminate double-strand break toxicity and prevent chromosomal rearrangement.</span>
+          <span>Slide 04 / 13</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 5: Case Study 1 — Curing Inherited Blood Disorders [Theme: Deep Genomic Navy #0B192C] -->
+    <section class="slide-wrapper" data-slide="5" data-theme="GENOMIC NAVY">
+      <div class="slide-card theme-genomic-navy">
+        <div class="ambient-glow"></div>
+
+        <div class="slide-header">
+          <div class="header-left">
+            <span class="section-tag cyan-tag">04 / REAL-WORLD CASE STUDY 01</span>
+            <h2 class="slide-heading">Curing Inherited Blood Disorders: Sickle Cell & Thalassemia</h2>
+          </div>
+          <div class="badge-pill badge-cyan">FDA Approved Medicine (Casgevy / Exa-cel)</div>
+        </div>
+
+        <div class="analogy-banner cyan-theme">
+          <div class="analogy-icon">🩸</div>
+          <div class="analogy-text">
+            <strong>The Breakthrough:</strong> Rather than trying to fix thousands of different broken adult hemoglobin mutations, scientists used CRISPR to <strong>turn back on the baby hemoglobin switch (HbF)</strong> that normally turns off after birth.
+          </div>
+        </div>
+
+        <div class="content-area-expanded">
+          <div class="split-5050">
+            <!-- Left: Clinical Strategy & Metrics -->
+            <div class="panel-container">
+              <div class="panel-title-bar">
+                <div class="panel-title-text">
+                  <span>🧬</span>
+                  <span>The Molecular Strategy</span>
+                </div>
+                <span class="badge-pill badge-cyan">BCL11A Enhancer Cut</span>
+              </div>
+              <p class="card-desc">
+                Scientists take stem cells out of the patient's blood, use CRISPR to snip the <strong>BCL11A brake pedal</strong>, and reinfuse the cells. Without the brake, red blood cells produce massive amounts of healthy Fetal Hemoglobin, preventing sickle cell crises completely.
+              </p>
+              <div class="grid-3-cards" style="flex: none; gap: 8px;">
+                <div class="glass-card" style="padding: 10px; text-align: center;">
+                  <span class="metric-big cyan-metric">>90%</span>
+                  <span class="metric-lbl">Target stem cells edited successfully</span>
+                </div>
+                <div class="glass-card" style="padding: 10px; text-align: center;">
+                  <span class="metric-big cyan-metric">>40%</span>
+                  <span class="metric-lbl">Fetal hemoglobin levels restored</span>
+                </div>
+                <div class="glass-card" style="padding: 10px; text-align: center;">
+                  <span class="metric-big cyan-metric">100%</span>
+                  <span class="metric-lbl">Patients free of severe pain crises</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: 4-Step Patient Journey -->
+            <div class="panel-container">
+              <div class="panel-title-bar">
+                <div class="panel-title-text">
+                  <span>🏥</span>
+                  <span>The 4-Step Treatment Journey</span>
+                </div>
+                <span class="badge-pill badge-cyan">Ex Vivo Cell Therapy</span>
+              </div>
+              <div class="step-stack">
+                <div class="step-card">
+                  <span class="step-num cyan-step-num">01</span>
+                  <div class="step-info">
+                    <strong>Harvest Stem Cells</strong>
+                    <p>Doctor collects blood-forming CD34+ stem cells from patient's blood.</p>
+                  </div>
+                </div>
+                <div class="step-card">
+                  <span class="step-num cyan-step-num">02</span>
+                  <div class="step-info">
+                    <strong>CRISPR Edit in Lab</strong>
+                    <p>Brief electric pulse delivers temporary Cas9 scissors to cut BCL11A brake.</p>
+                  </div>
+                </div>
+                <div class="step-card">
+                  <span class="step-num cyan-step-num">03</span>
+                  <div class="step-info">
+                    <strong>Quality & Safety Check</strong>
+                    <p>High-depth DNA sequencing confirms high editing and zero off-target cuts.</p>
+                  </div>
+                </div>
+                <div class="step-card">
+                  <span class="step-num cyan-step-num">04</span>
+                  <div class="step-info">
+                    <strong>One-Time Reinfusion</strong>
+                    <p>Cured cells are reinfused into patient, permanently producing healthy blood.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer-bar">
+          <span>Clinical Milestone: The first commercialized CRISPR therapy in human history, turning a fatal hereditary disease into a one-time cure.</span>
+          <span>Slide 05 / 13</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 6: Case Study 2 — Delivering Medicine Inside the Body (Fat Bubbles) [Theme: Dark Lab Slate #1E3E62] -->
+    <section class="slide-wrapper" data-slide="6" data-theme="LAB SLATE">
+      <div class="slide-card theme-lab-slate">
+        <div class="ambient-glow"></div>
+
+        <div class="slide-header">
+          <div class="header-left">
+            <span class="section-tag amber-tag">05 / REAL-WORLD CASE STUDY 02</span>
+            <h2 class="slide-heading">Delivering Inside the Body: Lipid Nanoparticle Fat Bubbles</h2>
+          </div>
+          <div class="badge-pill badge-amber">Human Milestone (NTLA-2001 Amyloidosis Trial)</div>
+        </div>
+
+        <div class="analogy-banner amber-theme">
+          <div class="analogy-icon">🫧</div>
+          <div class="analogy-text">
+            <strong>The Delivery Problem:</strong> Raw CRISPR scissors injected into the blood would be destroyed by the immune system. The solution? Package CRISPR instructions inside <strong>microscopic protective fat bubbles</strong> that sneak directly into liver cells.
+          </div>
+        </div>
+
+        <div class="content-area-expanded">
+          <div class="split-5050">
+            <!-- Left: 4-Phase Delivery Funnel -->
+            <div class="panel-container">
+              <div class="panel-title-bar">
+                <div class="panel-title-text">
+                  <span>🚀</span>
+                  <span>The 4-Stage In Vivo Delivery Journey</span>
+                </div>
+                <span class="badge-pill badge-amber">Systemic IV Infusion</span>
+              </div>
+              <div class="step-stack">
+                <div class="step-card">
+                  <span class="step-num amber-step-num">01</span>
+                  <div class="step-info">
+                    <strong>IV Drip Infusion</strong>
+                    <p>Fat bubbles (LNPs) holding Cas9 mRNA + guide RNA enter bloodstream.</p>
+                  </div>
+                </div>
+                <div class="step-card">
+                  <span class="step-num amber-step-num">02</span>
+                  <div class="step-info">
+                    <strong>Liver Docking (ApoE Tag)</strong>
+                    <p>Bubbles grab natural body proteins that act like keys to liver cell doors.</p>
+                  </div>
+                </div>
+                <div class="step-card">
+                  <span class="step-num amber-step-num">03</span>
+                  <div class="step-info">
+                    <strong>Acidic Bubble Pop</strong>
+                    <p>Inside the cell's acidic stomach, lipids pop open and release CRISPR safely.</p>
+                  </div>
+                </div>
+                <div class="step-card">
+                  <span class="step-num amber-step-num">04</span>
+                  <div class="step-info">
+                    <strong>Gene Shut Off (TTR Knockout)</strong>
+                    <p>Scissors cut the toxic TTR amyloid gene, shutting down disease production.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Clinical Results -->
+            <div class="panel-container">
+              <div class="panel-title-bar">
+                <div class="panel-title-text">
+                  <span>📊</span>
+                  <span>Clinical Results in Humans (Amyloidosis)</span>
+                </div>
+                <span class="badge-pill badge-amber">One-Time Dosing</span>
+              </div>
+              <p class="card-desc">
+                In ATTR Amyloidosis, misfolded TTR proteins build up and destroy heart tissue and nerves. A single 2-hour IV infusion of CRISPR lipid nanoparticles shut down production permanently.
+              </p>
+              <div class="grid-3-cards" style="flex: none; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <div class="glass-card" style="padding: 12px; text-align: center;">
+                  <span class="metric-big amber-metric">~97%</span>
+                  <span class="metric-lbl">Drop in toxic serum protein</span>
+                </div>
+                <div class="glass-card" style="padding: 12px; text-align: center;">
+                  <span class="metric-big amber-metric">Permanent</span>
+                  <span class="metric-lbl">Lifelong therapeutic durability</span>
+                </div>
+              </div>
+              <div class="analogy-banner amber-theme" style="margin-top: 10px; margin-bottom: 0;">
+                <div class="analogy-text" style="font-size: 0.8rem;">
+                  <strong>Revolutionary Impact:</strong> Replaces bi-weekly lifelong hospital injections with a single one-and-done curative IV treatment.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer-bar">
+          <span>Global First: First proof in human history of systemically infused CRISPR curing disease directly inside a human organ.</span>
+          <span>Slide 06 / 13</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 7: Case Study 3 — Remote-Controlled CRISPR (Light & Pills) [Theme: Deep Genomic Navy #0B192C] -->
+    <section class="slide-wrapper" data-slide="7" data-theme="GENOMIC NAVY">
+      <div class="slide-card theme-genomic-navy">
+        <div class="ambient-glow"></div>
+
+        <div class="slide-header">
+          <div class="header-left">
+            <span class="section-tag cyan-tag">06 / REAL-WORLD CASE STUDY 03</span>
+            <h2 class="slide-heading">Remote-Controlled CRISPR: Light & Pill Switches</h2>
+          </div>
+          <div class="badge-pill badge-cyan">Precision Spatiotemporal Control</div>
+        </div>
+
+        <div class="analogy-banner cyan-theme">
+          <div class="analogy-icon">🔦</div>
+          <div class="analogy-text">
+            <strong>The Safety Challenge:</strong> Leaving scissors active inside cells forever increases the risk of accidental cuts. Scientists solved this by <strong>splitting Cas9 in half</strong> so it only snaps together when triggered by a blue light flash or a harmless pill.
+          </div>
+        </div>
+
+        <div class="content-area-expanded">
+          <div class="split-5050">
+            <!-- Switch 1: Optogenetics (Light) -->
+            <div class="panel-container">
+              <div class="panel-title-bar">
+                <div class="panel-title-text">
+                  <span>💡</span>
+                  <span>Switch 1: Blue Light Laser (paCas9)</span>
+                </div>
+                <span class="badge-pill badge-cyan">Optogenetic Flash</span>
+              </div>
+              <div class="analogy-pill cyan-pill">🔦 The Optical Remote Control</div>
+              <p class="card-desc">
+                Cas9 is cut into two inactive halves tagged with light-sensitive magnets (p-Mag and n-Mag). In the dark, nothing happens. Shine a pulse of blue light, and the two halves snap together instantly to cut.
+              </p>
+              <div class="bullet-points">
+                <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Instant On:</strong> Activates within seconds under 470 nm blue light.</span></div>
+                <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Automatic Off:</strong> In the dark, halves separate in ~15 minutes.</span></div>
+                <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Microscopic Focus:</strong> Can edit a single cell without touching neighbors.</span></div>
+              </div>
+              <div class="card-bottom-metric">
+                <span class="metric-big cyan-metric">< 60 Sec</span>
+                <span class="metric-lbl">Activation speed upon illumination</span>
+              </div>
+            </div>
+
+            <!-- Switch 2: Chemical Pills (CID) -->
+            <div class="panel-container">
+              <div class="panel-title-bar">
+                <div class="panel-title-text">
+                  <span>💊</span>
+                  <span>Switch 2: Small-Molecule Pill Trigger</span>
+                </div>
+                <span class="badge-pill badge-cyan">Chemical Induction</span>
+              </div>
+              <div class="analogy-pill cyan-pill">🔑 The Key-in-Lock Pill Switch</div>
+              <p class="card-desc">
+                Split Cas9 fragments are tagged with lock-and-key protein domains. The scissors only assemble and perform their cut when an approved, harmless small-molecule pill (like Rapamycin or ABA) is swallowed.
+              </p>
+              <div class="bullet-points">
+                <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Deep Tissue Reach:</strong> Pills easily reach deep internal organs.</span></div>
+                <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Dose Adjustable:</strong> More pill = more editing; less pill = less editing.</span></div>
+                <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Emergency Brake:</strong> Adding an antidote pill instantly halts activity.</span></div>
+              </div>
+              <div class="card-bottom-metric">
+                <span class="metric-big cyan-metric">>25x</span>
+                <span class="metric-lbl">Dynamic ON / OFF induction control</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer-bar">
+          <span>Safety Leap: Restricting active cutting time from weeks to minutes slashes accidental off-target edits by over 80%.</span>
+          <span>Slide 07 / 13</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 8: Case Study 4 — Super-Crops and Climate Resistance [Theme: Dark Lab Slate #1E3E62] -->
+    <section class="slide-wrapper" data-slide="8" data-theme="LAB SLATE">
+      <div class="slide-card theme-lab-slate">
+        <div class="ambient-glow"></div>
+
+        <div class="slide-header">
+          <div class="header-left">
+            <span class="section-tag amber-tag">07 / REAL-WORLD CASE STUDY 04</span>
+            <h2 class="slide-heading">Super-Crops: Disease-Proof Wheat & Nutritional Food</h2>
+          </div>
+          <div class="badge-pill badge-amber">Agricultural Biofortification & Non-GMO Crops</div>
+        </div>
+
+        <div class="analogy-banner amber-theme">
+          <div class="analogy-icon">🌾</div>
+          <div class="analogy-text">
+            <strong>The Plant Strategy:</strong> Instead of spraying toxic chemicals or adding foreign bacterial genes, scientists used CRISPR to <strong>lock the doorway (MLO gene)</strong> that powdery mildew fungus uses to infect wheat crops.
+          </div>
+        </div>
+
+        <div class="content-area-expanded">
+          <div class="split-5050">
+            <!-- Left: Wheat MLO Knockout -->
+            <div class="panel-container">
+              <div class="panel-title-bar">
+                <div class="panel-title-text">
+                  <span>🍞</span>
+                  <span>Powdery Mildew Immunity in Wheat</span>
+                </div>
+                <span class="badge-pill badge-amber">6-Allele Simultaneous Cut</span>
+              </div>
+              <p class="card-desc">
+                Bread wheat is complex with 6 copies of the <em>MLO</em> susceptibility gene across three ancestral subgenomes (A, B, D). Traditional breeding could never turn all 6 off without killing the plant. CRISPR knocked out all 6 at once.
+              </p>
+              <div class="step-stack">
+                <div class="step-card">
+                  <span class="step-num amber-step-num">A</span>
+                  <div class="step-info">
+                    <strong>TaMLO-A1 Disabled</strong>
+                    <p>Subgenome A fungal doorway deleted cleanly.</p>
+                  </div>
+                </div>
+                <div class="step-card">
+                  <span class="step-num amber-step-num">B</span>
+                  <div class="step-info">
+                    <strong>TaMLO-B1 Disabled</strong>
+                    <p>Subgenome B fungal doorway deleted cleanly.</p>
+                  </div>
+                </div>
+                <div class="step-card">
+                  <span class="step-num amber-step-num">D</span>
+                  <div class="step-info">
+                    <strong>TaMLO-D1 Disabled</strong>
+                    <p>Subgenome D fungal doorway deleted cleanly.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-bottom-metric">
+                <span class="metric-big amber-metric">100% Immunity</span>
+                <span class="metric-lbl">Zero growth penalty or crop loss</span>
+              </div>
+            </div>
+
+            <!-- Right: Healthier Food & Non-GMO Delivery -->
+            <div class="panel-container">
+              <div class="panel-title-bar">
+                <div class="panel-title-text">
+                  <span>🥗</span>
+                  <span>Nutritional Upgrades & Non-GMO Status</span>
+                </div>
+                <span class="badge-pill badge-amber">Transgene-Free Breeding</span>
+              </div>
+              <div class="glass-card" style="padding: 12px; margin-bottom: 10px;">
+                <h4 style="color: #FFFFFF; font-size: 0.9rem; margin-bottom: 4px;">🍅 GABA Super-Tomatoes</h4>
+                <p style="font-size: 0.76rem; color: var(--text-medium);">CRISPR turns down GABA breakdown, yielding tomatoes with 5x higher calming GABA for blood pressure control (commercialized in Japan).</p>
+              </div>
+              <div class="glass-card" style="padding: 12px; margin-bottom: 10px;">
+                <h4 style="color: #FFFFFF; font-size: 0.9rem; margin-bottom: 4px;">🌱 Heart-Healthy High-Oleic Soybean</h4>
+                <p style="font-size: 0.76rem; color: var(--text-medium);">Boosts heart-healthy monounsaturated oleic acid from 20% to >80% while eliminating unhealthy trans fats.</p>
+              </div>
+              <div class="glass-card" style="padding: 12px;">
+                <h4 style="color: #FFFFFF; font-size: 0.9rem; margin-bottom: 4px;">🚫 Zero Foreign DNA Integration</h4>
+                <p style="font-size: 0.76rem; color: var(--text-medium);">Delivering pure protein scissors (RNP) leaves no bacterial trace, qualifying as natural non-GMO breeding in USA, Japan, and UK.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer-bar">
+          <span>Global Impact: Protecting food security against climate change without using chemical fungicides or foreign transgenes.</span>
+          <span>Slide 08 / 13</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 9: Case Study 5 — Fighting Superbugs and Fast Virus Testing [Theme: Deep Genomic Navy #0B192C] -->
+    <section class="slide-wrapper" data-slide="9" data-theme="GENOMIC NAVY">
+      <div class="slide-card theme-genomic-navy">
+        <div class="ambient-glow"></div>
+
+        <div class="slide-header">
+          <div class="header-left">
+            <span class="section-tag cyan-tag">08 / REAL-WORLD CASE STUDY 05</span>
+            <h2 class="slide-heading">Fighting Superbugs & 15-Minute Virus Testing</h2>
+          </div>
+          <div class="badge-pill badge-cyan">Precision Antimicrobials & SHERLOCK Paper Strips</div>
+        </div>
+
+        <div class="analogy-banner cyan-theme">
+          <div class="analogy-icon">🦠</div>
+          <div class="analogy-text">
+            <strong>The Microbiology Frontier:</strong> Traditional antibiotics are like carpet bombs that kill all bacteria (good and bad). CRISPR acts like a <strong>laser-guided sniper rifle</strong> that deletes antibiotic resistance genes in superbugs, plus powers paper strip tests for instant viral diagnosis.
+          </div>
+        </div>
+
+        <div class="content-area-expanded">
+          <div class="split-5050">
+            <!-- Left: Smart Antimicrobial Sniper -->
+            <div class="panel-container">
+              <div class="panel-title-bar">
+                <div class="panel-title-text">
+                  <span>🎯</span>
+                  <span>1. Curing Superbugs (Plasmid Removal)</span>
+                </div>
+                <span class="badge-pill badge-cyan">Microbiome Protection</span>
+              </div>
+              <div class="analogy-pill cyan-pill">🧲 Laser-Guided Antibiotic Weapon</div>
+              <p class="card-desc">
+                Engineered harmless bacterial phages deliver CRISPR programmed to cut the resistance ring (plasmid) inside deadly carbapenem-resistant superbugs (CRE and MRSA).
+              </p>
+              <div class="bullet-points">
+                <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Plasmid Shredding:</strong> Cuts and destroys the antibiotic-resistant ring.</span></div>
+                <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Resensitization:</strong> Restores superbug vulnerability to standard penicillin.</span></div>
+                <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Protects Good Flora:</strong> Leaves 100% of healthy gut microbes alive.</span></div>
+              </div>
+              <div class="card-bottom-metric">
+                <span class="metric-big cyan-metric">>99.9%</span>
+                <span class="metric-lbl">Eradication of carbapenem resistance</span>
+              </div>
+            </div>
+
+            <!-- Right: SHERLOCK Diagnostics -->
+            <div class="panel-container">
+              <div class="panel-title-bar">
+                <div class="panel-title-text">
+                  <span>🧪</span>
+                  <span>2. Instant Paper Strip Virus Tests</span>
+                </div>
+                <span class="badge-pill badge-cyan">SHERLOCK & DETECTR</span>
+              </div>
+              <div class="analogy-pill cyan-pill">📄 15-Minute Home Diagnostic Strips</div>
+              <p class="card-desc">
+                Cousins of Cas9 (Cas12a and Cas13a) have a special trigger: once they find a viral sequence (like COVID, Flu, or Dengue), they start shredding surrounding reporter molecules, causing an instant glowing color change.
+              </p>
+              <div class="bullet-points">
+                <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Attomolar Sensitivity:</strong> Spots single-digit viral particles in saliva.</span></div>
+                <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>15–20 Minutes:</strong> Read on a simple paper strip like a pregnancy test.</span></div>
+                <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Single-Letter Precision:</strong> Tells viral subvariants apart instantly.</span></div>
+              </div>
+              <div class="card-bottom-metric">
+                <span class="metric-big cyan-metric">< 20 Min</span>
+                <span class="metric-lbl">Zero laboratory equipment needed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer-bar">
+          <span>Dual Power: CRISPR acts as both a smart drug that reverses antibiotic resistance and a quantum-sensitive diagnostic sensor.</span>
+          <span>Slide 09 / 13</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 10: Case Study 6 — Smart Biological Computers [Theme: Dark Lab Slate #1E3E62] -->
+    <section class="slide-wrapper" data-slide="10" data-theme="LAB SLATE">
+      <div class="slide-card theme-lab-slate">
+        <div class="ambient-glow"></div>
+
+        <div class="slide-header">
+          <div class="header-left">
+            <span class="section-tag amber-tag">09 / REAL-WORLD CASE STUDY 06</span>
+            <h2 class="slide-heading">Smart Biological Computers: Logic Gates & Living Recorders</h2>
+          </div>
+          <div class="badge-pill badge-amber">Cellular Computing & Deep Learning sgRNA AI</div>
+        </div>
+
+        <div class="analogy-banner amber-theme">
+          <div class="analogy-icon">🤖</div>
+          <div class="analogy-text">
+            <strong>The Vision:</strong> Scientists are using CRISPR to turn living cells into <strong>microscopic smart computers</strong> that evaluate disease signals inside the human body and automatically release medicine only when needed.
+          </div>
+        </div>
+
+        <div class="content-area-expanded">
+          <div class="split-5050">
+            <!-- Left: Logic Gates & Memory -->
+            <div class="panel-container">
+              <div class="panel-title-bar">
+                <div class="panel-title-text">
+                  <span>🧠</span>
+                  <span>Living Logic Circuits (AND / OR Gates)</span>
+                </div>
+                <span class="badge-pill badge-amber">Cellular Computing</span>
+              </div>
+              <div class="analogy-pill amber-pill">💻 Programming Code Inside Cells</div>
+              <p class="card-desc">
+                By linking dead Cas9 proteins to molecular switches, engineered immune cells follow logic rules before attacking:
+              </p>
+              <div class="step-stack">
+                <div class="step-card">
+                  <span class="step-num amber-step-num">AND</span>
+                  <div class="step-info">
+                    <strong>IF (Tumor Signal A AND Tumor Signal B) are present</strong>
+                    <p>Cell activates tumor-killing toxin only inside cancer tissue.</p>
+                  </div>
+                </div>
+                <div class="step-card">
+                  <span class="step-num amber-step-num">NOT</span>
+                  <div class="step-info">
+                    <strong>IF (Healthy Tissue Marker) is detected</strong>
+                    <p>Safety brake halts cell attack, preventing toxicity to normal organs.</p>
+                  </div>
+                </div>
+                <div class="step-card">
+                  <span class="step-num amber-step-num">REC</span>
+                  <div class="step-info">
+                    <strong>CAMERA / MEMOIR DNA Tape Recorder</strong>
+                    <p>Writes inflammation and cell history as permanent logs in DNA tape.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: AI Guide Design Pipelines -->
+            <div class="panel-container">
+              <div class="panel-title-bar">
+                <div class="panel-title-text">
+                  <span>🤖</span>
+                  <span>Deep Learning Guide Design (DeepSpCas9)</span>
+                </div>
+                <span class="badge-pill badge-amber">AI-Powered Engineering</span>
+              </div>
+              <div class="analogy-pill amber-pill">⚡ Neural Networks Designing Guides</div>
+              <p class="card-desc">
+                Scientists no longer guess which guide RNAs work best. Deep learning models predict cutting efficiency and exact repair outcomes before stepping into a wet lab:
+              </p>
+              <div class="step-stack">
+                <div class="step-card">
+                  <span class="step-num amber-step-num">01</span>
+                  <div class="step-info">
+                    <strong>DeepSpCas9 Neural Network</strong>
+                    <p>CNN algorithms predict guide cutting strength with >87% accuracy.</p>
+                  </div>
+                </div>
+                <div class="step-card">
+                  <span class="step-num amber-step-num">02</span>
+                  <div class="step-info">
+                    <strong>inDelphi Repair Outcome Predictor</strong>
+                    <p>Calculates the exact percentage of specific gene repair alleles.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-bottom-metric">
+                <span class="metric-big amber-metric">r > 0.87</span>
+                <span class="metric-lbl">Machine learning correlation to lab results</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer-bar">
+          <span>Synthetic Biology: Transforming genetic therapy from trial-and-error biology into predictable software engineering.</span>
+          <span>Slide 10 / 13</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 11: Safety First (How Scientists Prevent Mistakes) [Theme: Deep Genomic Navy #0B192C] -->
+    <section class="slide-wrapper" data-slide="11" data-theme="GENOMIC NAVY">
+      <div class="slide-card theme-genomic-navy">
+        <div class="ambient-glow"></div>
+
+        <div class="slide-header">
+          <div class="header-left">
+            <span class="section-tag cyan-tag">10 / BIOSAFETY & VALIDATION</span>
+            <h2 class="slide-heading">Safety First: How Scientists Prevent Accidental Mistakes</h2>
+          </div>
+          <div class="badge-pill badge-cyan">Clinical Grade De-Risking Matrix</div>
+        </div>
+
+        <div class="analogy-banner cyan-theme">
+          <div class="analogy-icon">🛡️</div>
+          <div class="analogy-text">
+            <strong>The Safety Imperative:</strong> The biggest worry in gene editing is an "off-target" cut—snipping the wrong gene accidentally. Scientists use a <strong>3-layer defense system</strong> to guarantee surgical precision.
+          </div>
+        </div>
+
+        <div class="content-area-expanded">
+          <div class="panel-container" style="padding: 0; overflow: hidden;">
+            <table class="safety-table">
+              <thead>
+                <tr>
+                  <th style="width: 22%;">Potential Risk</th>
+                  <th style="width: 28%;">What Could Happen</th>
+                  <th style="width: 25%;">How We Detect It</th>
+                  <th style="width: 25%;">Engineered Safety Solution</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1. Off-Target Cuts</strong></td>
+                  <td>Scissors cut a similar-looking gene somewhere else in DNA.</td>
+                  <td><strong>GUIDE-seq</strong> unbiased whole-genome deep sequencing.</td>
+                  <td><strong>High-Fidelity Cas9</strong> (SpCas9-HF1) that refuses to cut unless 100% matched.</td>
+                </tr>
+                <tr>
+                  <td><strong>2. Chromosome Scrambling</strong></td>
+                  <td>Multiple simultaneous cuts rejoin backwards or trade arms.</td>
+                  <td>Long-read PacBio / Oxford Nanopore sequencing checks.</td>
+                  <td>Switch to <strong>Base or Prime Editors</strong> that make edits without double-strand breaks.</td>
+                </tr>
+                <tr>
+                  <td><strong>3. Immune Reaction</strong></td>
+                  <td>Body sees bacterial Cas9 protein as an invading germ.</td>
+                  <td>T-cell activation assays & anti-Cas9 antibody screening.</td>
+                  <td><strong>Transient Delivery (RNP/LNP)</strong> that does the edit and dissolves in 24 hours.</td>
+                </tr>
+                <tr>
+                  <td><strong>4. Cellular Stress (p53)</strong></td>
+                  <td>DNA cuts trigger natural emergency brake in cells.</td>
+                  <td>p53 activation biomarkers & survival screening.</td>
+                  <td>Gentle single-letter base editors and transient, low-dose delivery.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="slide-footer-bar">
+          <span>Gold Standard: Clinical regulators (FDA & EMA) mandate whole-genome sequencing confirmation before any patient trial begins.</span>
+          <span>Slide 11 / 13</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 12: The Future of Genetic Medicine [Theme: Dark Lab Slate #1E3E62] -->
+    <section class="slide-wrapper" data-slide="12" data-theme="LAB SLATE">
+      <div class="slide-card theme-lab-slate">
+        <div class="ambient-glow"></div>
+
+        <div class="slide-header">
+          <div class="header-left">
+            <span class="section-tag amber-tag">11 / FUTURE HORIZONS</span>
+            <h2 class="slide-heading">The Future of Genetic Medicine: The Next Decade</h2>
+          </div>
+          <div class="badge-pill badge-amber">Living Drugs & Permanent Viral Eradication</div>
+        </div>
+
+        <div class="analogy-banner amber-theme">
+          <div class="analogy-icon">🚀</div>
+          <div class="analogy-text">
+            <strong>Where We Are Headed:</strong> Moving from fixing rare genetic diseases one patient at a time to <strong>off-the-shelf universal cancer cures</strong>, <strong>eradicating latent viruses like HIV</strong>, and setting global safety standards.
+          </div>
+        </div>
+
+        <div class="content-area-expanded">
+          <div class="grid-3-cards">
+            <!-- Horizon 1 -->
+            <div class="glass-card">
+              <div class="card-top">
+                <div class="icon-box amber-box">🛡️</div>
+                <div>
+                  <span class="card-kicker amber-tag">HORIZON 01</span>
+                  <h3 class="card-title">Off-the-Shelf CAR-T Cancer Cells</h3>
+                </div>
+              </div>
+              <div class="analogy-pill amber-pill">🏭 Universal Cancer-Fighting Soldiers</div>
+              <p class="card-desc">
+                Using CRISPR to edit healthy donor T-cells with 4 simultaneous knockouts so they can be mass-produced and frozen for instant cancer therapy:
+              </p>
+              <div class="bullet-points">
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>TRAC Knockout:</strong> Prevents donor cells attacking patient (GvHD).</span></div>
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>B2M Knockout:</strong> Hides cells from patient immune rejection.</span></div>
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>PD-1 Knockout:</strong> Removes tumor-induced exhaustion switch.</span></div>
+              </div>
+              <div class="card-bottom-metric">
+                <span class="metric-big amber-metric">Thousands / Batch</span>
+                <span class="metric-lbl">Universal donor availability</span>
+              </div>
+            </div>
+
+            <!-- Horizon 2 -->
+            <div class="glass-card">
+              <div class="card-top">
+                <div class="icon-box amber-box">✂️</div>
+                <div>
+                  <span class="card-kicker amber-tag">HORIZON 02</span>
+                  <h3 class="card-title">Cutting Out Latent Viruses (HIV-1)</h3>
+                </div>
+              </div>
+              <div class="analogy-pill amber-pill">🦠 Eradicating Sleeping Viral DNA</div>
+              <p class="card-desc">
+                HIV hides permanently inside patient DNA, avoiding pills. CRISPR deploys dual scissors to physically snip out the sleeping provirus from hiding spots:
+              </p>
+              <div class="bullet-points">
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Dual-Cut Excision:</strong> Cuts both ends (LTRs) of integrated HIV DNA.</span></div>
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Permanent Cure:</strong> Clears dormant viral reservoirs (EBT-101 trial).</span></div>
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Hepatitis B & HPV:</strong> Destroys circular viral DNA in liver and cervix.</span></div>
+              </div>
+              <div class="card-bottom-metric">
+                <span class="metric-big amber-metric">Phase 1/2</span>
+                <span class="metric-lbl">Human clinical trials underway</span>
+              </div>
+            </div>
+
+            <!-- Horizon 3 -->
+            <div class="glass-card">
+              <div class="card-top">
+                <div class="icon-box amber-box">📜</div>
+                <div>
+                  <span class="card-kicker amber-tag">HORIZON 03</span>
+                  <h3 class="card-title">Global Guidelines & Accessibility</h3>
+                </div>
+              </div>
+              <div class="analogy-pill amber-pill">⚖️ Global Standards & Affordable Access</div>
+              <p class="card-desc">
+                Ensuring that life-saving genetic medicines become standardized, affordable, and ethically distributed worldwide:
+              </p>
+              <div class="bullet-points">
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Harmonized CMC:</strong> Standardized quality controls across FDA & EMA.</span></div>
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Scalable Nanoparticles:</strong> Lowering manufacturing costs by >90%.</span></div>
+                <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Ethical Frameworks:</strong> Restricting edits strictly to somatic medicine.</span></div>
+              </div>
+              <div class="card-bottom-metric">
+                <span class="metric-big amber-metric">Global Standard</span>
+                <span class="metric-lbl">Ethical therapeutic deployment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer-bar">
+          <span>The Next Frontier: Moving from custom individual treatments to universally available living cures for cancer, viral infections, and chronic disease.</span>
+          <span>Slide 12 / 13</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 13: Summary & Reference Library [Theme: Deep Genomic Navy #0B192C] -->
+    <section class="slide-wrapper" data-slide="13" data-theme="GENOMIC NAVY">
+      <div class="slide-card theme-genomic-navy">
+        <div class="ambient-glow"></div>
+
+        <div class="slide-header">
+          <div class="header-left">
+            <span class="section-tag cyan-tag">12 / SUMMARY & CITATIONS</span>
+            <h2 class="slide-heading">Summary: The Age of Programmable Biology</h2>
+          </div>
+          <div class="badge-pill badge-cyan">Peer-Reviewed Scientific Foundation</div>
+        </div>
+
+        <div class="analogy-banner cyan-theme" style="margin-bottom: 12px;">
+          <div class="analogy-icon">🌟</div>
+          <div class="analogy-text">
+            <strong>Final Takeaway:</strong> In just over a decade, CRISPR-Cas9 transitioned from a curious bacterial defense mechanism into an approved, life-saving cure for human disease. Biology is no longer something we can only observe—<strong>it is a language we can rewrite with molecular precision</strong>.
+          </div>
+        </div>
+
+        <div class="content-area-expanded">
+          <div class="grid-2x2-clean" style="gap: 10px;">
+            <div class="glass-card" style="padding: 10px 14px;">
+              <span class="card-kicker cyan-tag">[1] Jinek et al. (Science 2012)</span>
+              <strong style="color: #FFFFFF; font-size: 0.84rem; display: block; margin: 2px 0;">A Programmable Dual-RNA-Guided DNA Endonuclease in Adaptive Bacterial Immunity</strong>
+              <p style="font-size: 0.74rem; color: var(--text-medium);">The foundational paper demonstrating that Cas9 can be programmed with a single-guide RNA to cut target DNA.</p>
+            </div>
+
+            <div class="glass-card" style="padding: 10px 14px;">
+              <span class="card-kicker cyan-tag">[2] Cong et al. / Mali et al. (Science 2013)</span>
+              <strong style="color: #FFFFFF; font-size: 0.84rem; display: block; margin: 2px 0;">Multiplex Genome Engineering Using CRISPR-Cas Systems in Mammalian Cells</strong>
+              <p style="font-size: 0.74rem; color: var(--text-medium);">First demonstration showing that CRISPR-Cas9 works inside living human and mammalian cells.</p>
+            </div>
+
+            <div class="glass-card" style="padding: 10px 14px;">
+              <span class="card-kicker cyan-tag">[3] Frangoul et al. (NEJM 2021)</span>
+              <strong style="color: #FFFFFF; font-size: 0.84rem; display: block; margin: 2px 0;">CRISPR-Cas9 Gene Editing for Sickle Cell Disease and Beta-Thalassemia</strong>
+              <p style="font-size: 0.74rem; color: var(--text-medium);">Clinical trial results demonstrating curative fetal hemoglobin reactivation (CTX001 / Casgevy).</p>
+            </div>
+
+            <div class="glass-card" style="padding: 10px 14px;">
+              <span class="card-kicker cyan-tag">[4] Gillmore et al. (NEJM 2021)</span>
+              <strong style="color: #FFFFFF; font-size: 0.84rem; display: block; margin: 2px 0;">CRISPR-Cas9 In Vivo Gene Editing for Transthyretin Amyloidosis</strong>
+              <p style="font-size: 0.74rem; color: var(--text-medium);">First-in-human clinical proof of systemically infused lipid nanoparticles achieving in vivo liver gene knockout (NTLA-2001).</p>
+            </div>
+
+            <div class="glass-card" style="padding: 10px 14px;">
+              <span class="card-kicker cyan-tag">[5] Anzalone et al. (Nature 2019) / Komor et al. (Nature 2016)</span>
+              <strong style="color: #FFFFFF; font-size: 0.84rem; display: block; margin: 2px 0;">Search-and-Replace Prime Editing & Programmable Base Editing</strong>
+              <p style="font-size: 0.74rem; color: var(--text-medium);">Architectures for single-letter base editors (CBE/ABE) and prime editing without double-strand breaks.</p>
+            </div>
+
+            <div class="glass-card" style="padding: 10px 14px;">
+              <span class="card-kicker cyan-tag">[6] Gootenberg et al. (Science 2017) / Wang et al. (Nat Biotech 2014)</span>
+              <strong style="color: #FFFFFF; font-size: 0.84rem; display: block; margin: 2px 0;">Nucleic Acid Detection with CRISPR-Cas13a / Wheat Powdery Mildew Resistance via MLO</strong>
+              <p style="font-size: 0.74rem; color: var(--text-medium);">SHERLOCK attomolar paper strip virus diagnostics and 6-allele hexaploid wheat MLO resistance knockout.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer-bar">
+          <span>End of Presentation • Master Synthesis compiled by Science Communicator & Presentation Designer.</span>
+          <span>Slide 13 / 13</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Slide Overview Modal -->
+  <div class="overview-modal" id="overview-modal">
+    <div class="overview-content">
+      <div class="overview-header">
+        <h3>Presentation Overview (13 Slides)</h3>
+        <button class="close-btn" id="btn-close-overview">&times;</button>
+      </div>
+      <div class="overview-grid" id="overview-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="presentation.js"></script>
+</body>
+</html>
