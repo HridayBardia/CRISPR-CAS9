@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const files = ['index.html', 'presentation.css', 'presentation.js', 'README.md'];
+const files = ['index.html', 'presentation.css', 'presentation.js', 'README.md', 'vercel.json'];
 const targetDirs = ['public', 'dist'];
 
 function copyFolderRecursive(src, dest) {
