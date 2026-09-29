@@ -138,49 +138,22 @@
               </div>
             </div>
 
-            <!-- Right Side: Structural Mechanism Vector Diagram -->
+            <!-- Right Side: Full Visual Image & Cryo-EM Architecture -->
             <div class="split-right-panel">
-              <div class="diagram-visual-box">
-                <span class="diagram-header-tag">SPCAS9 BILOBED ARCHITECTURE & R-LOOP ALLOSTERY</span>
-                <div class="diagram-svg-wrapper">
-                  <svg viewBox="0 0 460 260" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                    <!-- REC Lobe & NUC Lobe Contours -->
-                    <path d="M 100,50 C 180,15 340,25 380,105 C 400,185 320,235 210,225 C 130,215 80,195 60,135 C 50,85 70,60 100,50 Z" 
-                          fill="rgba(0, 240, 255, 0.07)" stroke="#00F0FF" stroke-width="1.6" stroke-dasharray="4,2"/>
-                    
-                    <!-- DNA Target & Non-Target Strands -->
-                    <path d="M 20,95 L 120,95 Q 220,55 330,95 L 440,95" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
-                    <path d="M 20,155 L 120,155 Q 220,195 330,155 L 440,155" fill="none" stroke="#0284C7" stroke-width="3" stroke-linecap="round"/>
-
-                    <!-- Heteroduplex Rungs -->
-                    <line x1="50" y1="95" x2="50" y2="155" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
-                    <line x1="80" y1="95" x2="80" y2="155" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
-                    <line x1="360" y1="95" x2="360" y2="155" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
-                    <line x1="390" y1="95" x2="390" y2="155" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
-                    <line x1="420" y1="95" x2="420" y2="155" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
-
-                    <!-- Guide RNA (sgRNA 20-nt Spacer) in Amber/Gold -->
-                    <path d="M 130,145 L 305,145 Q 335,145 335,115 Q 335,75 315,75 Q 295,75 295,115 Q 295,145 275,145" 
-                          fill="none" stroke="#FFB300" stroke-width="3.5" stroke-linecap="round"/>
-                    
-                    <!-- PAM Signpost (5'-NGG) -->
-                    <rect x="310" y="87" width="32" height="16" rx="3" fill="#FF5252" />
-                    <text x="326" y="99" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">5'-NGG</text>
-
-                    <!-- HNH Domain 32Å Rotation Indicator -->
-                    <circle cx="260" cy="80" r="22" fill="rgba(16, 185, 129, 0.2)" stroke="#10B981" stroke-width="1.5" stroke-dasharray="3,2"/>
-                    <text x="260" y="84" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#10B981" text-anchor="middle">HNH (His840)</text>
-
-                    <!-- RuvC Cleavage Mark -->
-                    <text x="240" y="180" font-size="14">✂️</text>
-                    <text x="275" y="182" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#FF5252">RuvC (Asp10)</text>
-
-                    <!-- Labels -->
-                    <text x="130" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#00F0FF">REC Lobe (REC1-3)</text>
-                    <text x="195" y="160" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#FFB300">20-nt sgRNA spacer</text>
-                    <text x="28" y="85" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94A3B8">5' DNA Target</text>
-                    <text x="28" y="170" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94A3B8">3' Displaced NTS</text>
-                  </svg>
+              <div class="slide-image-box">
+                <img src="images/crispr_cas9_complex.jpg" alt="SpCas9 Molecular Complex" class="slide-visual-img">
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 1 | SPCAS9 CRYO-EM ARCHITECTURE & R-LOOP HETERODUPLEX</div>
+              </div>
+              <div class="figure-explain-card">
+                <div class="figure-explain-header">
+                  <span class="figure-explain-title"><span class="pulse-dot"></span>CRYO-EM ATOMIC ARCHITECTURE</span>
+                </div>
+                <div class="figure-explain-desc">
+                  High-resolution Cryo-EM 3D reconstruction showing SpCas9 bilobed architecture (REC and NUC lobes) bound to sgRNA and unwound target DNA heteroduplex.
+                </div>
+                <div class="figure-explain-points">
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>Scissile Phosphate Docking:</strong> HNH & RuvC catalytic centers positioned 3 bp upstream of the 5'-NGG PAM signpost.</span></div>
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>Thermodynamic Trajectory:</strong> &minus;22.4 kcal/mol excess binding free energy drives irreversible directional R-loop propagation.</span></div>
                 </div>
               </div>
             </div>
@@ -217,7 +190,7 @@
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
-            <!-- Left Side: Mechanistic Pillars -->
+            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-amber-border">
                 <div class="card-top">
@@ -249,73 +222,23 @@
               </div>
             </div>
 
-            <!-- Right Side: Table 1 & Interactive R-Loop Simulator -->
+            <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="interactive-panel-box">
-                <div class="panel-top-bar">
-                  <span class="panel-title">TABLE 1: KINETIC & THERMODYNAMIC CONSTANTS (WT-SpCas9)</span>
-                </div>
-                <div class="table-container">
-                  <table class="academic-table">
-                    <thead>
-                      <tr>
-                        <th>Target Substrate</th>
-                        <th>kobs (s&minus;&sup1;)</th>
-                        <th>Rel. Activity</th>
-                        <th>Kd (nM)</th>
-                        <th>&Delta;G&deg; (kcal/mol)</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="highlight-row">
-                        <td><strong>Fully Matched (On-Target)</strong></td>
-                        <td>0.185 &plusmn; 0.012</td>
-                        <td>100.0%</td>
-                        <td>0.45 &plusmn; 0.05</td>
-                        <td>&minus;22.4 &plusmn; 0.3</td>
-                      </tr>
-                      <tr>
-                        <td>Position 18 (PAM-Distal)</td>
-                        <td>0.142 &plusmn; 0.009</td>
-                        <td>76.8%</td>
-                        <td>1.20 &plusmn; 0.15</td>
-                        <td>&minus;19.8 &plusmn; 0.4</td>
-                      </tr>
-                      <tr>
-                        <td>Position 12 (Mid-Region)</td>
-                        <td>0.052 &plusmn; 0.004</td>
-                        <td>28.1%</td>
-                        <td>4.80 &plusmn; 0.50</td>
-                        <td>&minus;16.7 &plusmn; 0.5</td>
-                      </tr>
-                      <tr>
-                        <td>Position 4 (Seed Region)</td>
-                        <td>0.002 &plusmn; 0.0003</td>
-                        <td>1.1%</td>
-                        <td>48.5 &plusmn; 5.20</td>
-                        <td>&minus;12.1 &plusmn; 0.6</td>
-                      </tr>
-                      <tr>
-                        <td>Triple Mismatch (16, 18, 20)</td>
-                        <td>0.068 &plusmn; 0.006</td>
-                        <td>36.8%</td>
-                        <td>3.10 &plusmn; 0.35</td>
-                        <td>&minus;17.5 &plusmn; 0.4</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="slide-image-box">
+                <img src="images/crispr_cas9_complex.jpg" alt="Cryo-EM Structure of Cas9" class="slide-visual-img">
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 2 | DIRECTIONAL R-LOOP DYNAMICS & 32 Å HNH ALLOSTERY</div>
+              </div>
 
-                <!-- Interactive R-Loop State Control -->
-                <div class="sim-interactive-area" style="margin-top: 10px;">
-                  <div class="sim-btn-group">
-                    <button class="sim-btn active" id="btn-rloop-seed">Seed (1-8 bp)</button>
-                    <button class="sim-btn" id="btn-rloop-mid">Mid (9-14 bp)</button>
-                    <button class="sim-btn" id="btn-rloop-full">Full R-Loop (20 bp)</button>
-                  </div>
-                  <div class="sim-status-box" id="rloop-sim-status">
-                    <span style="color:#FFB300; font-weight:700;">Conformational State:</span> Initial PAM binding and seed hybridization. HNH domain in parked checkpoint state.
-                  </div>
+              <div class="figure-explain-card">
+                <div class="figure-explain-header">
+                  <span class="figure-explain-title"><span class="pulse-dot"></span>STRUCTURAL ALLOSTERY & KINETICS</span>
+                </div>
+                <div class="figure-explain-desc">
+                  Directional R-loop propagation drives conformational allostery, repositioning the HNH nuclease domain by 32 Å to align His840 at the target strand.
+                </div>
+                <div class="figure-explain-points">
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>Conformational Checkpoint:</strong> REC3 senses 20-bp base pairing; distal mismatches fail to trigger rapid catalytic collapse in WT-SpCas9.</span></div>
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>Kinetic Contrast:</strong> Fully matched on-target rate kobs = 0.185 s&minus;1 vs. Seed mismatch abort kobs = 0.002 s&minus;1.</span></div>
                 </div>
               </div>
             </div>
@@ -352,6 +275,7 @@
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
+            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-cyan-border">
                 <div class="card-top">
@@ -384,74 +308,23 @@
               </div>
             </div>
 
-            <!-- Right Side: Table 2 Comparison -->
+            <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="interactive-panel-box">
-                <div class="panel-top-bar">
-                  <span class="panel-title">TABLE 2: SPECIFICITY RATIOS & GUIDE-SEQ OFF-TARGETS</span>
-                </div>
-                <div class="table-container">
-                  <table class="academic-table">
-                    <thead>
-                      <tr>
-                        <th>Nuclease</th>
-                        <th>Key Mutations</th>
-                        <th>GUIDE-seq Off-Targets</th>
-                        <th>kobs On-Target</th>
-                        <th>Specificity Ratio</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><strong>WT-SpCas9</strong></td>
-                        <td>None (Wild-Type)</td>
-                        <td><span class="badge-alert">142 detected sites</span></td>
-                        <td>0.185 &plusmn; 0.012 s&minus;&sup1;</td>
-                        <td>1.0x (Baseline)</td>
-                      </tr>
-                      <tr>
-                        <td><strong>eSpCas9(1.1)</strong></td>
-                        <td>K848A, K1003A, R1060A</td>
-                        <td>14 detected sites</td>
-                        <td>0.124 &plusmn; 0.010 s&minus;&sup1;</td>
-                        <td>42.5x</td>
-                      </tr>
-                      <tr>
-                        <td><strong>SpCas9-HF1</strong></td>
-                        <td>N497A, R661A, Q695A, Q926A</td>
-                        <td>1 detected site</td>
-                        <td>0.092 &plusmn; 0.008 s&minus;&sup1;</td>
-                        <td>215.0x</td>
-                      </tr>
-                      <tr>
-                        <td><strong>HypaCas9</strong></td>
-                        <td>N692A, M694A, Q695A, H698A</td>
-                        <td>2 detected sites</td>
-                        <td>0.088 &plusmn; 0.007 s&minus;&sup1;</td>
-                        <td>185.0x</td>
-                      </tr>
-                      <tr class="highlight-row">
-                        <td><strong>SuperFi-Cas9</strong></td>
-                        <td>REC3 Loop Stabilized</td>
-                        <td><span class="badge-success">0 detected sites</span></td>
-                        <td>0.165 &plusmn; 0.014 s&minus;&sup1;</td>
-                        <td><strong>&gt;1,000.0x</strong></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="slide-image-box">
+                <img src="images/crispr_dna_repair.jpg" alt="High-Fidelity Proofreading" class="slide-visual-img">
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 3 | NON-TARGET GROOVE ENGINEERING & PROOFREADING</div>
+              </div>
 
-                <!-- Interactive High-Fidelity Nuclease Selector -->
-                <div class="sim-interactive-area" style="margin-top: 10px;">
-                  <div class="sim-btn-group">
-                    <button class="sim-btn active hifi-btn" data-variant="wt">WT-SpCas9</button>
-                    <button class="sim-btn hifi-btn" data-variant="esp">eSpCas9(1.1)</button>
-                    <button class="sim-btn hifi-btn" data-variant="hf1">SpCas9-HF1</button>
-                    <button class="sim-btn hifi-btn" data-variant="superfi">SuperFi-Cas9</button>
-                  </div>
-                  <div class="sim-status-box" id="hifi-sim-status">
-                    <span style="color:#00F0FF; font-weight:700;">WT-SpCas9 Active:</span> High catalytic rate but high off-target promiscuity across 142 genomic sites.
-                  </div>
+              <div class="figure-explain-card">
+                <div class="figure-explain-header">
+                  <span class="figure-explain-title"><span class="pulse-dot"></span>EXCESS ENERGY ATTENUATION</span>
+                </div>
+                <div class="figure-explain-desc">
+                  Rational alanine substitutions in the non-target groove (eSpCas9) and target phosphate contacts (HF1) neutralize ~4.5 kcal/mol of excess binding energy.
+                </div>
+                <div class="figure-explain-points">
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>SuperFi-Cas9 Precision:</strong> REC3 loop stabilization rejects non-cognate substrates with &gt;1,000x fidelity gain.</span></div>
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>GUIDE-seq Validation:</strong> Genomic off-target sites reduced from 142 in WT-SpCas9 to 0 detectable off-target cuts in SuperFi-Cas9.</span></div>
                 </div>
               </div>
             </div>
@@ -488,6 +361,7 @@
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
+            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-amber-border">
                 <div class="card-top">
@@ -520,72 +394,23 @@
               </div>
             </div>
 
+            <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="interactive-panel-box">
-                <div class="panel-top-bar">
-                  <span class="panel-title">TABLE 1: EPIGENETIC MARK DEPOSITION & KINETICS</span>
-                </div>
-                <div class="table-container">
-                  <table class="academic-table">
-                    <thead>
-                      <tr>
-                        <th>Effector Domain</th>
-                        <th>Epigenetic Mark</th>
-                        <th>Peak Silencing</th>
-                        <th>Half-Life</th>
-                        <th>Mitotic Persistence</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><strong>dCas9 Alone</strong></td>
-                        <td>Steric Roadblock</td>
-                        <td>65.2 &plusmn; 4.1%</td>
-                        <td>1.2 days</td>
-                        <td>Lost immediately</td>
-                      </tr>
-                      <tr>
-                        <td><strong>dCas9-KRAB</strong></td>
-                        <td>H3K9me3 / Loss H3K27ac</td>
-                        <td>96.4 &plusmn; 1.8%</td>
-                        <td>5.4 days</td>
-                        <td>Lost in 5-8 divisions</td>
-                      </tr>
-                      <tr>
-                        <td><strong>dCas9-KRAB-MeCP2</strong></td>
-                        <td>H3K9me3 + Deacetylation</td>
-                        <td>98.1 &plusmn; 0.9%</td>
-                        <td>8.2 days</td>
-                        <td>Lost in 8-12 divisions</td>
-                      </tr>
-                      <tr>
-                        <td><strong>dCas9-DNMT3A-3L</strong></td>
-                        <td>De Novo 5mC Methylation</td>
-                        <td>88.5 &plusmn; 2.5%</td>
-                        <td>&gt;60 days</td>
-                        <td>Maintained by DNMT1</td>
-                      </tr>
-                      <tr class="highlight-row">
-                        <td><strong>CRISPRoff (KRAB-DNMT)</strong></td>
-                        <td>H3K9me3 + 5mC (Bimodal)</td>
-                        <td><strong>99.2 &plusmn; 0.4%</strong></td>
-                        <td><strong>Permanent</strong></td>
-                        <td><strong>Heritable (&gt;100 div)</strong></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="slide-image-box">
+                <img src="images/crispr_cell_computer.jpg" alt="Epigenome Modulation" class="slide-visual-img">
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 4 | CHROMATIN REMODELING & HERITABLE CRISPRoff SILENCING</div>
+              </div>
 
-                <!-- Epigenetic Mode Switcher -->
-                <div class="sim-interactive-area" style="margin-top: 10px;">
-                  <div class="sim-btn-group">
-                    <button class="sim-btn active epi-btn" data-mode="crispri">CRISPRi (KRAB)</button>
-                    <button class="sim-btn epi-btn" data-mode="crispra">CRISPRa (VPR)</button>
-                    <button class="sim-btn epi-btn" data-mode="crisproff">CRISPRoff (Heritable)</button>
-                  </div>
-                  <div class="sim-status-box" id="epi-sim-status">
-                    <span style="color:#FFB300; font-weight:700;">CRISPRi Active:</span> Transient H3K9me3 deposition silences transcription; decays upon cell division without DNA scars.
-                  </div>
+              <div class="figure-explain-card">
+                <div class="figure-explain-header">
+                  <span class="figure-explain-title"><span class="pulse-dot"></span>EPIGENETIC DIMMER SWITCHES</span>
+                </div>
+                <div class="figure-explain-desc">
+                  Sterile dCas9 (D10A/H840A) recruits chromatin modifiers to write repressive (H3K9me3, 5mC) or activating (p300/CBP) marks without cutting genomic DNA.
+                </div>
+                <div class="figure-explain-points">
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>CRISPRi (dCas9-KRAB):</strong> High-potency transient repression (&gt;96% silencing) that resets upon cell division.</span></div>
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>CRISPRoff (Methylation):</strong> Dual DNMT3A/DNMT3L + KRAB writes permanent, heritable silencing across &gt;100 cell divisions.</span></div>
                 </div>
               </div>
             </div>
@@ -622,6 +447,7 @@
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
+            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-cyan-border">
                 <div class="card-top">
@@ -654,70 +480,23 @@
               </div>
             </div>
 
+            <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="interactive-panel-box">
-                <div class="panel-top-bar">
-                  <span class="panel-title">TABLE 2: IN VIVO LNP EFFICACY ACROSS ANIMAL & HUMAN STUDIES</span>
-                </div>
-                <div class="table-container">
-                  <table class="academic-table">
-                    <thead>
-                      <tr>
-                        <th>Target & Model</th>
-                        <th>LNP Lipid</th>
-                        <th>Dose (mg/kg)</th>
-                        <th>Liver Editing</th>
-                        <th>Serum Protein Drop</th>
-                        <th>Durability</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><strong>PCSK9 (Mouse)</strong></td>
-                        <td>C12-200/DOPE</td>
-                        <td>0.50 mg/kg</td>
-                        <td>84.2 &plusmn; 3.5%</td>
-                        <td>96.5 &plusmn; 1.2%</td>
-                        <td>&gt;360 days (Lifelong)</td>
-                      </tr>
-                      <tr>
-                        <td><strong>TTR (Mouse)</strong></td>
-                        <td>MC3/DSPC</td>
-                        <td>0.75 mg/kg</td>
-                        <td>88.1 &plusmn; 2.8%</td>
-                        <td>98.2 &plusmn; 0.6%</td>
-                        <td>&gt;360 days (Lifelong)</td>
-                      </tr>
-                      <tr>
-                        <td><strong>PCSK9 (Macaque)</strong></td>
-                        <td>ALC-0315/DSPC</td>
-                        <td>1.00 mg/kg</td>
-                        <td>72.4 &plusmn; 4.8%</td>
-                        <td>89.4 &plusmn; 3.1%</td>
-                        <td>&gt;720 days (Ongoing)</td>
-                      </tr>
-                      <tr class="highlight-row">
-                        <td><strong>TTR (Human Phase 1)</strong></td>
-                        <td>Proprietary LNP</td>
-                        <td>0.30 mg/kg</td>
-                        <td>Biopsy Confirmed</td>
-                        <td><strong>86.8 &plusmn; 4.2%</strong></td>
-                        <td><strong>&gt;36 mos (Stable)</strong></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="slide-image-box">
+                <img src="images/crispr_lnp_delivery.jpg" alt="Lipid Nanoparticles" class="slide-visual-img">
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 5 | 4-COMPONENT IONIZABLE LNP ARCHITECTURE & HEPATIC TROPOS</div>
+              </div>
 
-                <!-- Interactive LNP pH Simulator -->
-                <div class="sim-interactive-area" style="margin-top: 10px;">
-                  <div class="sim-btn-group">
-                    <button class="sim-btn active lnp-btn" data-stage="blood">Bloodstream (pH 7.4)</button>
-                    <button class="sim-btn lnp-btn" data-stage="apoe">ApoE-LDLR Binding</button>
-                    <button class="sim-btn lnp-btn" data-stage="endosome">Endosome (pH 5.5)</button>
-                  </div>
-                  <div class="sim-status-box" id="lnp-sim-status">
-                    <span style="color:#00F0FF; font-weight:700;">Bloodstream State:</span> Neutral surface charge prevents non-specific cytotoxicity and extends circulation half-life.
-                  </div>
+              <div class="figure-explain-card">
+                <div class="figure-explain-header">
+                  <span class="figure-explain-title"><span class="pulse-dot"></span>SYSTEMIC IN VIVO DELIVERY</span>
+                </div>
+                <div class="figure-explain-desc">
+                  75&ndash;85 nm lipid nanoparticles adsorb endogenous ApoE in blood, mediating LDLR uptake and acid-triggered endosomal Cas9 mRNA release.
+                </div>
+                <div class="figure-explain-points">
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>pH Charge Reversal:</strong> Neutral at circulation pH 7.4; cationic at endosomal pH 5.5 to disrupt lipid bilayers.</span></div>
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>Clinical Durability:</strong> NTLA-2001 (TTR) and VERVE-101 (PCSK9) demonstrate &gt;85&ndash;95% sustained knockdown past 36 months.</span></div>
                 </div>
               </div>
             </div>
@@ -754,6 +533,7 @@
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
+            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-amber-border">
                 <div class="card-top">
@@ -786,72 +566,23 @@
               </div>
             </div>
 
+            <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="interactive-panel-box">
-                <div class="panel-top-bar">
-                  <span class="panel-title">TABLE 1: DEAMINATION KINETICS & EDITING WINDOWS</span>
-                </div>
-                <div class="table-container">
-                  <table class="academic-table">
-                    <thead>
-                      <tr>
-                        <th>Base Editor</th>
-                        <th>Deaminase Component</th>
-                        <th>Editing Window</th>
-                        <th>kcat/Km (M&minus;&sup1;s&minus;&sup1;)</th>
-                        <th>Indel Rate</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><strong>BE4max</strong></td>
-                        <td>rAPOBEC1-2xUGI</td>
-                        <td>Positions 4 &ndash; 8</td>
-                        <td>(2.4 &plusmn; 0.3) &times; 10&sup4;</td>
-                        <td>1.2% &ndash; 3.5%</td>
-                      </tr>
-                      <tr>
-                        <td><strong>evoFERNY-BE4max</strong></td>
-                        <td>evoFERNY Deaminase</td>
-                        <td>Positions 4 &ndash; 7</td>
-                        <td>(8.5 &plusmn; 0.7) &times; 10&sup4;</td>
-                        <td>0.8% &ndash; 1.8%</td>
-                      </tr>
-                      <tr>
-                        <td><strong>ABE7.10</strong></td>
-                        <td>TadA-TadA* Dimer</td>
-                        <td>Positions 4 &ndash; 7</td>
-                        <td>(1.1 &plusmn; 0.2) &times; 10&sup3;</td>
-                        <td>&lt;0.2%</td>
-                      </tr>
-                      <tr>
-                        <td><strong>ABE8e</strong></td>
-                        <td>TadA-8e Monomer</td>
-                        <td>Positions 3 &ndash; 9</td>
-                        <td>(1.8 &plusmn; 0.2) &times; 10&sup6;</td>
-                        <td>&lt;0.5%</td>
-                      </tr>
-                      <tr class="highlight-row">
-                        <td><strong>ABE8e-V106W</strong></td>
-                        <td>TadA-8e (V106W Narrow)</td>
-                        <td>Positions 4 &ndash; 7</td>
-                        <td>(4.2 &plusmn; 0.5) &times; 10&sup5;</td>
-                        <td><strong>&lt;0.1% (Ultra-Clean)</strong></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="slide-image-box">
+                <img src="images/crispr_base_editor.jpg" alt="Base Editing Deaminases" class="slide-visual-img">
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 6 | HYDROLYTIC DEAMINATION CASCADE (C•G→T•A & A•T→G•C)</div>
+              </div>
 
-                <!-- Interactive Base Editor Workbench -->
-                <div class="sim-interactive-area" style="margin-top: 10px;">
-                  <div class="sim-btn-group">
-                    <button class="sim-btn active be-btn" data-be="cbe">CBE (C&rarr;T)</button>
-                    <button class="sim-btn be-btn" data-be="abe8e">ABE8e (A&rarr;G)</button>
-                    <button class="sim-btn be-btn" data-be="v106w">ABE8e-V106W (Precision)</button>
-                  </div>
-                  <div class="sim-status-box" id="be-sim-status">
-                    <span style="color:#FFB300; font-weight:700;">CBE Active:</span> Hydrolytic deamination converts C&bull;G &rarr; T&bull;A; UGI prevents uracil excision repair.
-                  </div>
+              <div class="figure-explain-card">
+                <div class="figure-explain-header">
+                  <span class="figure-explain-title"><span class="pulse-dot"></span>TRANSITION EDITING WITHOUT DSBs</span>
+                </div>
+                <div class="figure-explain-desc">
+                  Deaminases tethered to nCas9(D10A) convert target bases within a 4&ndash;8 nt window, followed by nick-directed mismatch repair to seal transitions.
+                </div>
+                <div class="figure-explain-points">
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>CBE (BE4max):</strong> Cytidine deaminase converts C&rarr;U; 2x UGI domains prevent uracil excision repair.</span></div>
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>ABE8e-V106W:</strong> High-speed evolved adenine deaminase converts A&rarr;I with &lt;0.1% indels and zero bystander edits.</span></div>
                 </div>
               </div>
             </div>
@@ -888,6 +619,7 @@
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
+            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-cyan-border">
                 <div class="card-top">
@@ -920,72 +652,23 @@
               </div>
             </div>
 
+            <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="interactive-panel-box">
-                <div class="panel-top-bar">
-                  <span class="panel-title">TABLE 2: BENCHMARK ACROSS PRIME EDITING GENERATIONS</span>
-                </div>
-                <div class="table-container">
-                  <table class="academic-table">
-                    <thead>
-                      <tr>
-                        <th>Prime Editor</th>
-                        <th>Architecture</th>
-                        <th>Target Edit Scope</th>
-                        <th>Efficiency</th>
-                        <th>Indel Rate</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><strong>PE2 (Baseline)</strong></td>
-                        <td>nCas9 + M-MLV RT (5 mut)</td>
-                        <td>Transitions, Transversions, Indels</td>
-                        <td>10% &ndash; 30%</td>
-                        <td>&lt;0.5%</td>
-                      </tr>
-                      <tr>
-                        <td><strong>PE3 (Nicking)</strong></td>
-                        <td>PE2 + Non-Edited Strand sgRNA</td>
-                        <td>All 12 Substitutions, Ins/Del</td>
-                        <td>35% &ndash; 65%</td>
-                        <td>1.5% &ndash; 4.5%</td>
-                      </tr>
-                      <tr>
-                        <td><strong>PE3b</strong></td>
-                        <td>PE2 + Mismatch-Specific sgRNA</td>
-                        <td>All 12 Substitutions, Ins/Del</td>
-                        <td>40% &ndash; 70%</td>
-                        <td>&lt;0.8%</td>
-                      </tr>
-                      <tr class="highlight-row">
-                        <td><strong>PEmax + epegRNA</strong></td>
-                        <td>PEmax + 3'-evopreQ1 Motif</td>
-                        <td>Universal (All Variants)</td>
-                        <td><strong>55% &ndash; 85%</strong></td>
-                        <td><strong>&lt;0.5% (High Purity)</strong></td>
-                      </tr>
-                      <tr>
-                        <td><strong>twinPE (Dual Flap)</strong></td>
-                        <td>PEmax + Dual pegRNAs</td>
-                        <td>Gene Inversion / Large Insertion</td>
-                        <td>30% &ndash; 60%</td>
-                        <td>1.0% &ndash; 2.5%</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="slide-image-box">
+                <img src="images/crispr_future_horizon.jpg" alt="Prime Editing Mechanism" class="slide-visual-img">
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 7 | pegRNA REVERSE TRANSCRIPTION & 3'-FLAP RESOLUTION</div>
+              </div>
 
-                <!-- Interactive Prime Editing Flap Resolver -->
-                <div class="sim-interactive-area" style="margin-top: 10px;">
-                  <div class="sim-btn-group">
-                    <button class="sim-btn active pe-btn" data-step="nick">1. PAM Nick</button>
-                    <button class="sim-btn pe-btn" data-step="rt">2. RT Synthesis</button>
-                    <button class="sim-btn pe-btn" data-step="flap">3. Flap Resolution</button>
-                  </div>
-                  <div class="sim-status-box" id="pe-sim-status">
-                    <span style="color:#00F0FF; font-weight:700;">Step 1 Active:</span> Cas9(H840A) nicks PAM strand generating 3'-OH; pegRNA PBS anneals.
-                  </div>
+              <div class="figure-explain-card">
+                <div class="figure-explain-header">
+                  <span class="figure-explain-title"><span class="pulse-dot"></span>SEARCH-AND-REPLACE WORD PROCESSING</span>
+                </div>
+                <div class="figure-explain-desc">
+                  Prime Editors fuse nCas9(H840A) to engineered M-MLV Reverse Transcriptase, writing all 12 base conversions, insertions, and deletions via pegRNA.
+                </div>
+                <div class="figure-explain-points">
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>3'-Flap Resolution:</strong> pegRNA PBS anneals to the nicked strand; RT copies the RTT edit; FEN1 removes the 5'-flap.</span></div>
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>PEmax Efficiency:</strong> Boosted to 55&ndash;85% efficiency across &gt;89% of pathogenic ClinVar human disease variants.</span></div>
                 </div>
               </div>
             </div>
@@ -1022,6 +705,7 @@
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
+            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-amber-border">
                 <div class="card-top">
@@ -1054,72 +738,23 @@
               </div>
             </div>
 
+            <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="interactive-panel-box">
-                <div class="panel-top-bar">
-                  <span class="panel-title">TABLE 1: CLINICAL BIOMARKERS IN EXA-CEL PATIENTS (NEJM 2024)</span>
-                </div>
-                <div class="table-container">
-                  <table class="academic-table">
-                    <thead>
-                      <tr>
-                        <th>Clinical Biomarker</th>
-                        <th>Baseline</th>
-                        <th>Month 6</th>
-                        <th>Month 12</th>
-                        <th>Month 24+</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><strong>Total Hb (g/dL) - SCD</strong></td>
-                        <td>8.5 &plusmn; 1.2</td>
-                        <td>12.2 &plusmn; 1.4</td>
-                        <td>13.5 &plusmn; 1.1</td>
-                        <td><strong>13.8 &plusmn; 0.9 (Normal)</strong></td>
-                      </tr>
-                      <tr class="highlight-row">
-                        <td><strong>Fetal Hb (HbF, % Total)</strong></td>
-                        <td>4.8 &plusmn; 2.5%</td>
-                        <td>38.2 &plusmn; 5.1%</td>
-                        <td>44.5 &plusmn; 4.2%</td>
-                        <td><strong>46.2 &plusmn; 3.8% (Sustained)</strong></td>
-                      </tr>
-                      <tr>
-                        <td><strong>F-Cells (% Circulating)</strong></td>
-                        <td>22.4 &plusmn; 8.6%</td>
-                        <td>88.5 &plusmn; 6.2%</td>
-                        <td>95.8 &plusmn; 3.1%</td>
-                        <td><strong>97.2 &plusmn; 2.0% (Pan-Cell)</strong></td>
-                      </tr>
-                      <tr>
-                        <td><strong>Annualized VOC Rate</strong></td>
-                        <td>4.2 events/yr</td>
-                        <td>0.0 events/yr</td>
-                        <td>0.0 events/yr</td>
-                        <td><strong>0.0 events/yr (Zero)</strong></td>
-                      </tr>
-                      <tr>
-                        <td><strong>Bone Marrow Indels</strong></td>
-                        <td>N/A</td>
-                        <td>78.4 &plusmn; 6.5%</td>
-                        <td>76.2 &plusmn; 5.8%</td>
-                        <td><strong>75.1 &plusmn; 5.2% (Stable)</strong></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="slide-image-box">
+                <img src="images/crispr_sickle_cell.jpg" alt="Sickle Cell Gene Therapy" class="slide-visual-img">
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 8 | AUTOLOGOUS CD34+ HSPC MOBILIZATION & HbF INDUCTION</div>
+              </div>
 
-                <!-- Exa-cel Timeline Switcher -->
-                <div class="sim-interactive-area" style="margin-top: 10px;">
-                  <div class="sim-btn-group">
-                    <button class="sim-btn active exa-btn" data-phase="apheresis">1. Mobilization</button>
-                    <button class="sim-btn exa-btn" data-phase="rnp">2. RNP Editing</button>
-                    <button class="sim-btn exa-btn" data-phase="engraft">3. Busulfan & Engraftment</button>
-                  </div>
-                  <div class="sim-status-box" id="exa-sim-status">
-                    <span style="color:#FFB300; font-weight:700;">Workflow Phase 1:</span> Patient CD34+ HSPCs mobilized via plerixafor and collected by leukapheresis.
-                  </div>
+              <div class="figure-explain-card">
+                <div class="figure-explain-header">
+                  <span class="figure-explain-title"><span class="pulse-dot"></span>EXA-CEL (CASGEVY) CLINICAL CURE</span>
+                </div>
+                <div class="figure-explain-desc">
+                  Autologous CD34+ HSPCs electroporated with Cas9 RNP targeting the erythroid-specific BCL11A enhancer (+58 kb GATA1 binding motif).
+                </div>
+                <div class="figure-explain-points">
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>HbF Derepression:</strong> Induces &ge;44% pan-cellular fetal hemoglobin, overcoming sickle hemoglobin S polymerization.</span></div>
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>100% VOC Freedom:</strong> Complete elimination of vaso-occlusive pain crises and transfusion independence across clinical trials.</span></div>
                 </div>
               </div>
             </div>
@@ -1156,6 +791,7 @@
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
+            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-cyan-border">
                 <div class="card-top">
@@ -1188,66 +824,23 @@
               </div>
             </div>
 
+            <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="interactive-panel-box">
-                <div class="panel-top-bar">
-                  <span class="panel-title">TABLE 2: MULTI-LOCUS EDITING EFFICIENCY & TRANSLOCATIONS</span>
-                </div>
-                <div class="table-container">
-                  <table class="academic-table">
-                    <thead>
-                      <tr>
-                        <th>Target Locus</th>
-                        <th>Chromosome</th>
-                        <th>Indel Rate</th>
-                        <th>Protein Ablation</th>
-                        <th>Translocation Rate</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><strong>TRAC (TCR&alpha;)</strong></td>
-                        <td>Chr 14q11.2 (Exon 1)</td>
-                        <td>94.5 &plusmn; 2.1%</td>
-                        <td>98.2 &plusmn; 0.8% (TCR&minus;)</td>
-                        <td>0.12 &plusmn; 0.03% (w/ B2M)</td>
-                      </tr>
-                      <tr>
-                        <td><strong>B2M (HLA-I)</strong></td>
-                        <td>Chr 15q21.1 (Exon 1)</td>
-                        <td>92.8 &plusmn; 2.5%</td>
-                        <td>96.5 &plusmn; 1.2% (HLA&minus;)</td>
-                        <td>0.08 &plusmn; 0.02% (w/ PD1)</td>
-                      </tr>
-                      <tr>
-                        <td><strong>PDCD1 (PD-1)</strong></td>
-                        <td>Chr 2q37.3 (Exon 2)</td>
-                        <td>88.2 &plusmn; 3.4%</td>
-                        <td>91.4 &plusmn; 2.1% (PD1&minus;)</td>
-                        <td>0.06 &plusmn; 0.02% (w/ TRAC)</td>
-                      </tr>
-                      <tr class="highlight-row">
-                        <td><strong>Triple-Knockout</strong></td>
-                        <td>Chr 14 / 15 / 2</td>
-                        <td>82.4 &plusmn; 3.8%</td>
-                        <td><strong>89.5 &plusmn; 2.6% (Pure)</strong></td>
-                        <td><strong>0.26 &plusmn; 0.05% (Total)</strong></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="slide-image-box">
+                <img src="images/crispr_cancer_cart.jpg" alt="Allogeneic CAR-T Cell Engineering" class="slide-visual-img">
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 9 | MULTIPLEX RNP TRIPLE-KNOCKOUT & ALLOREJECTION RESCUE</div>
+              </div>
 
-                <!-- Interactive Multi-Locus CAR-T Switcher -->
-                <div class="sim-interactive-area" style="margin-top: 10px;">
-                  <div class="sim-btn-group">
-                    <button class="sim-btn active cart-btn" data-target="trac">TRAC (-GvHD)</button>
-                    <button class="sim-btn cart-btn" data-target="b2m">B2M (-Rejection)</button>
-                    <button class="sim-btn cart-btn" data-target="pd1">PDCD1 (-Exhaustion)</button>
-                    <button class="sim-btn cart-btn" data-target="triple">Triple-KO State</button>
-                  </div>
-                  <div class="sim-status-box" id="cart-sim-status">
-                    <span style="color:#00F0FF; font-weight:700;">TRAC Knockout:</span> Eliminates native T-cell receptor; allows infusion into any patient without causing lethal GvHD.
-                  </div>
+              <div class="figure-explain-card">
+                <div class="figure-explain-header">
+                  <span class="figure-explain-title"><span class="pulse-dot"></span>OFF-THE-SHELF ONCOLOGY</span>
+                </div>
+                <div class="figure-explain-desc">
+                  Simultaneous multiplex RNP editing in healthy donor T-cells creates universal, off-the-shelf therapeutic CAR-T cellular immunotherapies.
+                </div>
+                <div class="figure-explain-points">
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>Triple Knockout:</strong> TRAC ablation eliminates GvHD; B2M prevents host rejection; PDCD1 prevents exhaustion.</span></div>
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>Industrial Scale:</strong> Yields 50&ndash;100 universal patient doses per batch with &lt;0.26% total translocation frequency.</span></div>
                 </div>
               </div>
             </div>
@@ -1284,6 +877,7 @@
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
+            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-amber-border">
                 <div class="card-top">
@@ -1316,72 +910,23 @@
               </div>
             </div>
 
+            <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="interactive-panel-box">
-                <div class="panel-top-bar">
-                  <span class="panel-title">TABLE 1: CLEAVAGE VELOCITY ACROSS PAM TRIPLET FAMILIES</span>
-                </div>
-                <div class="table-container">
-                  <table class="academic-table">
-                    <thead>
-                      <tr>
-                        <th>PAM Triplet</th>
-                        <th>WT-SpCas9</th>
-                        <th>SpG Variant</th>
-                        <th>SpRY Variant</th>
-                        <th>SpRY-HF1</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="highlight-row">
-                        <td><strong>5'-NGG (Canonical)</strong></td>
-                        <td>100.0 &plusmn; 2.1%</td>
-                        <td>94.2 &plusmn; 3.5%</td>
-                        <td>92.5 &plusmn; 2.8%</td>
-                        <td>90.1 &plusmn; 3.2%</td>
-                      </tr>
-                      <tr>
-                        <td><strong>5'-NGA / NGC / NGT</strong></td>
-                        <td>1.2 &plusmn; 0.4% (Inactive)</td>
-                        <td>88.6 &plusmn; 4.2%</td>
-                        <td>89.4 &plusmn; 3.1%</td>
-                        <td>86.5 &plusmn; 2.9%</td>
-                      </tr>
-                      <tr>
-                        <td><strong>5'-NAG / NAA / NAT</strong></td>
-                        <td>0.2 &plusmn; 0.1% (Inactive)</td>
-                        <td>3.5 &plusmn; 0.8%</td>
-                        <td>78.2 &plusmn; 4.5%</td>
-                        <td>72.4 &plusmn; 4.1%</td>
-                      </tr>
-                      <tr>
-                        <td><strong>5'-NCG / NCT / NCC</strong></td>
-                        <td>0.1 &plusmn; 0.1% (Inactive)</td>
-                        <td>2.1 &plusmn; 0.5%</td>
-                        <td>74.6 &plusmn; 5.2%</td>
-                        <td>68.2 &plusmn; 4.8%</td>
-                      </tr>
-                      <tr>
-                        <td><strong>5'-NTG / NTA / NTT</strong></td>
-                        <td>0.0 &plusmn; 0.0% (Inactive)</td>
-                        <td>1.8 &plusmn; 0.4%</td>
-                        <td>71.2 &plusmn; 4.9%</td>
-                        <td>65.4 &plusmn; 4.2%</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="slide-image-box">
+                <img src="images/crispr_biosafety.jpg" alt="Near-PAMless Structure Evolution" class="slide-visual-img">
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 10 | DIRECTED EVOLUTION OF PAM-INTERACTING DOMAINS</div>
+              </div>
 
-                <!-- Interactive PAM Space Explorer -->
-                <div class="sim-interactive-area" style="margin-top: 10px;">
-                  <div class="sim-btn-group">
-                    <button class="sim-btn active pam-btn" data-pam="ngg">5'-NGG (12.5%)</button>
-                    <button class="sim-btn pam-btn" data-pam="ng">5'-NG SpG (~50%)</button>
-                    <button class="sim-btn pam-btn" data-pam="spry">5'-NRN/NYN SpRY (&gt;99%)</button>
-                  </div>
-                  <div class="sim-status-box" id="pam-sim-status">
-                    <span style="color:#FFB300; font-weight:700;">Canonical PAM Gating:</span> Restricts editing to 1 in 8 genomic positions; blocks precise base editing of ~70% of disease SNPs.
-                  </div>
+              <div class="figure-explain-card">
+                <div class="figure-explain-header">
+                  <span class="figure-explain-title"><span class="pulse-dot"></span>DISMANTLING THE NGG RESTRICTION</span>
+                </div>
+                <div class="figure-explain-desc">
+                  Loop re-engineering in the PID domain replaces rigid hydrogen bonds with flexible electrostatic loops, unlocking near-unconstrained PAM access.
+                </div>
+                <div class="figure-explain-points">
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>SpG & SpRY Variants:</strong> SpG recognizes 5'-NGN (~50% genome); SpRY recognizes 5'-NRN/NYN (&gt;99% genome).</span></div>
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>High-Fidelity Tuning:</strong> SpRY-HF1 combines broad targeting with non-target groove engineering to suppress off-target cleavage.</span></div>
                 </div>
               </div>
             </div>
@@ -1418,6 +963,7 @@
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
+            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-cyan-border">
                 <div class="card-top">
@@ -1450,65 +996,23 @@
               </div>
             </div>
 
+            <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="interactive-panel-box">
-                <div class="panel-top-bar">
-                  <span class="panel-title">TABLE 2: HETEROPLASMY SHIFTS & SEAHORSE BIOENERGETICS</span>
-                </div>
-                <div class="table-container">
-                  <table class="academic-table">
-                    <thead>
-                      <tr>
-                        <th>Disease Model</th>
-                        <th>Target Mutation</th>
-                        <th>Baseline Heteroplasmy</th>
-                        <th>Post-DdCBE</th>
-                        <th>Respiration Rescue</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="highlight-row">
-                        <td><strong>MERRF Syndrome</strong></td>
-                        <td>m.8344A&gt;G (tRNA-Lys)</td>
-                        <td>86.5 &plusmn; 3.2%</td>
-                        <td><strong>12.4 &plusmn; 2.1%</strong></td>
-                        <td><strong>92.4 &plusmn; 4.5% (Full)</strong></td>
-                      </tr>
-                      <tr>
-                        <td><strong>MELAS Syndrome</strong></td>
-                        <td>m.3243A&gt;G (tRNA-Leu)</td>
-                        <td>82.1 &plusmn; 4.1%</td>
-                        <td><strong>14.8 &plusmn; 2.8%</strong></td>
-                        <td><strong>88.6 &plusmn; 5.2% (Full)</strong></td>
-                      </tr>
-                      <tr>
-                        <td><strong>LHON Optic Atrophy</strong></td>
-                        <td>m.11778G&gt;A (ND4)</td>
-                        <td>100.0% (Homoplasmic)</td>
-                        <td>28.5 &plusmn; 3.6%</td>
-                        <td>78.2 &plusmn; 6.1% (Partial)</td>
-                      </tr>
-                      <tr>
-                        <td><strong>Kearns-Sayre</strong></td>
-                        <td>m.8993T&gt;G (ATP6)</td>
-                        <td>78.4 &plusmn; 3.8%</td>
-                        <td>18.2 &plusmn; 2.5%</td>
-                        <td>85.1 &plusmn; 4.8% (Full)</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="slide-image-box">
+                <img src="images/crispr_superbug_phage.jpg" alt="Mitochondrial DdCBE Base Editing" class="slide-visual-img">
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 11 | RNA-FREE TALE-MTS & SPLIT-DddA mtDNA DEAMINATION</div>
+              </div>
 
-                <!-- Interactive Cybrid Disease Switcher -->
-                <div class="sim-interactive-area" style="margin-top: 10px;">
-                  <div class="sim-btn-group">
-                    <button class="sim-btn active mto-btn" data-dis="merrf">MERRF (m.8344A&gt;G)</button>
-                    <button class="sim-btn mto-btn" data-dis="melas">MELAS (m.3243A&gt;G)</button>
-                    <button class="sim-btn mto-btn" data-dis="lhon">LHON (m.11778G&gt;A)</button>
-                  </div>
-                  <div class="sim-status-box" id="mto-sim-status">
-                    <span style="color:#00F0FF; font-weight:700;">MERRF Rescue:</span> DdCBE shifts mutant heteroplasmy from 86.5% to 12.4%, rescuing tRNA-Lys translation and Complex I/IV assembly.
-                  </div>
+              <div class="figure-explain-card">
+                <div class="figure-explain-header">
+                  <span class="figure-explain-title"><span class="pulse-dot"></span>MITOCHONDRIAL IMPORT BREAKTHROUGH</span>
+                </div>
+                <div class="figure-explain-desc">
+                  Protein-only TALE-MTS architecture bypasses the impermeable mitochondrial inner membrane to assemble split-DddA deaminases on double-stranded mtDNA.
+                </div>
+                <div class="figure-explain-points">
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>dsDNA C&bull;G &rarr; T&bull;A:</strong> Deaminates cytidines in 5'-TC context with zero double-strand breaks and zero mtDNA depletion.</span></div>
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>Bioenergetic Rescue:</strong> Shifts heteroplasmy from 86.5% to 12.4% in patient cybrids, restoring 92.4% oxygen consumption.</span></div>
                 </div>
               </div>
             </div>
@@ -1536,106 +1040,109 @@
           <div class="badge-pill badge-amber">Comparative Genomics Working Group | 2026 Guidelines</div>
         </div>
 
-        <div class="content-area-expanded" style="padding-top: 6px;">
-          <!-- Master Cross-Platform Benchmark Matrix (Table 3) -->
-          <div class="table-container" style="max-height: 220px; overflow-y: auto;">
-            <table class="academic-table compact-table">
-              <thead>
-                <tr>
-                  <th>Platform</th>
-                  <th>Primary Mechanism</th>
-                  <th>Mutation Scope</th>
-                  <th>DSBs / Indels</th>
-                  <th>Delivery Vector</th>
-                  <th>Clinical Status</th>
-                  <th>Optimal Indication</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>WT-SpCas9</strong></td>
-                  <td>Double-strand break (NHEJ/HDR)</td>
-                  <td>Gene Knockout (Indels)</td>
-                  <td>100% DSBs (1-5% Transloc)</td>
-                  <td>RNP / AAV / LNP</td>
-                  <td>FDA Approved (Exa-cel)</td>
-                  <td>Screening & Ex Vivo Knockout</td>
-                </tr>
-                <tr>
-                  <td><strong>SuperFi-Cas9</strong></td>
-                  <td>High-fidelity DSB (Tuned energy)</td>
-                  <td>Ultra-clean Knockout</td>
-                  <td>DSBs (&lt;0.001% Transloc)</td>
-                  <td>Purified RNP / LNP</td>
-                  <td>IND-Enabling</td>
-                  <td>HSPC & Stem Cell Therapeutics</td>
-                </tr>
-                <tr>
-                  <td><strong>dCas9-KRAB/CRISPRoff</strong></td>
-                  <td>H3K9me3 & 5mC Epigenetic Mark</td>
-                  <td>Reversible / Heritable Silencing</td>
-                  <td>0% DSBs (Zero Indels)</td>
-                  <td>AAV / LNP (Challenging)</td>
-                  <td>Preclinical</td>
-                  <td>Oncogenes & Complex Regulation</td>
-                </tr>
-                <tr>
-                  <td><strong>Base Editors (ABE8e/CBE)</strong></td>
-                  <td>Hydrolytic Deamination (C&rarr;T, A&rarr;G)</td>
-                  <td>Transitions (~30% ClinVar)</td>
-                  <td>&lt;0.1% Indels (No DSBs)</td>
-                  <td>Ionizable LNP (Validated)</td>
-                  <td>Phase 1/2 (VERVE-101)</td>
-                  <td>Monogenic Liver & Lipid Diseases</td>
-                </tr>
-                <tr>
-                  <td><strong>Prime Editors (PEmax)</strong></td>
-                  <td>pegRNA Reverse Transcription</td>
-                  <td>All 12 Substitutions, Ins/Del</td>
-                  <td>&lt;0.5% Indels (No DSBs)</td>
-                  <td>Dual AAV / LNP mRNA</td>
-                  <td>Phase 1/2 (PM359)</td>
-                  <td>Transversions & Micro-Deletions</td>
-                </tr>
-                <tr>
-                  <td><strong>SpRY-HF1</strong></td>
-                  <td>Near-PAMless (NRN/NYN)</td>
-                  <td>&gt;99% Nuclear Genome Access</td>
-                  <td>Low Off-Target with HF1</td>
-                  <td>RNP / mRNA</td>
-                  <td>Preclinical</td>
-                  <td>Non-Canonical PAM Targets</td>
-                </tr>
-                <tr class="highlight-row">
-                  <td><strong>Mitochondrial DdCBE</strong></td>
-                  <td>Protein-Only TALE-Split-DddA</td>
-                  <td>mtDNA C&bull;G &rarr; T&bull;A (5'-TC)</td>
-                  <td>0% DSBs (Zero Depletion)</td>
-                  <td>mRNA / Protein + MTS</td>
-                  <td>Preclinical Validation</td>
-                  <td>MERRF, MELAS, LHON Cybrids</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="content-area-expanded">
+          <div class="split-deck-layout">
+            
+            <!-- Left Side: Benchmark Table + 3 Decision Guidelines -->
+            <div class="split-left-panel">
+              <!-- Master Cross-Platform Benchmark Matrix (Table 3) -->
+              <div class="table-container" style="flex: 1; max-height: 230px; overflow-y: auto;">
+                <table class="academic-table compact-table">
+                  <thead>
+                    <tr>
+                      <th>Platform</th>
+                      <th>Primary Mechanism</th>
+                      <th>Mutation Scope</th>
+                      <th>DSBs / Indels</th>
+                      <th>Clinical Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>WT-SpCas9</strong></td>
+                      <td>Double-strand break (NHEJ)</td>
+                      <td>Gene Knockout (Indels)</td>
+                      <td>100% DSBs (1-5% Transloc)</td>
+                      <td>FDA Approved (Exa-cel)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>SuperFi-Cas9</strong></td>
+                      <td>High-fidelity DSB (Tuned)</td>
+                      <td>Ultra-clean Knockout</td>
+                      <td>DSBs (&lt;0.001% Transloc)</td>
+                      <td>IND-Enabling</td>
+                    </tr>
+                    <tr>
+                      <td><strong>CRISPRoff</strong></td>
+                      <td>H3K9me3 & 5mC Epigenetics</td>
+                      <td>Heritable Silencing</td>
+                      <td>0% DSBs (Zero Indels)</td>
+                      <td>Preclinical</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Base Editors (ABE/CBE)</strong></td>
+                      <td>Deamination (C&rarr;T, A&rarr;G)</td>
+                      <td>Transitions (~30% ClinVar)</td>
+                      <td>&lt;0.1% Indels (No DSBs)</td>
+                      <td>Phase 1/2 (VERVE-101)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Prime Editors (PEmax)</strong></td>
+                      <td>pegRNA Reverse Transcription</td>
+                      <td>All 12 Substitutions, Ins/Del</td>
+                      <td>&lt;0.5% Indels (No DSBs)</td>
+                      <td>Phase 1/2 (PM359)</td>
+                    </tr>
+                    <tr class="highlight-row">
+                      <td><strong>Mitochondrial DdCBE</strong></td>
+                      <td>Protein TALE-Split-DddA</td>
+                      <td>mtDNA C&bull;G &rarr; T&bull;A (5'-TC)</td>
+                      <td>0% DSBs (Zero Depletion)</td>
+                      <td>Preclinical Validation</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
-          <!-- 3 Clinical Decision Guideline Cards -->
-          <div class="decision-grid-3" style="margin-top: 10px;">
-            <div class="glass-card card-amber-border" style="padding: 10px 14px;">
-              <span class="card-kicker amber-tag">GUIDELINE 01: MONOGENIC HEPATIC</span>
-              <h4 style="font-size: 0.85rem; color: #fff; margin: 2px 0;">In Vivo LNP Delivery (ABE / Nuclease)</h4>
-              <p style="font-size: 0.72rem; color: var(--text-soft);">Deploy ionizable LNPs (ApoE-LDLR) for permanent lifelong knockout in PCSK9, TTR, and ATTR amyloidosis with single infusion.</p>
+              <!-- 3 Clinical Decision Guideline Cards -->
+              <div class="decision-grid-3" style="gap: 8px;">
+                <div class="glass-card card-amber-border" style="padding: 8px 12px;">
+                  <span class="card-kicker amber-tag">01. HEPATIC LNP</span>
+                  <p style="font-size: 0.78rem; color: var(--text-soft); margin-top: 2px;">Deploy ionizable LNPs (ApoE-LDLR) for permanent lifelong knockout in PCSK9 and TTR amyloidosis.</p>
+                </div>
+                <div class="glass-card card-amber-border" style="padding: 8px 12px;">
+                  <span class="card-kicker amber-tag">02. EX VIVO STEM / CAR-T</span>
+                  <p style="font-size: 0.78rem; color: var(--text-soft); margin-top: 2px;">Use autologous Exa-cel for hemoglobinopathies; mandate high-fidelity RNP multiplexing for allogeneic CAR-T.</p>
+                </div>
+                <div class="glass-card card-amber-border" style="padding: 8px 12px;">
+                  <span class="card-kicker amber-tag">03. MITOCHONDRIA & PE</span>
+                  <p style="font-size: 0.78rem; color: var(--text-soft); margin-top: 2px;">Deploy PEmax for transversions (HBB E6V); use protein-only DdCBE with MTS for maternal encephalomyopathies.</p>
+                </div>
+              </div>
             </div>
-            <div class="glass-card card-amber-border" style="padding: 10px 14px;">
-              <span class="card-kicker amber-tag">GUIDELINE 02: EX VIVO CELL THERAPY</span>
-              <h4 style="font-size: 0.85rem; color: #fff; margin: 2px 0;">Autologous vs. Allogeneic CAR-T</h4>
-              <p style="font-size: 0.72rem; color: var(--text-soft);">Use autologous Exa-cel for monogenic hemoglobinopathies; mandate high-fidelity RNP multiplexing (TRAC/B2M/PD1) for off-the-shelf oncology.</p>
+
+            <!-- Right Side: Full Visual Image + Figure Explain Card -->
+            <div class="split-right-panel">
+              <div class="slide-image-box">
+                <img src="images/crispr_diagnostics.jpg" alt="Translational Decision Framework" class="slide-visual-img">
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 12 | TRANSLATIONAL DECISION MATRIX & PLATFORM SELECTION</div>
+              </div>
+
+              <div class="figure-explain-card">
+                <div class="figure-explain-header">
+                  <span class="figure-explain-title"><span class="pulse-dot"></span>TRANSLATIONAL DECISION MATRIX</span>
+                </div>
+                <div class="figure-explain-desc">
+                  Strategic algorithmic pipeline guiding clinical platform selection based on target lesion type, in vivo delivery vectors, and tolerable genotoxicity.
+                </div>
+                <div class="figure-explain-points">
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>Monogenic Transitions:</strong> In vivo LNP-delivered ABE8e/CBE offers optimal single-infusion curative efficacy.</span></div>
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>Transversions & Small Indels:</strong> Prime Editing (PEmax) executes precision corrections without double-strand break translocations.</span></div>
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>Maternal Organelles:</strong> Protein-only DdCBE provides the only validated modality for double-stranded mtDNA editing.</span></div>
+                </div>
+              </div>
             </div>
-            <div class="glass-card card-amber-border" style="padding: 10px 14px;">
-              <span class="card-kicker amber-tag">GUIDELINE 03: MITOCHONDRIA & TRANSVERSIONS</span>
-              <h4 style="font-size: 0.85rem; color: #fff; margin: 2px 0;">PEmax & DdCBE Selection</h4>
-              <p style="font-size: 0.72rem; color: var(--text-soft);">Mandate PEmax for transversions (HBB E6V); deploy protein-only DdCBE with validated MTS for maternal-inherited mitochondrial encephalomyopathies.</p>
-            </div>
+
           </div>
         </div>
 
@@ -1657,7 +1164,7 @@
             <span class="section-tag cyan-tag">ACADEMIC BIBLIOGRAPHY</span>
             <h2 class="slide-heading">Key Literature References & Peer-Reviewed Monograph Citations</h2>
           </div>
-          <div class="badge-pill badge-cyan">Complete 25-Citation Master Compendium (2013&ndash;2026)</div>
+          <div class="badge-pill badge-cyan">Complete 20-Citation Master Compendium (2013&ndash;2026)</div>
         </div>
 
         <div class="content-area-expanded" style="padding: 10px 18px; overflow-y: auto;">
@@ -1801,6 +1308,24 @@
       </div>
       <div class="overview-grid" id="overview-grid">
         <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Keymap Overlay -->
+  <div class="help-overlay" id="help-overlay">
+    <div class="help-card">
+      <div class="help-header">
+        <h3>Keyboard & Navigation Controls</h3>
+        <button class="close-btn" id="btn-close-help">&times;</button>
+      </div>
+      <div class="help-grid">
+        <div class="help-item"><kbd>→</kbd> / <kbd>Space</kbd> / <kbd>↓</kbd><span>Next Slide</span></div>
+        <div class="help-item"><kbd>←</kbd> / <kbd>↑</kbd><span>Previous Slide</span></div>
+        <div class="help-item"><kbd>O</kbd> / <kbd>Tab</kbd><span>Toggle Grid Overview</span></div>
+        <div class="help-item"><kbd>F</kbd><span>Toggle Fullscreen</span></div>
+        <div class="help-item"><kbd>P</kbd><span>Export / Print Mode</span></div>
+        <div class="help-item"><kbd>?</kbd> / <kbd>H</kbd><span>Help / Keymap</span></div>
       </div>
     </div>
   </div>

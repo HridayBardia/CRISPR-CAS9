@@ -387,8 +387,8 @@ body {
 
 .split-deck-layout {
   display: grid;
-  grid-template-columns: 1.16fr 0.84fr;
-  gap: 14px;
+  grid-template-columns: 1.12fr 0.88fr;
+  gap: 16px;
   height: 100%;
   align-items: stretch;
 }
@@ -398,13 +398,14 @@ body {
   flex-direction: column;
   gap: 10px;
   height: 100%;
+  min-height: 0;
 }
 
 .split-left-panel .glass-card {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   gap: 8px;
 }
 
@@ -413,6 +414,8 @@ body {
   flex-direction: column;
   gap: 10px;
   height: 100%;
+  min-height: 0;
+  overflow: hidden;
 }
 
 /* Glass Presentation Cards */
@@ -569,20 +572,139 @@ body {
 
 
 /* ===================================================================
-   Clean Scientific SVG & Diagram Visual Containers
+   Scientific Visual Imagery & Full Whole-Image Figure Containers
    =================================================================== */
-.diagram-visual-box {
+.slide-image-box {
   flex: 1;
-  background: rgba(3, 8, 16, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-height: 220px;
+  position: relative;
   border-radius: var(--radius-sm);
-  padding: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.65);
+  background: radial-gradient(circle at 50% 50%, #08172c 0%, #030814 100%);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
+  padding: 8px;
+}
+
+.slide-visual-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important; /* THE COMPLETE WHOLE IMAGE IS 100% VISIBLE */
+  object-position: center;
+  border-radius: var(--radius-xs);
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.6)) contrast(1.04);
+  transition: transform 0.3s ease;
+}
+
+.slide-image-box:hover .slide-visual-img {
+  transform: scale(1.02);
+}
+
+.img-overlay-tag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 6px 14px;
+  background: linear-gradient(180deg, transparent 0%, rgba(3, 8, 18, 0.95) 100%);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: 0.07em;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  pointer-events: none;
+}
+
+.img-overlay-tag .tag-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cyan-accent);
+  box-shadow: 0 0 8px var(--cyan-accent);
+}
+
+.theme-lab-slate .img-overlay-tag .tag-dot {
+  background: var(--amber-accent);
+  box-shadow: 0 0 8px var(--amber-accent);
+}
+
+/* Figure Explanation Card (Explaining Whole Figure Beneath It) */
+.figure-explain-card {
+  background: rgba(8, 20, 38, 0.92);
+  border: 1px solid rgba(0, 240, 255, 0.22);
+  border-radius: var(--radius-xs);
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-shrink: 0;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+}
+
+.theme-lab-slate .figure-explain-card {
+  background: rgba(12, 24, 44, 0.92);
+  border-color: rgba(255, 179, 0, 0.22);
+}
+
+.figure-explain-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.figure-explain-title {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--cyan-accent);
+  letter-spacing: 0.08em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-transform: uppercase;
+}
+
+.theme-lab-slate .figure-explain-title {
+  color: var(--amber-accent);
+}
+
+.figure-explain-desc {
+  font-size: 0.88rem;
+  color: var(--text-high);
+  line-height: 1.40;
+  font-weight: 500;
+}
+
+.figure-explain-points {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 1px;
+}
+
+.figure-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 0.82rem;
+  color: var(--text-medium);
+  line-height: 1.36;
+}
+
+.figure-point strong {
+  color: #FFFFFF;
+  font-weight: 700;
 }
 
 .diagram-header-tag {
