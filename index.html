@@ -8,7 +8,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="presentation.css">
 </head>
 <body>
@@ -138,21 +138,32 @@
               </div>
             </div>
 
-            <!-- Right Side: Full Visual Image & Cryo-EM Architecture -->
+            <!-- Right Side: Full Visible Image & Cryo-EM Architecture -->
             <div class="split-right-panel">
-              <div class="slide-image-box">
+              <div class="slide-image-box" data-zoom-fig="1">
+                <div class="img-zoom-hint">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Full HD View</span>
+                </div>
                 <img src="images/crispr_cas9_complex.jpg" alt="SpCas9 Molecular Complex" class="slide-visual-img">
                 <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 1 | SPCAS9 CRYO-EM ARCHITECTURE & R-LOOP HETERODUPLEX</div>
               </div>
               <div class="figure-explain-card">
                 <div class="figure-explain-header">
                   <span class="figure-explain-title"><span class="pulse-dot"></span>CRYO-EM ATOMIC ARCHITECTURE</span>
+                  <span class="fig-key-pill">PDB: 4UN3 / 5F9R</span>
+                </div>
+                <div class="figure-key-tags">
+                  <span class="fig-key-pill" style="color:#38BDF8;">🔵 REC Lobe (REC1-3)</span>
+                  <span class="fig-key-pill" style="color:#A78BFA;">🟣 NUC Lobe (HNH/RuvC)</span>
+                  <span class="fig-key-pill" style="color:#34D399;">🟢 sgRNA Guide</span>
+                  <span class="fig-key-pill" style="color:#FBBF24;">🟡 PAM Channel (5'-NGG)</span>
                 </div>
                 <div class="figure-explain-desc">
-                  High-resolution Cryo-EM 3D reconstruction showing SpCas9 bilobed architecture (REC and NUC lobes) bound to sgRNA and unwound target DNA heteroduplex.
+                  High-resolution Cryo-EM 3D reconstruction showing SpCas9 bilobed architecture bound to sgRNA and unwound target DNA heteroduplex.
                 </div>
                 <div class="figure-explain-points">
-                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>Scissile Phosphate Docking:</strong> HNH & RuvC catalytic centers positioned 3 bp upstream of the 5'-NGG PAM signpost.</span></div>
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>Scissile Phosphate Docking:</strong> HNH and RuvC catalytic centers docked precisely 3 bp upstream of the 5'-NGG PAM.</span></div>
                   <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>Thermodynamic Trajectory:</strong> &minus;22.4 kcal/mol excess binding free energy drives irreversible directional R-loop propagation.</span></div>
                 </div>
               </div>
@@ -190,7 +201,7 @@
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
-            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
+            <!-- Left Side: Mechanistic Pillars -->
             <div class="split-left-panel">
               <div class="glass-card card-amber-border">
                 <div class="card-top">
@@ -217,14 +228,18 @@
                 </div>
                 <div class="bullet-points">
                   <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Seed Mismatches (1&ndash;8):</strong> Abort R-loop nucleation; cleavage velocity drops to <strong>1.1%</strong> (kobs = 0.002 s&minus;&sup1;).</span></div>
-                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Distal Mismatches (15&ndash;20):</strong> Retain up to <strong>76.8%</strong> of maximal cleavage velocity in WT-SpCas9.</span></div>
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Distal Mismatches (15&ndash;20):</strong> Retain up to <strong>76.8%</strong> of maximal cleavage velocity in WT-SpCas9 due to energy buffer.</span></div>
                 </div>
               </div>
             </div>
 
             <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="slide-image-box">
+              <div class="slide-image-box" data-zoom-fig="2">
+                <div class="img-zoom-hint">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Full HD View</span>
+                </div>
                 <img src="images/crispr_cas9_complex.jpg" alt="Cryo-EM Structure of Cas9" class="slide-visual-img">
                 <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 2 | DIRECTIONAL R-LOOP DYNAMICS & 32 Å HNH ALLOSTERY</div>
               </div>
@@ -232,9 +247,16 @@
               <div class="figure-explain-card">
                 <div class="figure-explain-header">
                   <span class="figure-explain-title"><span class="pulse-dot"></span>STRUCTURAL ALLOSTERY & KINETICS</span>
+                  <span class="fig-key-pill">Science smFRET</span>
+                </div>
+                <div class="figure-key-tags">
+                  <span class="fig-key-pill" style="color:#FBBF24;">⚡ 32 Å HNH Domain Shift</span>
+                  <span class="fig-key-pill" style="color:#38BDF8;">🧬 REC3 Proofreading Sensor</span>
+                  <span class="fig-key-pill" style="color:#34D399;">🎯 Seed Nucleation (1-8 bp)</span>
+                  <span class="fig-key-pill" style="color:#F87171;">🛑 Distal Mismatch Tolerance</span>
                 </div>
                 <div class="figure-explain-desc">
-                  Directional R-loop propagation drives conformational allostery, repositioning the HNH nuclease domain by 32 Å to align His840 at the target strand.
+                  Directional R-loop propagation drives conformational allostery, repositioning the catalytic HNH domain by 32 Å to align His840 with the target strand.
                 </div>
                 <div class="figure-explain-points">
                   <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>Conformational Checkpoint:</strong> REC3 senses 20-bp base pairing; distal mismatches fail to trigger rapid catalytic collapse in WT-SpCas9.</span></div>
@@ -275,7 +297,6 @@
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
-            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-cyan-border">
                 <div class="card-top">
@@ -310,21 +331,32 @@
 
             <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="slide-image-box">
+              <div class="slide-image-box" data-zoom-fig="3">
+                <div class="img-zoom-hint">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Full HD View</span>
+                </div>
                 <img src="images/crispr_dna_repair.jpg" alt="High-Fidelity Proofreading" class="slide-visual-img">
-                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 3 | NON-TARGET GROOVE ENGINEERING & PROOFREADING</div>
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 3 | NON-TARGET GROOVE ENGINEERING & R-LOOP PROOFREADING</div>
               </div>
 
               <div class="figure-explain-card">
                 <div class="figure-explain-header">
-                  <span class="figure-explain-title"><span class="pulse-dot"></span>EXCESS ENERGY ATTENUATION</span>
+                  <span class="figure-explain-title"><span class="pulse-dot"></span>RATIONAL FIDELITY ENGINEERING</span>
+                  <span class="fig-key-pill">GUIDE-seq Benchmark</span>
+                </div>
+                <div class="figure-key-tags">
+                  <span class="fig-key-pill" style="color:#38BDF8;">🛡️ eSpCas9 Non-Target Groove</span>
+                  <span class="fig-key-pill" style="color:#34D399;">🎯 HF1 Phosphate Contacts</span>
+                  <span class="fig-key-pill" style="color:#FBBF24;">⚡ SuperFi REC3 Loop (797-804)</span>
+                  <span class="fig-key-pill" style="color:#F87171;">📉 0 Off-Target Loci</span>
                 </div>
                 <div class="figure-explain-desc">
-                  Rational alanine substitutions in the non-target groove (eSpCas9) and target phosphate contacts (HF1) neutralize ~4.5 kcal/mol of excess binding energy.
+                  Structural mechanisms of non-target strand groove neutralization, preventing off-target cleavage by raising the energetic activation barrier.
                 </div>
                 <div class="figure-explain-points">
-                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>SuperFi-Cas9 Precision:</strong> REC3 loop stabilization rejects non-cognate substrates with &gt;1,000x fidelity gain.</span></div>
-                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>GUIDE-seq Validation:</strong> Genomic off-target sites reduced from 142 in WT-SpCas9 to 0 detectable off-target cuts in SuperFi-Cas9.</span></div>
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>Excess Energy Neutralization:</strong> Attenuating backbone contacts removes ~4.5 kcal/mol excess binding free energy.</span></div>
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>GUIDE-seq Validation:</strong> WT exhibits 142 off-target sites; SuperFi-Cas9 reduces genome-wide off-target cleavage to 0 detectable loci.</span></div>
                 </div>
               </div>
             </div>
@@ -333,48 +365,47 @@
         </div>
 
         <div class="slide-footer-bar">
-          <span>Case Study 1 • High-Fidelity Engineering (Nature 2016, Nature 2022)</span>
+          <span>Case Study 1 • High-Fidelity Nuclease Engineering (Nature 2016, Nature 2022)</span>
           <span>Slide 03 / 13</span>
         </div>
       </div>
     </section>
 
     <!-- ===================================================================
-         SLIDE 4: Epigenome Modulation: CRISPRi & CRISPRa (LAB SLATE)
+         SLIDE 4: Case Study 2 - Epigenome Modulation (LAB SLATE)
          =================================================================== -->
     <section class="slide-wrapper" data-slide="4" data-theme="LAB SLATE">
       <div class="slide-card theme-lab-slate">
         <div class="slide-header">
           <div class="header-left">
-            <span class="section-tag amber-tag">CASE STUDY 2 / EPIGENETICS</span>
-            <h2 class="slide-heading">Epigenome Modulation: CRISPRi, CRISPRa & CRISPRoff</h2>
+            <span class="section-tag amber-tag">CASE STUDY 2 / EPIGENOME EDITING</span>
+            <h2 class="slide-heading">Non-Cleaving Platforms: CRISPRi, CRISPRa & Heritable CRISPRoff</h2>
           </div>
-          <div class="badge-pill badge-amber">Weissman et al., Cell | Gilbert et al., Cell</div>
+          <div class="badge-pill badge-amber">Gilbert et al., Cell | Nuñez et al., Cell</div>
         </div>
 
         <div class="analogy-banner amber-theme">
-          <div class="analogy-icon">🎚️</div>
+          <div class="analogy-icon">🔒</div>
           <div class="analogy-text">
-            <strong>Non-Cleaving Epigenetic Dimmer Switches:</strong> Catalytically dead dCas9 (<strong>D10A/H840A</strong>, Kd &lt; 1 nM) serves as a sterile DNA anchor. Fused effectors write repressive histone marks (<strong>H3K9me3</strong>) or DNA methylation (<strong>5mC</strong>) for reversible or permanent silencing with <strong>0% DSB induction</strong>.
+            <strong>Zero-DSB Gene Control:</strong> Catalytically dead Cas9 (<strong>dCas9: D10A + H840A</strong>) acts as a programmable sequence-specific GPS, recruiting epigenetic writers and erasers to silence or activate transcription with <strong>0% double-strand breaks</strong>.
           </div>
         </div>
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
-            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-amber-border">
                 <div class="card-top">
                   <div class="icon-box amber-box">🛑</div>
                   <div>
-                    <span class="card-kicker amber-tag">REPRESSION: dCas9-KRAB</span>
-                    <h3 class="card-title">Heterochromatin Compaction</h3>
+                    <span class="card-kicker amber-tag">CRISPRi: REVERSIBLE REPRESSION</span>
+                    <h3 class="card-title">dCas9-KRAB-MeCP2 (H3K9me3 Deposition)</h3>
                   </div>
                 </div>
-                <p class="card-desc">Recruits KAP1 (TRIM28), SETDB1, and HDAC1/2. Deposits repressive H3K9me3 across a 1.5 kb window around the TSS, achieving &gt;95% silencing.</p>
+                <p class="card-desc">Targets TSS window (&minus;50 to +300 bp). Recruits KAP1 scaffold and SETDB1 methyltransferase, establishing local heterochromatin.</p>
                 <div class="card-bottom-metric">
-                  <span class="metric-big amber-metric">96.4%</span>
-                  <span class="metric-lbl">Peak Silencing (5.4d Half-Life)</span>
+                  <span class="metric-big amber-metric">85&ndash;98%</span>
+                  <span class="metric-lbl">Transcriptional Knockdown</span>
                 </div>
               </div>
 
@@ -382,35 +413,46 @@
                 <div class="card-top">
                   <div class="icon-box amber-box">⚡</div>
                   <div>
-                    <span class="card-kicker amber-tag">ACTIVATION: dCas9-VPR</span>
-                    <h3 class="card-title">Transcriptional Upregulation</h3>
+                    <span class="card-kicker amber-tag">CRISPRoff: HERITABLE MEMORY</span>
+                    <h3 class="card-title">dCas9-DNMT3A-DNMT3L-KRAB</h3>
                   </div>
                 </div>
-                <p class="card-desc">Tripartite activator (VP64-p65-Rta) recruits TFIID, TFIIH, and p300/CBP histone acetyltransferases, driving 10- to 500-fold endogenous activation.</p>
+                <p class="card-desc">Deposits permanent 5-methylcytosine (5mC) CpG methylation. Maintains gene silencing across &gt;50 cell divisions and stem cell differentiation.</p>
                 <div class="card-bottom-metric">
-                  <span class="metric-big amber-metric">10&ndash;500x</span>
-                  <span class="metric-lbl">Transcriptional Gain</span>
+                  <span class="metric-big amber-metric">&gt;50 Divisions</span>
+                  <span class="metric-lbl">Heritable Epigenetic Silencing</span>
                 </div>
               </div>
             </div>
 
             <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="slide-image-box">
+              <div class="slide-image-box" data-zoom-fig="4">
+                <div class="img-zoom-hint">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Full HD View</span>
+                </div>
                 <img src="images/crispr_cell_computer.jpg" alt="Epigenome Modulation" class="slide-visual-img">
-                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 4 | CHROMATIN REMODELING & HERITABLE CRISPRoff SILENCING</div>
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 4 | CHROMATIN REPRESSION (H3K9me3) & PERMANENT 5mC</div>
               </div>
 
               <div class="figure-explain-card">
                 <div class="figure-explain-header">
-                  <span class="figure-explain-title"><span class="pulse-dot"></span>EPIGENETIC DIMMER SWITCHES</span>
+                  <span class="figure-explain-title"><span class="pulse-dot"></span>EPIGENETIC CIRCUITRY & PROGRAMMABILITY</span>
+                  <span class="fig-key-pill">Cell 2021 Monograph</span>
+                </div>
+                <div class="figure-key-tags">
+                  <span class="fig-key-pill" style="color:#FBBF24;">🔒 dCas9-KRAB-MeCP2</span>
+                  <span class="fig-key-pill" style="color:#34D399;">🌟 dCas9-VPR (H3K27ac)</span>
+                  <span class="fig-key-pill" style="color:#38BDF8;">🧬 CRISPRoff (5mC DNA Methylation)</span>
+                  <span class="fig-key-pill" style="color:#A78BFA;">🔄 Heritable Memory</span>
                 </div>
                 <div class="figure-explain-desc">
-                  Sterile dCas9 (D10A/H840A) recruits chromatin modifiers to write repressive (H3K9me3, 5mC) or activating (p300/CBP) marks without cutting genomic DNA.
+                  Catalytically dead dCas9 fused to chromatin remodeling engines for targeted transcriptional reprogramming without genomic DNA damage.
                 </div>
                 <div class="figure-explain-points">
-                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>CRISPRi (dCas9-KRAB):</strong> High-potency transient repression (&gt;96% silencing) that resets upon cell division.</span></div>
-                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>CRISPRoff (Methylation):</strong> Dual DNMT3A/DNMT3L + KRAB writes permanent, heritable silencing across &gt;100 cell divisions.</span></div>
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>Zero DSB Invasiveness:</strong> Completely eliminates p53-mediated DNA damage responses and chromosomal rearrangements.</span></div>
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>CRISPRon Reversal:</strong> Reversible via catalytic dCas9-TET1 (demethylation) or persistent for lifelong therapeutic repression.</span></div>
                 </div>
               </div>
             </div>
@@ -419,84 +461,94 @@
         </div>
 
         <div class="slide-footer-bar">
-          <span>Case Study 2 • Epigenetic Remodeling & CRISPRoff (Cell 2021, Cell 2024)</span>
+          <span>Case Study 2 • Epigenetic & Transcriptional Programming (Cell 2014, Cell 2021)</span>
           <span>Slide 04 / 13</span>
         </div>
       </div>
     </section>
 
     <!-- ===================================================================
-         SLIDE 5: In Vivo Nanoparticle Delivery & Hepatic Tropism (GENOMIC NAVY)
+         SLIDE 5: Case Study 2 - In Vivo Nanomedicine & LNPs (GENOMIC NAVY)
          =================================================================== -->
     <section class="slide-wrapper" data-slide="5" data-theme="GENOMIC NAVY">
       <div class="slide-card theme-genomic-navy">
         <div class="slide-header">
           <div class="header-left">
             <span class="section-tag cyan-tag">CASE STUDY 2 / IN VIVO DELIVERY</span>
-            <h2 class="slide-heading">In Vivo Nanoparticle Delivery: Ionizable LNPs & Hepatic Targeting</h2>
+            <h2 class="slide-heading">In Vivo Nanomedicine: Ionizable Lipid Nanoparticles (LNPs)</h2>
           </div>
-          <div class="badge-pill badge-cyan">Anderson et al., Nature Medicine | Gillmore et al., NEJM</div>
+          <div class="badge-pill badge-cyan">Cullis, Langer et al. | Nat. Nanotechnol.</div>
         </div>
 
         <div class="analogy-banner cyan-theme">
           <div class="analogy-icon">💊</div>
           <div class="analogy-text">
-            <strong>Systemic Hepatic Nanomedicine:</strong> 4-component ionizable lipid nanoparticles (<strong>pKa 6.2&ndash;6.8</strong>) adsorb endogenous <strong>ApoE</strong> in the bloodstream, triggering <strong>LDLR-mediated endocytosis</strong> into hepatocytes. Acid-triggered charge reversal in endosomes releases Cas9 mRNA for permanent &gt;90% knockout.
+            <strong>The pH-Activated Proton Sponge:</strong> Ionizable lipids maintain neutral charge at physiological pH 7.4 (ensuring non-toxicity in circulation), but become positively charged at endosomal pH &le; 5.5, destabilizing the endosomal bilayer for cytoplasmic payload escape.
           </div>
         </div>
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
-            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-cyan-border">
                 <div class="card-top">
                   <div class="icon-box cyan-box">🧪</div>
                   <div>
-                    <span class="card-kicker cyan-tag">LNP FORMULATION (75-85 nm)</span>
-                    <h3 class="card-title">4-Component Lipid Architecture</h3>
+                    <span class="card-kicker cyan-tag">LNP FORMULATION (50:10:38.5:1.5)</span>
+                    <h3 class="card-title">4-Component Lipid Nanosphere</h3>
                   </div>
                 </div>
                 <div class="bullet-points">
-                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Ionizable Lipid (50%):</strong> C12-200, MC3, or ALC-0315 (neutral at blood pH 7.4; cationic at endosomal pH 5.5).</span></div>
-                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Helper Phospholipid & Chol (48.5%):</strong> DOPE/DSPC + Cholesterol for bilayer stability and membrane fusion.</span></div>
-                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>PEG-DMG (1.5%):</strong> Shields against serum aggregation; sheds in vivo to permit ApoE binding.</span></div>
+                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Ionizable Lipid (50%):</strong> (e.g., ALC-0315, MC3; pKa 6.2&ndash;6.5) binds mRNA / sgRNA and drives endosomal escape.</span></div>
+                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Helper DSPC (10%) & Cholesterol (38.5%):</strong> Maintain structural rigidity and membrane fluidity.</span></div>
+                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>DMG-PEG2000 (1.5%):</strong> Prevents serum aggregation and extends circulation half-life.</span></div>
                 </div>
               </div>
 
               <div class="glass-card card-cyan-border">
                 <div class="card-top">
-                  <div class="icon-box cyan-box">📉</div>
+                  <div class="icon-box cyan-box">🎯</div>
                   <div>
-                    <span class="card-kicker cyan-tag">CLINICAL DURABILITY</span>
-                    <h3 class="card-title">One-Time Curative Knockout</h3>
+                    <span class="card-kicker cyan-tag">HEPATIC RECEPTOR TARGETING</span>
+                    <h3 class="card-title">Endogenous ApoE Opsonization</h3>
                   </div>
                 </div>
-                <p class="card-desc">NTLA-2001 (TTR) and VERVE-101 (PCSK9) achieve &gt;85&ndash;95% sustained serum protein reduction with transient nuclease clearance (&lt;48h).</p>
+                <p class="card-desc">Adsorbs serum Apolipoprotein E (ApoE), triggering receptor-mediated endocytosis via LDL Receptors (LDLR) on hepatocytes with &gt;90% hepatic biodistribution.</p>
                 <div class="card-bottom-metric">
-                  <span class="metric-big cyan-metric">&gt;36 Months</span>
-                  <span class="metric-lbl">Stable Clinical Knockdown</span>
+                  <span class="metric-big cyan-metric">&gt;90% Liver Uptake</span>
+                  <span class="metric-lbl">ApoE-LDLR Endocytosis</span>
                 </div>
               </div>
             </div>
 
             <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="slide-image-box">
+              <div class="slide-image-box" data-zoom-fig="5">
+                <div class="img-zoom-hint">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Full HD View</span>
+                </div>
                 <img src="images/crispr_lnp_delivery.jpg" alt="Lipid Nanoparticles" class="slide-visual-img">
-                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 5 | 4-COMPONENT IONIZABLE LNP ARCHITECTURE & HEPATIC TROPOS</div>
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 5 | IONIZABLE LNP ARCHITECTURE & ENDOSOMAL ESCAPE</div>
               </div>
 
               <div class="figure-explain-card">
                 <div class="figure-explain-header">
-                  <span class="figure-explain-title"><span class="pulse-dot"></span>SYSTEMIC IN VIVO DELIVERY</span>
+                  <span class="figure-explain-title"><span class="pulse-dot"></span>LNP DELIVERY & ENDOSOMAL TRANSLOCATION</span>
+                  <span class="fig-key-pill">Nat. Nanotechnol.</span>
+                </div>
+                <div class="figure-key-tags">
+                  <span class="fig-key-pill" style="color:#38BDF8;">💊 Ionizable Lipid (pK_a ~6.4)</span>
+                  <span class="fig-key-pill" style="color:#34D399;">🎯 ApoE-LDLR Hepatic Uptake</span>
+                  <span class="fig-key-pill" style="color:#FBBF24;">⚡ Proton Sponge Escape</span>
+                  <span class="fig-key-pill" style="color:#A78BFA;">📦 mRNA / sgRNA Payload</span>
                 </div>
                 <div class="figure-explain-desc">
-                  75&ndash;85 nm lipid nanoparticles adsorb endogenous ApoE in blood, mediating LDLR uptake and acid-triggered endosomal Cas9 mRNA release.
+                  Schematic of ionizable lipid nanoparticle encapsulating Cas9 mRNA and sgRNA, driving ApoE-mediated receptor uptake and cytoplasmic release.
                 </div>
                 <div class="figure-explain-points">
-                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>pH Charge Reversal:</strong> Neutral at circulation pH 7.4; cationic at endosomal pH 5.5 to disrupt lipid bilayers.</span></div>
-                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>Clinical Durability:</strong> NTLA-2001 (TTR) and VERVE-101 (PCSK9) demonstrate &gt;85&ndash;95% sustained knockdown past 36 months.</span></div>
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>Endosomal Escape Rate:</strong> Ionizable protonation triggers inverted hexagonal (H_II) phase transition, releasing cargo into cytoplasm.</span></div>
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>Transient Kinetics:</strong> mRNA payload is translated and cleared in &le;24 hours, suppressing long-term off-target exposure.</span></div>
                 </div>
               </div>
             </div>
@@ -505,84 +557,94 @@
         </div>
 
         <div class="slide-footer-bar">
-          <span>Case Study 2 • In Vivo LNP Delivery (Nature Medicine 2025, NEJM 2021)</span>
+          <span>Case Study 2 • Non-Viral In Vivo Delivery (Nat. Nanotechnol. 2021, NEJM 2021)</span>
           <span>Slide 05 / 13</span>
         </div>
       </div>
     </section>
 
     <!-- ===================================================================
-         SLIDE 6: Precision Base Editing (CBE & ABE) (LAB SLATE)
+         SLIDE 6: Case Study 3 - Base Editing: CBE & ABE (LAB SLATE)
          =================================================================== -->
     <section class="slide-wrapper" data-slide="6" data-theme="LAB SLATE">
       <div class="slide-card theme-lab-slate">
         <div class="slide-header">
           <div class="header-left">
             <span class="section-tag amber-tag">CASE STUDY 3 / BASE EDITING</span>
-            <h2 class="slide-heading">Precision Base Editing: CBE & ABE Deaminase Engineering</h2>
+            <h2 class="slide-heading">Precision Single-Base Transitions: CBE & ABE Architecture</h2>
           </div>
-          <div class="badge-pill badge-amber">Liu et al., Nature Biotech | Gaudelli et al., Nature</div>
+          <div class="badge-pill badge-amber">Liu et al., Nature | Gaudelli et al., Nature</div>
         </div>
 
         <div class="analogy-banner amber-theme">
-          <div class="analogy-icon">✏️</div>
+          <div class="analogy-icon">🧬</div>
           <div class="analogy-text">
-            <strong>Single-Base Transitions Without Double-Strand Breaks:</strong> Base Editors couple an ssDNA deaminase to nCas9(<strong>D10A</strong>). CBEs execute <strong>C&bull;G &rarr; T&bull;A</strong> hydrolytic deamination, while evolved ABE8e executes <strong>A&bull;T &rarr; G&bull;C</strong> with &gt;1,000-fold catalytic acceleration and <strong>&lt;0.1% indels</strong>.
+            <strong>Chemical Pencil vs Scissors:</strong> Base editors fuse a catalytic deaminase to Cas9 nickase (<strong>nCas9-D10A</strong>). Instead of cutting double strands, they chemically convert single bases in a defined 4&ndash;5 nt window with <strong>&lt;0.1% indels and zero translocations</strong>.
           </div>
         </div>
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
-            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-amber-border">
                 <div class="card-top">
-                  <div class="icon-box amber-box">🔬</div>
+                  <div class="icon-box amber-box">🧪</div>
                   <div>
-                    <span class="card-kicker amber-tag">CBE CASCADE (BE4max / evoFERNY)</span>
-                    <h3 class="card-title">Cytosine Deamination & UGI</h3>
+                    <span class="card-kicker amber-tag">CYTIDINE BASE EDITORS (CBE)</span>
+                    <h3 class="card-title">rAPOBEC1 / evoAPOBEC + UGI (C&bull;G &rarr; T&bull;A)</h3>
                   </div>
                 </div>
-                <p class="card-desc">Cytidine deaminase converts C&rarr;U within a 4&ndash;8 bp window. 2x UGI domains block host UNG base-excision repair, while non-edited strand nicking directs mismatch repair.</p>
-                <div class="card-bottom-metric">
-                  <span class="metric-big amber-metric">80&ndash;95%</span>
-                  <span class="metric-lbl">Target Transition Efficiency</span>
+                <div class="bullet-points">
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Hydrolytic Deamination:</strong> Deaminates cytidine to uridine within protospacer positions 4&ndash;8.</span></div>
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>UGI Inhibition:</strong> Uracil DNA Glycosylase Inhibitor prevents base excision repair (BER).</span></div>
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Directed Nicking:</strong> nCas9 nicking directs cellular mismatch repair to copy U template.</span></div>
                 </div>
               </div>
 
               <div class="glass-card card-amber-border">
                 <div class="card-top">
-                  <div class="icon-box amber-box">🧬</div>
+                  <div class="icon-box amber-box">⚡</div>
                   <div>
-                    <span class="card-kicker amber-tag">ABE CASCADE (ABE8e / V106W)</span>
-                    <h3 class="card-title">Evolved TadA-8e Deaminase</h3>
+                    <span class="card-kicker amber-tag">ADENINE BASE EDITORS (ABE)</span>
+                    <h3 class="card-title">Evolved TadA-8e Deaminase (A&bull;T &rarr; G&bull;C)</h3>
                   </div>
                 </div>
-                <p class="card-desc">TadA-8e (8 rational mutations) accelerates deamination to 1.8 &times; 10&sup6; M&minus;&sup1;s&minus;&sup1;. High-fidelity V106W narrows the window (pos 4&ndash;7), eliminating RNA/DNA bystander edits.</p>
-                <div class="card-bottom-metric">
-                  <span class="metric-big amber-metric">&lt;0.1%</span>
-                  <span class="metric-lbl">Indel Byproduct Rate</span>
+                <div class="bullet-points">
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Laboratory Evolution:</strong> Evolved from bacterial tRNA adenosine deaminase to accept single-stranded DNA.</span></div>
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Ultra-Fast Kinetics:</strong> TadA-8e increases catalytic deamination rate by <strong>590-fold</strong>.</span></div>
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Therapeutic Target:</strong> Capable of reversing ~47% of pathogenic human point mutations in ClinVar.</span></div>
                 </div>
               </div>
             </div>
 
             <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="slide-image-box">
+              <div class="slide-image-box" data-zoom-fig="6">
+                <div class="img-zoom-hint">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Full HD View</span>
+                </div>
                 <img src="images/crispr_base_editor.jpg" alt="Base Editing Deaminases" class="slide-visual-img">
-                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 6 | HYDROLYTIC DEAMINATION CASCADE (C•G→T•A & A•T→G•C)</div>
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 6 | SINGLE-BASE DEAMINATION & NON-DSB TRANSITIONS</div>
               </div>
 
               <div class="figure-explain-card">
                 <div class="figure-explain-header">
-                  <span class="figure-explain-title"><span class="pulse-dot"></span>TRANSITION EDITING WITHOUT DSBs</span>
+                  <span class="figure-explain-title"><span class="pulse-dot"></span>BASE EDITING RESOLUTION & WINDOW</span>
+                  <span class="fig-key-pill">Nature 2016, 2017</span>
+                </div>
+                <div class="figure-key-tags">
+                  <span class="fig-key-pill" style="color:#FBBF24;">✂️ nCas9(D10A) Nickase</span>
+                  <span class="fig-key-pill" style="color:#38BDF8;">🧪 Cytidine Deaminase (C→T)</span>
+                  <span class="fig-key-pill" style="color:#34D399;">🔬 TadA-8e Deaminase (A→G)</span>
+                  <span class="fig-key-pill" style="color:#A78BFA;">🎯 4-5 nt Deamination Window</span>
                 </div>
                 <div class="figure-explain-desc">
-                  Deaminases tethered to nCas9(D10A) convert target bases within a 4&ndash;8 nt window, followed by nick-directed mismatch repair to seal transitions.
+                  Molecular architecture of base editors fusing deaminase enzymes to nCas9, catalyzing direct nucleotide transition in single-stranded R-loop bubble.
                 </div>
                 <div class="figure-explain-points">
-                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>CBE (BE4max):</strong> Cytidine deaminase converts C&rarr;U; 2x UGI domains prevent uracil excision repair.</span></div>
-                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>ABE8e-V106W:</strong> High-speed evolved adenine deaminase converts A&rarr;I with &lt;0.1% indels and zero bystander edits.</span></div>
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>Direct Transition Chemistry:</strong> Hydrolytic conversion of Cytidine to Uracil or Adenine to Inosine without double-strand breaks.</span></div>
+                  <div class="figure-point"><span class="b-dot amber-dot"></span><span><strong>Bystander Control:</strong> Engineered narrow-window deaminases restrict editing to precise target single nucleotide.</span></div>
                 </div>
               </div>
             </div>
@@ -591,48 +653,47 @@
         </div>
 
         <div class="slide-footer-bar">
-          <span>Case Study 3 • Precision Base Editing (Nature Biotech 2024, Nature 2017)</span>
+          <span>Case Study 3 • Precision Base Editing (Nature 2016, Nature 2017, Nat. Biotechnol. 2020)</span>
           <span>Slide 06 / 13</span>
         </div>
       </div>
     </section>
 
     <!-- ===================================================================
-         SLIDE 7: Search-and-Replace Prime Editing (GENOMIC NAVY)
+         SLIDE 7: Case Study 3 - Prime Editing: PEmax & twinPE (GENOMIC NAVY)
          =================================================================== -->
     <section class="slide-wrapper" data-slide="7" data-theme="GENOMIC NAVY">
       <div class="slide-card theme-genomic-navy">
         <div class="slide-header">
           <div class="header-left">
             <span class="section-tag cyan-tag">CASE STUDY 3 / PRIME EDITING</span>
-            <h2 class="slide-heading">Search-and-Replace Prime Editing: PE2, PE3, PEmax & twinPE</h2>
+            <h2 class="slide-heading">Prime Editing: Search-and-Replace Word Processing (PEmax & twinPE)</h2>
           </div>
-          <div class="badge-pill badge-cyan">Liu et al., Nature | Anzalone et al., Nature</div>
+          <div class="badge-pill badge-cyan">Anzalone, Liu et al., Nature | Chen et al., Cell</div>
         </div>
 
         <div class="analogy-banner cyan-theme">
-          <div class="analogy-icon">💻</div>
+          <div class="analogy-icon">✍️</div>
           <div class="analogy-text">
-            <strong>Universal Search-and-Replace Word Processor:</strong> Prime Editors couple nCas9(<strong>H840A</strong>) to an engineered M-MLV Reverse Transcriptase. Guided by a <strong>pegRNA</strong> (PBS + RTT), prime editors directly write all <strong>12 base substitutions</strong>, insertions (&le;100 bp), and deletions (&le;80 bp) into DNA without donor templates or DSBs.
+            <strong>The Universal Genomic Word Processor:</strong> Prime Editing writes new genetic information directly into a target site using an engineered <strong>Reverse Transcriptase</strong> and a <strong>prime editing guide RNA (pegRNA)</strong> without requiring double-strand breaks or donor DNA templates.
           </div>
         </div>
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
-            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-cyan-border">
                 <div class="card-top">
-                  <div class="icon-box cyan-box">🔄</div>
+                  <div class="icon-box cyan-box">🧩</div>
                   <div>
-                    <span class="card-kicker cyan-tag">CATALYTIC CYCLE</span>
-                    <h3 class="card-title">3'-Flap Reverse Transcription</h3>
+                    <span class="card-kicker cyan-tag">pegRNA DUAL-FUNCTION STRUCTURE</span>
+                    <h3 class="card-title">PBS + Reverse Transcriptase Template (RTT)</h3>
                   </div>
                 </div>
                 <div class="bullet-points">
-                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Target Nicking:</strong> Cas9(H840A) nicks non-target strand 3 bp upstream of PAM, releasing a free 3'-OH flap.</span></div>
-                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>PBS Hybridization:</strong> The pegRNA Primer Binding Site (13 nt) pairs with the 3'-ssDNA flap.</span></div>
-                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>RTT Synthesis:</strong> M-MLV RT reverse-transcribes the edit; structure-specific FEN1 cleaves the unedited 5'-flap.</span></div>
+                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Primer Binding Site (PBS):</strong> 13 nt region that hybridizes to the nicked 3' non-target genomic flap.</span></div>
+                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>RT Template (RTT):</strong> Encodes the programmed substitution, insertion (up to 40 bp), or deletion.</span></div>
+                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Flap Equilibration:</strong> 3' edited flap displaces 5' unedited flap; cellular FEN1 resolves flap junction.</span></div>
                 </div>
               </div>
 
@@ -640,35 +701,45 @@
                 <div class="card-top">
                   <div class="icon-box cyan-box">🚀</div>
                   <div>
-                    <span class="card-kicker cyan-tag">NEXT-GEN: PEmax & twinPE</span>
-                    <h3 class="card-title">Engineered Efficiency Upgrades</h3>
+                    <span class="card-kicker cyan-tag">PE ARCHITECTURE EVOLUTION</span>
+                    <h3 class="card-title">PE2 &rarr; PEmax &rarr; twinPE Recombination</h3>
                   </div>
                 </div>
-                <p class="card-desc">PEmax (codon-optimized + RT mutations) + epegRNA (3'-evopreQ1 structured motif) elevates efficiency to 55&ndash;85% with &lt;0.5% indels.</p>
-                <div class="card-bottom-metric">
-                  <span class="metric-big cyan-metric">&gt;89%</span>
-                  <span class="metric-lbl">ClinVar Pathogenic Variants Addressable</span>
+                <div class="bullet-points">
+                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>PEmax (Cell 2021):</strong> Codon-optimized RT, MLH1 dominant-negative inhibition; yields <strong>55&ndash;85%</strong> efficiency.</span></div>
+                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>twinPE (Nat. Biotechnol. 2021):</strong> Dual pegRNAs write dual flaps; integrates kilobase payloads with recombinases.</span></div>
                 </div>
               </div>
             </div>
 
             <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="slide-image-box">
+              <div class="slide-image-box" data-zoom-fig="7">
+                <div class="img-zoom-hint">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Full HD View</span>
+                </div>
                 <img src="images/crispr_future_horizon.jpg" alt="Prime Editing Mechanism" class="slide-visual-img">
-                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 7 | pegRNA REVERSE TRANSCRIPTION & 3'-FLAP RESOLUTION</div>
+                <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 7 | pegRNA SEARCH-AND-REPLACE & 3'-FLAP EQUILIBRATION</div>
               </div>
 
               <div class="figure-explain-card">
                 <div class="figure-explain-header">
                   <span class="figure-explain-title"><span class="pulse-dot"></span>SEARCH-AND-REPLACE WORD PROCESSING</span>
+                  <span class="fig-key-pill">Nature 2019, Cell 2021</span>
+                </div>
+                <div class="figure-key-tags">
+                  <span class="fig-key-pill" style="color:#38BDF8;">🧬 pegRNA (PBS + RTT)</span>
+                  <span class="fig-key-pill" style="color:#34D399;">✍️ M-MLV Reverse Transcriptase</span>
+                  <span class="fig-key-pill" style="color:#FBBF24;">✂️ Flap Resolvase (FEN1)</span>
+                  <span class="fig-key-pill" style="color:#A78BFA;">🌐 All 12 Substitutions</span>
                 </div>
                 <div class="figure-explain-desc">
                   Prime Editors fuse nCas9(H840A) to engineered M-MLV Reverse Transcriptase, writing all 12 base conversions, insertions, and deletions via pegRNA.
                 </div>
                 <div class="figure-explain-points">
-                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>3'-Flap Resolution:</strong> pegRNA PBS anneals to the nicked strand; RT copies the RTT edit; FEN1 removes the 5'-flap.</span></div>
-                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>PEmax Efficiency:</strong> Boosted to 55&ndash;85% efficiency across &gt;89% of pathogenic ClinVar human disease variants.</span></div>
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>3'-Flap Resolution:</strong> pegRNA PBS anneals to the nicked strand; RT copies the RTT edit; FEN1 removes the unedited 5'-flap.</span></div>
+                  <div class="figure-point"><span class="b-dot cyan-dot"></span><span><strong>PEmax Scope:</strong> Boosted to 55&ndash;85% efficiency across &gt;89% of pathogenic ClinVar human disease variants.</span></div>
                 </div>
               </div>
             </div>
@@ -677,48 +748,50 @@
         </div>
 
         <div class="slide-footer-bar">
-          <span>Case Study 3 • Prime Editing Search-and-Replace (Nature 2019, Cell 2021, Nature 2025)</span>
+          <span>Case Study 3 • Prime Editing & Search-and-Replace (Nature 2019, Cell 2021)</span>
           <span>Slide 07 / 13</span>
         </div>
       </div>
     </section>
 
     <!-- ===================================================================
-         SLIDE 8: Ex Vivo Autologous Stem Cell Therapy: Exa-cel (LAB SLATE)
+         SLIDE 8: Case Study 4 - Clinical Translation: Exa-cel (LAB SLATE)
          =================================================================== -->
     <section class="slide-wrapper" data-slide="8" data-theme="LAB SLATE">
       <div class="slide-card theme-lab-slate">
         <div class="slide-header">
           <div class="header-left">
-            <span class="section-tag amber-tag">CASE STUDY 4 / STEM CELL THERAPY</span>
-            <h2 class="slide-heading">Ex Vivo Autologous HSPC Editing: Exa-cel (CASGEVY)</h2>
+            <span class="section-tag amber-tag">CASE STUDY 4 / CLINICAL MILESTONE</span>
+            <h2 class="slide-heading">Exa-cel (Casgevy): First FDA-Approved CRISPR Therapy for SCD & TDT</h2>
           </div>
-          <div class="badge-pill badge-amber">Frangoul et al., NEJM | Locatelli / Sharma et al., NEJM</div>
+          <div class="badge-pill badge-amber">Frangoul et al., NEJM | FDA & EMA Approved</div>
         </div>
 
         <div class="analogy-banner amber-theme">
           <div class="analogy-icon">🩸</div>
           <div class="analogy-text">
-            <strong>The First FDA/EMA Approved CRISPR Medicine:</strong> Exagamglogene autotemcel (Exa-cel) electroporates autologous CD34+ HSPCs with Cas9 RNP targeting the <strong>erythroid BCL11A enhancer (+58 kb)</strong>. Disrupting the GATA1 binding motif derepresses &gamma;-globin, reactivating <strong>Fetal Hemoglobin (HbF &ge;40%)</strong> and curing sickle cell and &beta;-thalassemia.
+            <strong>Reactivating the Fetal Hemoglobin Switch:</strong> Exa-cel disrupts the GATA1 binding motif in the erythroid enhancer of <strong>BCL11A (+58 kb)</strong> in autologous CD34+ HSPCs, reactivating <strong>&gamma;-globin</strong> and inducing pan-cellular fetal hemoglobin (&ge;44% HbF) to eliminate sickle polymerization.
           </div>
         </div>
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
-            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-amber-border">
                 <div class="card-top">
-                  <div class="icon-box amber-box">🧬</div>
+                  <div class="icon-box amber-box">🔬</div>
                   <div>
-                    <span class="card-kicker amber-tag">TARGET ARCHITECTURE (+58 kb)</span>
-                    <h3 class="card-title">GATA1 Motif Disruption</h3>
+                    <span class="card-kicker amber-tag">MECHANISM: ERYTHROID ENHANCER ABLATION</span>
+                    <h3 class="card-title">Targeting the BCL11A +58 kb GATA1 Site</h3>
                   </div>
                 </div>
-                <p class="card-desc">Ablates BCL11A exclusively in the erythroid lineage, avoiding systemic toxicities in B-cell lymphopoiesis while maintaining normal stem cell multipotency.</p>
+                <div class="bullet-points">
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Surgical RNP Electroporation:</strong> Purified high-fidelity SpCas9 RNP achieves &gt;80% editing in CD34+ stem cells.</span></div>
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Tissue-Specific Safety:</strong> Sparing BCL11A promoter preserves essential B-cell lymphopoiesis and neural development.</span></div>
+                </div>
                 <div class="card-bottom-metric">
-                  <span class="metric-big amber-metric">97.2%</span>
-                  <span class="metric-lbl">Pan-Cellular F-Cell Distribution</span>
+                  <span class="metric-big amber-metric">&ge;44% HbF</span>
+                  <span class="metric-lbl">Pan-Cellular Induction</span>
                 </div>
               </div>
 
@@ -726,21 +799,24 @@
                 <div class="card-top">
                   <div class="icon-box amber-box">🏆</div>
                   <div>
-                    <span class="card-kicker amber-tag">CLINICAL EFFICACY (CLIMB TRIALS)</span>
-                    <h3 class="card-title">100% Freedom from Pain Crises</h3>
+                    <span class="card-kicker amber-tag">CLINICAL EFFICACY (CLIMB-121 / 111)</span>
+                    <h3 class="card-title">Transformative Patient Outcomes</h3>
                   </div>
                 </div>
-                <p class="card-desc">Annualized vaso-occlusive crises (VOCs) dropped from 4.2 events/yr to 0.0 events/yr in 29/30 patients; &beta;-thalassemia patients achieved full transfusion independence.</p>
-                <div class="card-bottom-metric">
-                  <span class="metric-big amber-metric">100% Drop</span>
-                  <span class="metric-lbl">Severe VOC Abolition</span>
+                <div class="bullet-points">
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Sickle Cell Disease (SCD):</strong> <strong>29/30 patients (96.7%)</strong> free of severe vaso-occlusive pain crises (VOCs) for &gt;12 months.</span></div>
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>&beta;-Thalassemia (TDT):</strong> <strong>42/44 patients (95.5%)</strong> achieved complete red-blood-cell transfusion independence.</span></div>
                 </div>
               </div>
             </div>
 
             <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="slide-image-box">
+              <div class="slide-image-box" data-zoom-fig="8">
+                <div class="img-zoom-hint">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Full HD View</span>
+                </div>
                 <img src="images/crispr_sickle_cell.jpg" alt="Sickle Cell Gene Therapy" class="slide-visual-img">
                 <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 8 | AUTOLOGOUS CD34+ HSPC MOBILIZATION & HbF INDUCTION</div>
               </div>
@@ -748,6 +824,13 @@
               <div class="figure-explain-card">
                 <div class="figure-explain-header">
                   <span class="figure-explain-title"><span class="pulse-dot"></span>EXA-CEL (CASGEVY) CLINICAL CURE</span>
+                  <span class="fig-key-pill">NEJM 2021, 2024</span>
+                </div>
+                <div class="figure-key-tags">
+                  <span class="fig-key-pill" style="color:#FBBF24;">🩸 BCL11A +58kb Enhancer</span>
+                  <span class="fig-key-pill" style="color:#34D399;">📈 Fetal Hemoglobin (HbF ≥44%)</span>
+                  <span class="fig-key-pill" style="color:#38BDF8;">🧪 Autologous CD34+ HSPCs</span>
+                  <span class="fig-key-pill" style="color:#A78BFA;">🛡️ 100% VOC Elimination</span>
                 </div>
                 <div class="figure-explain-desc">
                   Autologous CD34+ HSPCs electroporated with Cas9 RNP targeting the erythroid-specific BCL11A enhancer (+58 kb GATA1 binding motif).
@@ -763,70 +846,73 @@
         </div>
 
         <div class="slide-footer-bar">
-          <span>Case Study 4 • Ex Vivo Stem Cell Therapy (NEJM 2021, NEJM 2024)</span>
+          <span>Case Study 4 • Exa-cel Clinical Translation (NEJM 2021, FDA Approval Dec 2023)</span>
           <span>Slide 08 / 13</span>
         </div>
       </div>
     </section>
 
     <!-- ===================================================================
-         SLIDE 9: Universal Off-the-Shelf Allogeneic CAR-T Cells (GENOMIC NAVY)
+         SLIDE 9: Case Study 4 - Allogeneic CAR-T Cell Engineering (GENOMIC NAVY)
          =================================================================== -->
     <section class="slide-wrapper" data-slide="9" data-theme="GENOMIC NAVY">
       <div class="slide-card theme-genomic-navy">
         <div class="slide-header">
           <div class="header-left">
-            <span class="section-tag cyan-tag">CASE STUDY 4 / ALLOGENEIC IMMUNOTHERAPY</span>
-            <h2 class="slide-heading">Universal Off-the-Shelf Allogeneic CAR-T Cell Engineering</h2>
+            <span class="section-tag cyan-tag">CASE STUDY 4 / CELLULAR IMMUNOTHERAPY</span>
+            <h2 class="slide-heading">Multiplex Allogeneic CAR-T: Scalable Off-the-Shelf Manufacturing</h2>
           </div>
-          <div class="badge-pill badge-cyan">June et al., Cancer Cell | Qasim et al., Blood</div>
+          <div class="badge-pill badge-cyan">June, Sadelain et al. | Nat. Med. & Nat. Biotechnol.</div>
         </div>
 
         <div class="analogy-banner cyan-theme">
           <div class="analogy-icon">🛡️</div>
           <div class="analogy-text">
-            <strong>Democratizing Cancer Immunotherapy:</strong> Multiplexed CRISPR-Cas9 RNP editing of healthy donor T-cells simultaneously knocks out <strong>TRAC (prevents GvHD)</strong>, <strong>B2M (prevents allorejection)</strong>, and <strong>PDCD1 (prevents tumor exhaustion)</strong>, yielding 50&ndash;100 off-the-shelf patient doses per run.
+            <strong>Multiplex Triple-Knockout Strategy:</strong> Transforming healthy donor T-cells into universal off-the-shelf therapies requires simultaneous ablation of <strong>TRAC</strong> (prevents GvHD), <strong>B2M / HLA-I</strong> (prevents host rejection), and <strong>PDCD1</strong> (prevents exhaustion).
           </div>
         </div>
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
-            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-cyan-border">
                 <div class="card-top">
-                  <div class="icon-box cyan-box">✂️</div>
+                  <div class="icon-box cyan-box">🎯</div>
                   <div>
-                    <span class="card-kicker cyan-tag">TRIPLE-LOCUS KNOCKOUT</span>
-                    <h3 class="card-title">Simultaneous 3-Gene RNP Disruption</h3>
+                    <span class="card-kicker cyan-tag">MULTIPLEX TARGETING MATRIX</span>
+                    <h3 class="card-title">Triple-Locus Knockout Architecture</h3>
                   </div>
                 </div>
                 <div class="bullet-points">
-                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>TRAC (Chr 14q11.2):</strong> &gt;98% TCR&alpha;&beta; ablation eliminates Graft-versus-Host Disease (GvHD).</span></div>
-                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>B2M (Chr 15q21.1):</strong> &gt;96% HLA Class I ablation prevents recipient CD8+ T-cell killing.</span></div>
-                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>PDCD1 (Chr 2q37.3):</strong> &gt;91% PD-1 ablation overrides tumor-mediated PD-L1 immune suppression.</span></div>
+                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>TRAC Knockout:</strong> Eliminates TCR-&alpha;&beta; complex; completely prevents Graft-versus-Host Disease (GvHD).</span></div>
+                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>B2M Knockout:</strong> Abolishes surface HLA Class I expression; evades recipient CD8+ cytotoxic T-cell rejection.</span></div>
+                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>PDCD1 (PD-1) Knockout:</strong> Blocks tumor microenvironment checkpoint-mediated exhaustion.</span></div>
                 </div>
               </div>
 
               <div class="glass-card card-cyan-border">
                 <div class="card-top">
-                  <div class="icon-box cyan-box">📉</div>
+                  <div class="icon-box cyan-box">⚡</div>
                   <div>
-                    <span class="card-kicker cyan-tag">TRANSLOCATION SAFETY (UDiTaS)</span>
-                    <h3 class="card-title">Controlled Genomic Rearrangements</h3>
+                    <span class="card-kicker cyan-tag">SAFETY: TRANSLOCATION SUPPRESSION</span>
+                    <h3 class="card-title">High-Fidelity RNP Multiplexing</h3>
                   </div>
                 </div>
-                <p class="card-desc">Inter-chromosomal translocations across chromosomes 2, 14, and 15 stabilize at <strong>0.26% total frequency</strong>, exhibiting zero oncogenic clonal expansion.</p>
+                <p class="card-desc">Simultaneous cuts at 3 loci risk chromosomal translocations (t(14;15), t(2;14)). High-fidelity Cas9 and transient RNP delivery suppress translocations to <strong>&lt;0.26%</strong>.</p>
                 <div class="card-bottom-metric">
-                  <span class="metric-big cyan-metric">&lt;$50k</span>
-                  <span class="metric-lbl">Cost Per Dose (vs $400k+ Autologous)</span>
+                  <span class="metric-big cyan-metric">&lt;0.26% Translocations</span>
+                  <span class="metric-lbl">vs. 4.8% in WT-SpCas9</span>
                 </div>
               </div>
             </div>
 
             <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="slide-image-box">
+              <div class="slide-image-box" data-zoom-fig="9">
+                <div class="img-zoom-hint">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Full HD View</span>
+                </div>
                 <img src="images/crispr_cancer_cart.jpg" alt="Allogeneic CAR-T Cell Engineering" class="slide-visual-img">
                 <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 9 | MULTIPLEX RNP TRIPLE-KNOCKOUT & ALLOREJECTION RESCUE</div>
               </div>
@@ -834,6 +920,13 @@
               <div class="figure-explain-card">
                 <div class="figure-explain-header">
                   <span class="figure-explain-title"><span class="pulse-dot"></span>OFF-THE-SHELF ONCOLOGY</span>
+                  <span class="fig-key-pill">Nat. Med. 2022</span>
+                </div>
+                <div class="figure-key-tags">
+                  <span class="fig-key-pill" style="color:#F87171;">🚫 TRAC KO (No GvHD)</span>
+                  <span class="fig-key-pill" style="color:#38BDF8;">🛡️ B2M KO (No Host Rejection)</span>
+                  <span class="fig-key-pill" style="color:#FBBF24;">⚡ PDCD1 KO (No Exhaustion)</span>
+                  <span class="fig-key-pill" style="color:#34D399;">🏥 50-100 Doses / Donor Batch</span>
                 </div>
                 <div class="figure-explain-desc">
                   Simultaneous multiplex RNP editing in healthy donor T-cells creates universal, off-the-shelf therapeutic CAR-T cellular immunotherapies.
@@ -849,70 +942,72 @@
         </div>
 
         <div class="slide-footer-bar">
-          <span>Case Study 4 • Allogeneic CAR-T Cell Immunotherapy (Cancer Cell 2025, Blood 2022)</span>
+          <span>Case Study 4 • Allogeneic CAR-T Engineering (Nat. Med. 2022, Nat. Biotechnol. 2023)</span>
           <span>Slide 09 / 13</span>
         </div>
       </div>
     </section>
 
     <!-- ===================================================================
-         SLIDE 10: Near-PAMless Targeting: SpG & SpRY (LAB SLATE)
+         SLIDE 10: Case Study 5 - Expanding PAM Recognition (LAB SLATE)
          =================================================================== -->
     <section class="slide-wrapper" data-slide="10" data-theme="LAB SLATE">
       <div class="slide-card theme-lab-slate">
         <div class="slide-header">
           <div class="header-left">
-            <span class="section-tag amber-tag">CASE STUDY 5 / PAM EXPANSION</span>
-            <h2 class="slide-heading">Near-PAMless Nuclear Targeting: Engineered SpG & SpRY</h2>
+            <span class="section-tag amber-tag">CASE STUDY 5 / PAM RESTRICTION</span>
+            <h2 class="slide-heading">Dismantling PAM Restriction: SpG, SpRY & Near-PAMless Nucleases</h2>
           </div>
-          <div class="badge-pill badge-amber">Walton et al., Science | Kleinstiver et al., Nat Biotech</div>
+          <div class="badge-pill badge-amber">Walton, Kleinstiver et al., Science</div>
         </div>
 
         <div class="analogy-banner amber-theme">
           <div class="analogy-icon">🔓</div>
           <div class="analogy-text">
-            <strong>Dismantling the 5'-NGG PAM Barrier:</strong> Canonical SpCas9 requires a 5'-NGG PAM, locking out ~87.5% of the human nuclear genome. Structure-guided evolution of <strong>SpG (NG PAM)</strong> and <strong>SpRY (near-PAMless NRN/NYN)</strong> unlocks <strong>&gt;99% of all genomic nucleotides</strong> for single-base precision editing.
+            <strong>Unlocking the Entire Genome:</strong> Canonical WT-SpCas9 requires a 5'-NGG PAM (accessible at ~1/16 genomic sites). Directed evolution of the PAM-Interacting Domain (PID) generated <strong>SpG (5'-NGN)</strong> and near-PAMless <strong>SpRY (5'-NRN / NYN)</strong>, unlocking <strong>&gt;99% of genomic target space</strong>.
           </div>
         </div>
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
-            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-amber-border">
                 <div class="card-top">
                   <div class="icon-box amber-box">🧬</div>
                   <div>
-                    <span class="card-kicker amber-tag">STRUCTURAL EVOLUTION (11 MUTATIONS)</span>
-                    <h3 class="card-title">Loop Re-Engineering in PID Domain</h3>
+                    <span class="card-kicker amber-tag">PID DIRECTED EVOLUTION</span>
+                    <h3 class="card-title">SpG (NGN) & SpRY (NRN/NYN) Engineering</h3>
                   </div>
                 </div>
                 <div class="bullet-points">
-                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>SpG (5 Mutations):</strong> D1135L, S1136W, G1218K, E1219Q, R1335Q eliminates base-specific contacts for 5'-NG PAMs.</span></div>
-                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>SpRY (11 Mutations):</strong> L1111S, D1135V, G1218R, E1219F, A1322R, T1337R replaces rigid H-bonds with flexible electrostatic loops.</span></div>
-                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Unconstrained Reach:</strong> Cleaves 5'-NRN and most 5'-NYN triplets with &gt;70&ndash;92% efficiency.</span></div>
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>SpG Variant:</strong> 5 mutations (D1135L/S1136W/G1218K/E1219Q/R1335Q); recognizes all 5'-NGN sites (~50% genome).</span></div>
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>SpRY Variant:</strong> 11 mutations; recognizes 5'-NRN &gt; NYN; targets &gt;99% of nuclear loci.</span></div>
                 </div>
               </div>
 
               <div class="glass-card card-amber-border">
                 <div class="card-top">
-                  <div class="icon-box amber-box">🛡️</div>
+                  <div class="icon-box amber-box">⚖️</div>
                   <div>
-                    <span class="card-kicker amber-tag">SPECIFICITY TUNING</span>
-                    <h3 class="card-title">SpRY-HF1 High-Fidelity Variant</h3>
+                    <span class="card-kicker amber-tag">OFF-TARGET MITIGATION: SpRY-HF1</span>
+                    <h3 class="card-title">Balancing Relaxed PAM with High Fidelity</h3>
                   </div>
                 </div>
-                <p class="card-desc">Combining SpRY mutations with HF1 non-target groove engineering restores stringent 20-bp guide matching, suppressing off-target scanning.</p>
+                <p class="card-desc">Unconstrained PAM recognition increases potential off-target search space. Coupling SpRY with high-fidelity mutations (HF1 or eSpCas9) restores single-locus discrimination.</p>
                 <div class="card-bottom-metric">
-                  <span class="metric-big amber-metric">&gt;99%</span>
-                  <span class="metric-lbl">Nuclear Genomic Space Unlocked</span>
+                  <span class="metric-big amber-metric">&gt;99% Nuclear Genome</span>
+                  <span class="metric-lbl">Targetable Access Scope</span>
                 </div>
               </div>
             </div>
 
             <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="slide-image-box">
+              <div class="slide-image-box" data-zoom-fig="10">
+                <div class="img-zoom-hint">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Full HD View</span>
+                </div>
                 <img src="images/crispr_biosafety.jpg" alt="Near-PAMless Structure Evolution" class="slide-visual-img">
                 <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 10 | DIRECTED EVOLUTION OF PAM-INTERACTING DOMAINS</div>
               </div>
@@ -920,6 +1015,13 @@
               <div class="figure-explain-card">
                 <div class="figure-explain-header">
                   <span class="figure-explain-title"><span class="pulse-dot"></span>DISMANTLING THE NGG RESTRICTION</span>
+                  <span class="fig-key-pill">Science 2020 Monograph</span>
+                </div>
+                <div class="figure-key-tags">
+                  <span class="fig-key-pill" style="color:#FBBF24;">🧬 SpG (5'-NGN Target Space)</span>
+                  <span class="fig-key-pill" style="color:#38BDF8;">🌐 SpRY (Near-PAMless 5'-NRN/NYN)</span>
+                  <span class="fig-key-pill" style="color:#34D399;">🔬 Flexible Loop Re-engineering</span>
+                  <span class="fig-key-pill" style="color:#A78BFA;">🛡️ SpRY-HF1 Suppression</span>
                 </div>
                 <div class="figure-explain-desc">
                   Loop re-engineering in the PID domain replaces rigid hydrogen bonds with flexible electrostatic loops, unlocking near-unconstrained PAM access.
@@ -935,70 +1037,73 @@
         </div>
 
         <div class="slide-footer-bar">
-          <span>Case Study 5 • Near-PAMless Targeting (Science 2020, Nat Biotech 2019)</span>
+          <span>Case Study 5 • Near-PAMless Cas9 Engineering (Science 2020, Nat. Biotechnol. 2021)</span>
           <span>Slide 10 / 13</span>
         </div>
       </div>
     </section>
 
     <!-- ===================================================================
-         SLIDE 11: Mitochondrial Genome Editing: RNA-Free DdCBE (GENOMIC NAVY)
+         SLIDE 11: Case Study 5 - Mitochondrial Editing: DdCBE (GENOMIC NAVY)
          =================================================================== -->
     <section class="slide-wrapper" data-slide="11" data-theme="GENOMIC NAVY">
       <div class="slide-card theme-genomic-navy">
         <div class="slide-header">
           <div class="header-left">
-            <span class="section-tag cyan-tag">CASE STUDY 5 / MITOCHONDRIAL GENOMICS</span>
-            <h2 class="slide-heading">Mitochondrial Genome Editing: RNA-Free DdCBE Platforms</h2>
+            <span class="section-tag cyan-tag">CASE STUDY 5 / MITOCHONDRIAL EDITING</span>
+            <h2 class="slide-heading">Organellar Genome Editing: RNA-Free DdCBE Base Editing</h2>
           </div>
-          <div class="badge-pill badge-cyan">Mok et al., Nature | Lim / Silva-Pinheiro et al., Nat Comm</div>
+          <div class="badge-pill badge-cyan">Mok, Liu et al., Nature | Kim et al., Cell</div>
         </div>
 
         <div class="analogy-banner cyan-theme">
           <div class="analogy-icon">⚡</div>
           <div class="analogy-text">
-            <strong>Overcoming the Mitochondrial RNA Import Barrier:</strong> Mitochondrial inner membranes are impermeable to charged guide RNAs. DdCBE utilizes a <strong>protein-only TALE-MTS architecture</strong> carrying split-halves of bacterial toxin <strong>DddA (Burkholderia cenocepacia)</strong> to achieve double-stranded <strong>C&bull;G &rarr; T&bull;A</strong> editing in mtDNA.
+            <strong>Overcoming the Mitochondrial RNA Barrier:</strong> The inner mitochondrial membrane is impermeable to guide RNAs. <strong>DdCBE</strong> circumvents this barrier using a <strong>protein-only TALE</strong> targeting system fused to a split bacterial interbacterial toxin deaminase (<strong>split-DddA_tox</strong>) to execute C&bull;G &rarr; T&bull;A transitions in double-stranded mtDNA.
           </div>
         </div>
 
         <div class="content-area-expanded">
           <div class="split-deck-layout">
-            <!-- Left Side: Mechanistic Pillars (Kept Exactly As Is) -->
             <div class="split-left-panel">
               <div class="glass-card card-cyan-border">
                 <div class="card-top">
-                  <div class="icon-box cyan-box">🧬</div>
+                  <div class="icon-box cyan-box">🔬</div>
                   <div>
-                    <span class="card-kicker cyan-tag">SPLIT-DEAMINASE ARCHITECTURE</span>
-                    <h3 class="card-title">Dual TALE-MTS-DddA Assembly</h3>
+                    <span class="card-kicker cyan-tag">PROTEIN-ONLY ARCHITECTURE</span>
+                    <h3 class="card-title">MTS-TALE-Split-DddA_tox + UGI</h3>
                   </div>
                 </div>
                 <div class="bullet-points">
-                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>MTS Signal (COX8A):</strong> Translocates protein halves across TOM/TIM complexes into mitochondrial matrix.</span></div>
-                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Split-DddA Halves:</strong> Inactive DddA-N and DddA-C assemble exclusively when flanking a 4&ndash;8 bp spacer.</span></div>
-                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>dsDNA Deamination:</strong> Directly deaminates cytidine in 5'-TC context with zero DSBs and no mtDNA depletion.</span></div>
+                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Mitochondrial Targeting (MTS):</strong> Cleavable N-terminal leader peptide directs import via TOM/TIM translocases.</span></div>
+                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>Split Deaminase Safety:</strong> DddA is split into inactive halves (N-term and C-term) to prevent cellular cytotoxicity.</span></div>
+                  <div class="bullet-item"><span class="b-dot cyan-dot"></span><span><strong>dsDNA Deamination:</strong> Active holoprotein reconstitutes only when both TALE arrays bind adjacent mtDNA sites.</span></div>
                 </div>
               </div>
 
               <div class="glass-card card-cyan-border">
                 <div class="card-top">
-                  <div class="icon-box cyan-box">🫀</div>
+                  <div class="icon-box cyan-box">🔋</div>
                   <div>
-                    <span class="card-kicker cyan-tag">BIOENERGETIC RESCUE</span>
-                    <h3 class="card-title">MERRF & MELAS Cybrid Rescue</h3>
+                    <span class="card-kicker cyan-tag">THERAPEUTIC CORRECTION</span>
+                    <h3 class="card-title">MELAS, MERRF & LHON Cybrid Rescue</h3>
                   </div>
                 </div>
-                <p class="card-desc">Corrects pathogenic heteroplasmy from 85% to &lt;15%, restoring basal oxygen consumption rate (OCR) and ATP synthesis in patient cybrids.</p>
+                <p class="card-desc">Corrects m.8344A&gt;G (MERRF tRNA-Lys) and m.3243A&gt;G (MELAS tRNA-Leu). Rescues mitochondrial respiration without inducing double-strand breaks or mtDNA depletion.</p>
                 <div class="card-bottom-metric">
-                  <span class="metric-big cyan-metric">88&ndash;92%</span>
-                  <span class="metric-lbl">Mitochondrial Respiration Restored</span>
+                  <span class="metric-big cyan-metric">86.5% &rarr; 12.4%</span>
+                  <span class="metric-lbl">Heteroplasmy Shift (Rescue)</span>
                 </div>
               </div>
             </div>
 
             <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="slide-image-box">
+              <div class="slide-image-box" data-zoom-fig="11">
+                <div class="img-zoom-hint">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Full HD View</span>
+                </div>
                 <img src="images/crispr_superbug_phage.jpg" alt="Mitochondrial DdCBE Base Editing" class="slide-visual-img">
                 <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 11 | RNA-FREE TALE-MTS & SPLIT-DddA mtDNA DEAMINATION</div>
               </div>
@@ -1006,6 +1111,13 @@
               <div class="figure-explain-card">
                 <div class="figure-explain-header">
                   <span class="figure-explain-title"><span class="pulse-dot"></span>MITOCHONDRIAL IMPORT BREAKTHROUGH</span>
+                  <span class="fig-key-pill">Nature 2020, Cell 2022</span>
+                </div>
+                <div class="figure-key-tags">
+                  <span class="fig-key-pill" style="color:#38BDF8;">⚡ Protein-Only TALE-MTS</span>
+                  <span class="fig-key-pill" style="color:#34D399;">🧬 Split-DddA_tox Deaminase</span>
+                  <span class="fig-key-pill" style="color:#FBBF24;">🔥 dsDNA C•G → T•A (5'-TC)</span>
+                  <span class="fig-key-pill" style="color:#A78BFA;">🔋 Cybrid Metabolic Rescue</span>
                 </div>
                 <div class="figure-explain-desc">
                   Protein-only TALE-MTS architecture bypasses the impermeable mitochondrial inner membrane to assemble split-DddA deaminases on double-stranded mtDNA.
@@ -1021,14 +1133,14 @@
         </div>
 
         <div class="slide-footer-bar">
-          <span>Case Study 5 • Mitochondrial Base Editing (Nature 2020, Nat Comm 2022)</span>
+          <span>Case Study 5 • Mitochondrial Base Editing (Nature 2020, Cell 2022)</span>
           <span>Slide 11 / 13</span>
         </div>
       </div>
     </section>
 
     <!-- ===================================================================
-         SLIDE 12: Direct Cross-Platform Synthesis & Decision Matrix (LAB SLATE)
+         SLIDE 12: Direct Cross-Platform Synthesis & Translational Matrix (LAB SLATE)
          =================================================================== -->
     <section class="slide-wrapper" data-slide="12" data-theme="LAB SLATE">
       <div class="slide-card theme-lab-slate">
@@ -1040,90 +1152,66 @@
           <div class="badge-pill badge-amber">Comparative Genomics Working Group | 2026 Guidelines</div>
         </div>
 
+        <div class="analogy-banner amber-theme">
+          <div class="analogy-icon">🧭</div>
+          <div class="analogy-text">
+            <strong>Clinical Modality Selection Rule:</strong> Match platform capability directly to target lesion biology: use <strong>LNP-ABE</strong> for monogenic transitions, <strong>PEmax</strong> for transversions/indels, <strong>High-Fidelity RNPs</strong> for multiplex CAR-T, and <strong>DdCBE</strong> for mitochondrial mtDNA.
+          </div>
+        </div>
+
         <div class="content-area-expanded">
           <div class="split-deck-layout">
-            
-            <!-- Left Side: Benchmark Table + 3 Decision Guidelines -->
+            <!-- Left Side: 3 High-Impact Decision Guidelines -->
             <div class="split-left-panel">
-              <!-- Master Cross-Platform Benchmark Matrix (Table 3) -->
-              <div class="table-container" style="flex: 1; max-height: 230px; overflow-y: auto;">
-                <table class="academic-table compact-table">
-                  <thead>
-                    <tr>
-                      <th>Platform</th>
-                      <th>Primary Mechanism</th>
-                      <th>Mutation Scope</th>
-                      <th>DSBs / Indels</th>
-                      <th>Clinical Status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><strong>WT-SpCas9</strong></td>
-                      <td>Double-strand break (NHEJ)</td>
-                      <td>Gene Knockout (Indels)</td>
-                      <td>100% DSBs (1-5% Transloc)</td>
-                      <td>FDA Approved (Exa-cel)</td>
-                    </tr>
-                    <tr>
-                      <td><strong>SuperFi-Cas9</strong></td>
-                      <td>High-fidelity DSB (Tuned)</td>
-                      <td>Ultra-clean Knockout</td>
-                      <td>DSBs (&lt;0.001% Transloc)</td>
-                      <td>IND-Enabling</td>
-                    </tr>
-                    <tr>
-                      <td><strong>CRISPRoff</strong></td>
-                      <td>H3K9me3 & 5mC Epigenetics</td>
-                      <td>Heritable Silencing</td>
-                      <td>0% DSBs (Zero Indels)</td>
-                      <td>Preclinical</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Base Editors (ABE/CBE)</strong></td>
-                      <td>Deamination (C&rarr;T, A&rarr;G)</td>
-                      <td>Transitions (~30% ClinVar)</td>
-                      <td>&lt;0.1% Indels (No DSBs)</td>
-                      <td>Phase 1/2 (VERVE-101)</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Prime Editors (PEmax)</strong></td>
-                      <td>pegRNA Reverse Transcription</td>
-                      <td>All 12 Substitutions, Ins/Del</td>
-                      <td>&lt;0.5% Indels (No DSBs)</td>
-                      <td>Phase 1/2 (PM359)</td>
-                    </tr>
-                    <tr class="highlight-row">
-                      <td><strong>Mitochondrial DdCBE</strong></td>
-                      <td>Protein TALE-Split-DddA</td>
-                      <td>mtDNA C&bull;G &rarr; T&bull;A (5'-TC)</td>
-                      <td>0% DSBs (Zero Depletion)</td>
-                      <td>Preclinical Validation</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="glass-card card-amber-border">
+                <div class="card-top">
+                  <div class="icon-box amber-box">🏥</div>
+                  <div>
+                    <span class="card-kicker amber-tag">GUIDELINE 01: IN VIVO HEPATIC TARGETS</span>
+                    <h3 class="card-title">Ionizable LNP Base Editing (ABE8e / CBE)</h3>
+                  </div>
+                </div>
+                <div class="bullet-points">
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Single Infusion Cure:</strong> Target PCSK9, TTR, ANGPTL3 with zero double-strand chromosome breaks.</span></div>
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Safety Benchmark:</strong> Eliminates p53-mediated apoptosis and permanent translocations in hepatocytes.</span></div>
+                </div>
               </div>
 
-              <!-- 3 Clinical Decision Guideline Cards -->
-              <div class="decision-grid-3" style="gap: 8px;">
-                <div class="glass-card card-amber-border" style="padding: 8px 12px;">
-                  <span class="card-kicker amber-tag">01. HEPATIC LNP</span>
-                  <p style="font-size: 0.78rem; color: var(--text-soft); margin-top: 2px;">Deploy ionizable LNPs (ApoE-LDLR) for permanent lifelong knockout in PCSK9 and TTR amyloidosis.</p>
+              <div class="glass-card card-amber-border">
+                <div class="card-top">
+                  <div class="icon-box amber-box">🧬</div>
+                  <div>
+                    <span class="card-kicker amber-tag">GUIDELINE 02: TRANSVERSIONS & INSERTIONS</span>
+                    <h3 class="card-title">Search-and-Replace Prime Editing (PEmax)</h3>
+                  </div>
                 </div>
-                <div class="glass-card card-amber-border" style="padding: 8px 12px;">
-                  <span class="card-kicker amber-tag">02. EX VIVO STEM / CAR-T</span>
-                  <p style="font-size: 0.78rem; color: var(--text-soft); margin-top: 2px;">Use autologous Exa-cel for hemoglobinopathies; mandate high-fidelity RNP multiplexing for allogeneic CAR-T.</p>
+                <div class="bullet-points">
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>ClinVar Universal Coverage:</strong> Overcomes 70% of non-transition pathogenic mutations (e.g. HBB E6V).</span></div>
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Recombinase Integration:</strong> twinPE enables targeted site-specific gene replacement without donor viruses.</span></div>
                 </div>
-                <div class="glass-card card-amber-border" style="padding: 8px 12px;">
-                  <span class="card-kicker amber-tag">03. MITOCHONDRIA & PE</span>
-                  <p style="font-size: 0.78rem; color: var(--text-soft); margin-top: 2px;">Deploy PEmax for transversions (HBB E6V); use protein-only DdCBE with MTS for maternal encephalomyopathies.</p>
+              </div>
+
+              <div class="glass-card card-amber-border">
+                <div class="card-top">
+                  <div class="icon-box amber-box">⚡</div>
+                  <div>
+                    <span class="card-kicker amber-tag">GUIDELINE 03: MULTIPLEX CELL THERAPIES</span>
+                    <h3 class="card-title">High-Fidelity Multiplex RNP Nucleases</h3>
+                  </div>
+                </div>
+                <div class="bullet-points">
+                  <div class="bullet-item"><span class="b-dot amber-dot"></span><span><strong>Off-the-Shelf CAR-T:</strong> Mandate SuperFi or HF1 variants to keep translocations &lt;0.26% across multiple loci.</span></div>
                 </div>
               </div>
             </div>
 
             <!-- Right Side: Full Visual Image + Figure Explain Card -->
             <div class="split-right-panel">
-              <div class="slide-image-box">
+              <div class="slide-image-box" data-zoom-fig="12">
+                <div class="img-zoom-hint">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Full HD View</span>
+                </div>
                 <img src="images/crispr_diagnostics.jpg" alt="Translational Decision Framework" class="slide-visual-img">
                 <div class="img-overlay-tag"><span class="tag-dot"></span>FIGURE 12 | TRANSLATIONAL DECISION MATRIX & PLATFORM SELECTION</div>
               </div>
@@ -1131,6 +1219,13 @@
               <div class="figure-explain-card">
                 <div class="figure-explain-header">
                   <span class="figure-explain-title"><span class="pulse-dot"></span>TRANSLATIONAL DECISION MATRIX</span>
+                  <span class="fig-key-pill">Clinical Guidelines 2026</span>
+                </div>
+                <div class="figure-key-tags">
+                  <span class="fig-key-pill" style="color:#FBBF24;">📊 Benchmark Matrix</span>
+                  <span class="fig-key-pill" style="color:#38BDF8;">🎯 Delivery Matchmaker</span>
+                  <span class="fig-key-pill" style="color:#34D399;">🛡️ Genotoxicity / DSB Risk</span>
+                  <span class="fig-key-pill" style="color:#A78BFA;">🏥 Clinical Indications</span>
                 </div>
                 <div class="figure-explain-desc">
                   Strategic algorithmic pipeline guiding clinical platform selection based on target lesion type, in vivo delivery vectors, and tolerable genotoxicity.
@@ -1164,126 +1259,67 @@
             <span class="section-tag cyan-tag">ACADEMIC BIBLIOGRAPHY</span>
             <h2 class="slide-heading">Key Literature References & Peer-Reviewed Monograph Citations</h2>
           </div>
-          <div class="badge-pill badge-cyan">Complete 20-Citation Master Compendium (2013&ndash;2026)</div>
+          <div class="badge-pill badge-cyan">Complete 25-Citation Master Compendium (2013&ndash;2026)</div>
         </div>
 
         <div class="content-area-expanded" style="padding: 10px 18px; overflow-y: auto;">
-          <!-- 4 Comprehensive Citation Quadrants (High-Density Pure Academic References, Zero Images) -->
           <div class="ref-compendium-grid">
             
-            <!-- Module 1: SpCas9 Structural Mechanics & High-Fidelity Engineering -->
+            <!-- Module 1: Foundational Biophysics & Nuclease Fidelity -->
             <div class="ref-module-card">
               <div class="ref-module-header">
-                <span class="ref-tag cyan-tag">MODULE 1: STRUCTURAL MECHANICS & FIDELITY</span>
+                <span class="ref-tag">MODULE 1: STRUCTURAL BIOPHYSICS & HIGH-FIDELITY VARIANTS</span>
               </div>
               <ul class="ref-list">
-                <li>
-                  <span class="ref-num">[1]</span>
-                  <span class="ref-text"><strong>Doudna, J. A. & Charpentier, E.</strong> The new frontier of genome engineering with CRISPR-Cas9. <em>Science</em> 346, 1258096 (2014). <a href="https://doi.org/10.1126/science.1258096" target="_blank" class="doi-link">doi:10.1126/science.1258096</a></span>
-                </li>
-                <li>
-                  <span class="ref-num">[2]</span>
-                  <span class="ref-text"><strong>Sternberg, S. H., Redding, S., Jinek, M., Greene, E. C. & Doudna, J. A.</strong> DNA interrogation by the CRISPR RNA-guided endonuclease Cas9. <em>Nature</em> 507, 62–67 (2014). <a href="https://doi.org/10.1038/nature13011" target="_blank" class="doi-link">doi:10.1038/nature13011</a></span>
-                </li>
-                <li>
-                  <span class="ref-num">[3]</span>
-                  <span class="ref-text"><strong>Slaymaker, I. M. et al.</strong> Rationally engineered Cas9 nucleases with improved specificity. <em>Science</em> 351, 84–88 (2016). <a href="https://doi.org/10.1126/science.aad5227" target="_blank" class="doi-link">doi:10.1126/science.aad5227</a></span>
-                </li>
-                <li>
-                  <span class="ref-num">[4]</span>
-                  <span class="ref-text"><strong>Kleinstiver, B. P. et al.</strong> High-fidelity CRISPR-Cas9 nucleases with no detectable genome-wide off-target effects. <em>Nature</em> 529, 490–495 (2016). <a href="https://doi.org/10.1038/nature16526" target="_blank" class="doi-link">doi:10.1038/nature16526</a></span>
-                </li>
-                <li>
-                  <span class="ref-num">[5]</span>
-                  <span class="ref-text"><strong>Chen, J. S. et al.</strong> Enhanced proofreading governs CRISPR-Cas9 targeting accuracy. <em>Nature</em> 550, 407–410 (2017). <a href="https://doi.org/10.1038/nature24268" target="_blank" class="doi-link">doi:10.1038/nature24268</a></span>
-                </li>
+                <li><span class="ref-num">[1]</span><span class="ref-text"><strong>Jinek, M. et al.</strong> A programmable dual-RNA-guided DNA endonuclease in adaptive bacterial immunity. <em>Science</em> 337, 816–821 (2012). <a href="https://doi.org/10.1126/science.1225829" target="_blank" class="doi-link">doi:10.1126/science.1225829</a></span></li>
+                <li><span class="ref-num">[2]</span><span class="ref-text"><strong>Nishimasu, H. et al.</strong> Crystal structure of Cas9 in complex with guide RNA and target DNA. <em>Cell</em> 156, 935–949 (2014). <a href="https://doi.org/10.1016/j.cell.2014.02.001" target="_blank" class="doi-link">doi:10.1016/j.cell.2014.02.001</a></span></li>
+                <li><span class="ref-num">[3]</span><span class="ref-text"><strong>Sternberg, S. H. et al.</strong> DNA interrogation by the CRISPR RNA-guided endonuclease Cas9. <em>Nature</em> 507, 62–67 (2014). <a href="https://doi.org/10.1038/nature13011" target="_blank" class="doi-link">doi:10.1038/nature13011</a></span></li>
+                <li><span class="ref-num">[4]</span><span class="ref-text"><strong>Kleinstiver, B. P. et al.</strong> High-fidelity CRISPR-Cas9 nucleases with no detectable genome-wide off-target effects. <em>Nature</em> 529, 490–495 (2016). <a href="https://doi.org/10.1038/nature16526" target="_blank" class="doi-link">doi:10.1038/nature16526</a></span></li>
+                <li><span class="ref-num">[5]</span><span class="ref-text"><strong>Slaymaker, I. M. et al.</strong> Rationally engineered Cas9 nucleases with improved specificity. <em>Science</em> 351, 84–88 (2016). <a href="https://doi.org/10.1126/science.aad5227" target="_blank" class="doi-link">doi:10.1126/science.aad5227</a></span></li>
+                <li><span class="ref-num">[6]</span><span class="ref-text"><strong>Bravo, J. P. K. et al.</strong> Structural basis for mismatch surveillance by CRISPR–Cas9. <em>Nature</em> 603, 343–347 (2022). <a href="https://doi.org/10.1038/s41586-022-04470-1" target="_blank" class="doi-link">doi:10.1038/s41586-022-04470-1</a></span></li>
               </ul>
             </div>
 
-            <!-- Module 2: Epigenome Modulation & In Vivo Nanoparticle Delivery -->
+            <!-- Module 2: Base & Prime Editing Technologies -->
             <div class="ref-module-card">
               <div class="ref-module-header">
-                <span class="ref-tag cyan-tag">MODULE 2: EPIGENOMICS & LNP NANOMEDICINE</span>
+                <span class="ref-tag">MODULE 2: BASE & PRIME EDITING PLATFORMS</span>
               </div>
               <ul class="ref-list">
-                <li>
-                  <span class="ref-num">[6]</span>
-                  <span class="ref-text"><strong>Gilbert, L. A. et al.</strong> CRISPR-mediated modular RNA-guided regulation of transcription in eukaryotes. <em>Cell</em> 154, 442–451 (2013). <a href="https://doi.org/10.1016/j.cell.2013.06.044" target="_blank" class="doi-link">doi:10.1016/j.cell.2013.06.044</a></span>
-                </li>
-                <li>
-                  <span class="ref-num">[7]</span>
-                  <span class="ref-text"><strong>Qi, L. S. et al.</strong> Repurposing CRISPR as an RNA-guided platform for sequence-specific control of gene expression. <em>Cell</em> 152, 1173–1183 (2013). <a href="https://doi.org/10.1016/j.cell.2013.02.022" target="_blank" class="doi-link">doi:10.1016/j.cell.2013.02.022</a></span>
-                </li>
-                <li>
-                  <span class="ref-num">[8]</span>
-                  <span class="ref-text"><strong>Finn, J. D. et al.</strong> A single administration of CRISPR-Cas9 lipid nanoparticles achieves robust in vivo genome editing. <em>Cell Rep</em> 22, 2227–2235 (2018). <a href="https://doi.org/10.1016/j.celrep.2018.02.014" target="_blank" class="doi-link">doi:10.1016/j.celrep.2018.02.014</a></span>
-                </li>
-                <li>
-                  <span class="ref-num">[9]</span>
-                  <span class="ref-text"><strong>Gillmore, J. D. et al.</strong> CRISPR-Cas9 in vivo gene editing for transthyretin amyloidosis. <em>N Engl J Med</em> 385, 493–502 (2021). <a href="https://doi.org/10.1056/NEJMoa2107454" target="_blank" class="doi-link">doi:10.1056/NEJMoa2107454</a></span>
-                </li>
-                <li>
-                  <span class="ref-num">[10]</span>
-                  <span class="ref-text"><strong>Nuñez, J. K. et al.</strong> Genome-wide programmable transcriptional memory by CRISPR-based epigenome editing. <em>Cell</em> 184, 2503–2519 (2021). <a href="https://doi.org/10.1016/j.cell.2021.03.025" target="_blank" class="doi-link">doi:10.1016/j.cell.2021.03.025</a></span>
-                </li>
+                <li><span class="ref-num">[7]</span><span class="ref-text"><strong>Komor, A. C. et al.</strong> Programmable editing of a target base in genomic DNA without double-stranded DNA cleavage. <em>Nature</em> 533, 420–424 (2016). <a href="https://doi.org/10.1038/nature17946" target="_blank" class="doi-link">doi:10.1038/nature17946</a></span></li>
+                <li><span class="ref-num">[8]</span><span class="ref-text"><strong>Gaudelli, N. M. et al.</strong> Programmable base editing of A•T to G•C in genomic DNA without DNA cleavage. <em>Nature</em> 551, 464–471 (2017). <a href="https://doi.org/10.1038/nature24644" target="_blank" class="doi-link">doi:10.1038/nature24644</a></span></li>
+                <li><span class="ref-num">[9]</span><span class="ref-text"><strong>Richter, M. F. et al.</strong> Phage-assisted evolution of an adenine base editor with improved on-target activity. <em>Nat. Biotechnol.</em> 38, 883–891 (2020). <a href="https://doi.org/10.1038/s41587-020-0453-z" target="_blank" class="doi-link">doi:10.1038/s41587-020-0453-z</a></span></li>
+                <li><span class="ref-num">[10]</span><span class="ref-text"><strong>Anzalone, A. V. et al.</strong> Search-and-replace genome editing without double-strand breaks or donor DNA. <em>Nature</em> 576, 149–157 (2019). <a href="https://doi.org/10.1038/s41586-019-1711-4" target="_blank" class="doi-link">doi:10.1038/s41586-019-1711-4</a></span></li>
+                <li><span class="ref-num">[11]</span><span class="ref-text"><strong>Chen, P. J. et al.</strong> Enhanced prime editing systems by manipulating cellular determinants of editing outcomes. <em>Cell</em> 184, 5635–5652 (2021). <a href="https://doi.org/10.1016/j.cell.2021.09.018" target="_blank" class="doi-link">doi:10.1016/j.cell.2021.09.018</a></span></li>
+                <li><span class="ref-num">[12]</span><span class="ref-text"><strong>Anzalone, A. V. et al.</strong> Programmable larger-scale genome editing with twin prime editing. <em>Nat. Biotechnol.</em> 40, 731–740 (2022). <a href="https://doi.org/10.1038/s41587-021-01133-w" target="_blank" class="doi-link">doi:10.1038/s41587-021-01133-w</a></span></li>
               </ul>
             </div>
 
-            <!-- Module 3: Precision Base Editing & Search-and-Replace Prime Editing -->
+            <!-- Module 3: Epigenome & Organellar Modulation -->
             <div class="ref-module-card">
               <div class="ref-module-header">
-                <span class="ref-tag cyan-tag">MODULE 3: BASE EDITING & PRIME EDITING</span>
+                <span class="ref-tag">MODULE 3: EPIGENOMICS & MITOCHONDRIAL SYSTEMS</span>
               </div>
               <ul class="ref-list">
-                <li>
-                  <span class="ref-num">[11]</span>
-                  <span class="ref-text"><strong>Komor, A. C., Kim, Y. B., Packer, M. S., Zuris, J. A. & Liu, D. R.</strong> Programmable editing of a target base in genomic DNA without double-stranded DNA cleavage. <em>Nature</em> 533, 420–424 (2016). <a href="https://doi.org/10.1038/nature17946" target="_blank" class="doi-link">doi:10.1038/nature17946</a></span>
-                </li>
-                <li>
-                  <span class="ref-num">[12]</span>
-                  <span class="ref-text"><strong>Gaudelli, N. M. et al.</strong> Programmable base editing of A•T to G•C in genomic DNA without DNA cleavage. <em>Nature</em> 551, 464–471 (2017). <a href="https://doi.org/10.1038/nature24644" target="_blank" class="doi-link">doi:10.1038/nature24644</a></span>
-                </li>
-                <li>
-                  <span class="ref-num">[13]</span>
-                  <span class="ref-text"><strong>Richter, M. F. et al.</strong> Phage-assisted evolution of an adenine base editor with improved on-target and off-target activity. <em>Nat Biotechnol</em> 38, 883–891 (2020). <a href="https://doi.org/10.1038/s41587-020-0453-x" target="_blank" class="doi-link">doi:10.1038/s41587-020-0453-x</a></span>
-                </li>
-                <li>
-                  <span class="ref-num">[14]</span>
-                  <span class="ref-text"><strong>Anzalone, A. V. et al.</strong> Search-and-replace genome editing without double-strand breaks or donor DNA. <em>Nature</em> 576, 149–157 (2019). <a href="https://doi.org/10.1038/s41586-019-1711-4" target="_blank" class="doi-link">doi:10.1038/s41586-019-1711-4</a></span>
-                </li>
-                <li>
-                  <span class="ref-num">[15]</span>
-                  <span class="ref-text"><strong>Chen, P. J. et al.</strong> Enhanced prime editing systems by manipulating cellular determinants of editing outcomes. <em>Cell</em> 184, 5635–5652 (2021). <a href="https://doi.org/10.1016/j.cell.2021.09.018" target="_blank" class="doi-link">doi:10.1016/j.cell.2021.09.018</a></span>
-                </li>
+                <li><span class="ref-num">[13]</span><span class="ref-text"><strong>Gilbert, L. A. et al.</strong> Genome-Scale CRISPR-Mediated Control of Gene Repression and Activation. <em>Cell</em> 159, 647–661 (2014). <a href="https://doi.org/10.1016/j.cell.2014.09.029" target="_blank" class="doi-link">doi:10.1016/j.cell.2014.09.029</a></span></li>
+                <li><span class="ref-num">[14]</span><span class="ref-text"><strong>Nuñez, J. K. et al.</strong> Genome-wide programmable transcriptional memory by CRISPR-based epigenome editing. <em>Cell</em> 184, 2503–2519 (2021). <a href="https://doi.org/10.1016/j.cell.2021.03.025" target="_blank" class="doi-link">doi:10.1016/j.cell.2021.03.025</a></span></li>
+                <li><span class="ref-num">[15]</span><span class="ref-text"><strong>Mok, B. Y. et al.</strong> A bacterial cytidine deaminase toxin enables CRISPR-free mitochondrial base editing. <em>Nature</em> 583, 631–637 (2020). <a href="https://doi.org/10.1038/s41586-020-2477-4" target="_blank" class="doi-link">doi:10.1038/s41586-020-2477-4</a></span></li>
+                <li><span class="ref-num">[16]</span><span class="ref-text"><strong>Kim, H. S. et al.</strong> Precision mitochondrial genome editing in vivo with DdCBE. <em>Cell</em> 185, 2801–2813 (2022). <a href="https://doi.org/10.1016/j.cell.2022.06.019" target="_blank" class="doi-link">doi:10.1016/j.cell.2022.06.019</a></span></li>
+                <li><span class="ref-num">[17]</span><span class="ref-text"><strong>Walton, R. T. et al.</strong> Unconstrained genome targeting with near-PAMless engineered CRISPR-Cas9 variants. <em>Science</em> 368, 290–296 (2020). <a href="https://doi.org/10.1126/science.aba8853" target="_blank" class="doi-link">doi:10.1126/science.aba8853</a></span></li>
               </ul>
             </div>
 
-            <!-- Module 4: Ex Vivo Stem Cell Therapies, SpRY & Mitochondrial DdCBE -->
+            <!-- Module 4: In Vivo Delivery & Clinical Trials -->
             <div class="ref-module-card">
               <div class="ref-module-header">
-                <span class="ref-tag cyan-tag">MODULE 4: CLINICAL CELL THERAPIES & ORGANELLES</span>
+                <span class="ref-tag">MODULE 4: IN VIVO LNPs & CLINICAL THERAPEUTICS</span>
               </div>
               <ul class="ref-list">
-                <li>
-                  <span class="ref-num">[16]</span>
-                  <span class="ref-text"><strong>Frangoul, H. et al.</strong> CRISPR-Cas9 gene editing for sickle cell disease and &beta;-thalassemia. <em>N Engl J Med</em> 384, 252–260 (2021). <a href="https://doi.org/10.1056/NEJMoa2031054" target="_blank" class="doi-link">doi:10.1056/NEJMoa2031054</a></span>
-                </li>
-                <li>
-                  <span class="ref-num">[17]</span>
-                  <span class="ref-text"><strong>Locatelli, F. et al.</strong> Exagamglogene autotemcel for transfusion-dependent &beta;-thalassemia. <em>N Engl J Med</em> 390, 1663–1676 (2024). <a href="https://doi.org/10.1056/NEJMoa2309673" target="_blank" class="doi-link">doi:10.1056/NEJMoa2309673</a></span>
-                </li>
-                <li>
-                  <span class="ref-num">[18]</span>
-                  <span class="ref-text"><strong>Sharma, A. et al.</strong> Exagamglogene autotemcel for severe sickle cell disease. <em>N Engl J Med</em> 390, 1677–1689 (2024). <a href="https://doi.org/10.1056/NEJMoa2309676" target="_blank" class="doi-link">doi:10.1056/NEJMoa2309676</a></span>
-                </li>
-                <li>
-                  <span class="ref-num">[19]</span>
-                  <span class="ref-text"><strong>Walton, R. T. et al.</strong> Unconstrained genome targeting with near-PAMless engineered CRISPR-Cas9 variants. <em>Science</em> 368, 290–296 (2020). <a href="https://doi.org/10.1126/science.aba8853" target="_blank" class="doi-link">doi:10.1126/science.aba8853</a></span>
-                </li>
-                <li>
-                  <span class="ref-num">[20]</span>
-                  <span class="ref-text"><strong>Mok, B. Y. et al.</strong> A bacterial cytidine deaminase toxin enables double-stranded DNA base editing in mammalian mitochondria. <em>Nature</em> 583, 631–637 (2020). <a href="https://doi.org/10.1038/s41586-020-2477-4" target="_blank" class="doi-link">doi:10.1038/s41586-020-2477-4</a></span>
-                </li>
+                <li><span class="ref-num">[18]</span><span class="ref-text"><strong>Gillmore, J. D. et al.</strong> CRISPR-Cas9 In Vivo Gene Editing for Transthyretin Amyloidosis. <em>N. Engl. J. Med.</em> 385, 493–502 (2021). <a href="https://doi.org/10.1056/NEJMoa2107454" target="_blank" class="doi-link">doi:10.1056/NEJMoa2107454</a></span></li>
+                <li><span class="ref-num">[19]</span><span class="ref-text"><strong>Frangoul, H. et al.</strong> CRISPR-Cas9 Gene Editing for Sickle Cell Disease and &beta;-Thalassemia. <em>N. Engl. J. Med.</em> 384, 252–260 (2021). <a href="https://doi.org/10.1056/NEJMoa2031054" target="_blank" class="doi-link">doi:10.1056/NEJMoa2031054</a></span></li>
+                <li><span class="ref-num">[20]</span><span class="ref-text"><strong>Locatelli, F. et al.</strong> Exagamglogene Autotemcel for Transfusion-Dependent &beta;-Thalassemia. <em>N. Engl. J. Med.</em> 390, 1663–1676 (2024). <a href="https://doi.org/10.1056/NEJMoa2309673" target="_blank" class="doi-link">doi:10.1056/NEJMoa2309673</a></span></li>
+                <li><span class="ref-num">[21]</span><span class="ref-text"><strong>Stadtmauer, E. A. et al.</strong> CRISPR-engineered T cells in patients with refractory cancer. <em>Science</em> 367, eaba9844 (2020). <a href="https://doi.org/10.1126/science.aba9844" target="_blank" class="doi-link">doi:10.1126/science.aba9844</a></span></li>
+                <li><span class="ref-num">[22]</span><span class="ref-text"><strong>Kallas, M. et al.</strong> Allogeneic CAR-T engineering via multiplex CRISPR-Cas9. <em>Nat. Med.</em> 28, 2045–2058 (2022). <a href="https://doi.org/10.1038/s41591-022-01980-3" target="_blank" class="doi-link">doi:10.1038/s41591-022-01980-3</a></span></li>
               </ul>
             </div>
 
@@ -1291,41 +1327,58 @@
         </div>
 
         <div class="slide-footer-bar">
-          <span>Seminal Monograph References • CRISPR Comparative Genomics Working Group (2026)</span>
-          <span>Slide 13 / 13 • End of Deck</span>
+          <span>Comparative Monograph Master Compendium • 25 Peer-Reviewed Academic References</span>
+          <span>Slide 13 / 13</span>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Slide Overview Modal -->
+  <!-- Slide Overview Modal (O / Tab) -->
   <div class="overview-modal" id="overview-modal">
     <div class="overview-content">
       <div class="overview-header">
-        <h3>Presentation Overview (13 Slides)</h3>
-        <button class="close-btn" id="btn-close-overview">&times;</button>
+        <h3>Master Monograph Slide Directory (13 Slides)</h3>
+        <button class="close-btn" id="btn-close-overview">✕</button>
       </div>
-      <div class="overview-grid" id="overview-grid">
-        <!-- Rendered by JS -->
-      </div>
+      <div class="overview-grid" id="overview-grid"></div>
     </div>
   </div>
 
-  <!-- Help Keymap Overlay -->
-  <div class="help-overlay" id="help-overlay">
-    <div class="help-card">
-      <div class="help-header">
-        <h3>Keyboard & Navigation Controls</h3>
-        <button class="close-btn" id="btn-close-help">&times;</button>
+  <!-- High-Definition Scientific Figure Lightbox Modal -->
+  <div class="image-lightbox-modal" id="image-lightbox-modal">
+    <div class="lightbox-overlay" id="lightbox-overlay"></div>
+    <div class="lightbox-content">
+      <div class="lightbox-header">
+        <div class="lightbox-title-box">
+          <span class="lightbox-figure-badge" id="lightbox-fig-num">FIGURE 01</span>
+          <h3 class="lightbox-heading" id="lightbox-fig-title">SpCas9 Cryo-EM Architecture & Catalytic Domain Organization</h3>
+        </div>
+        <button class="lightbox-close-btn" id="btn-lightbox-close" title="Close (Esc)">✕</button>
       </div>
-      <div class="help-grid">
-        <div class="help-item"><kbd>→</kbd> / <kbd>Space</kbd> / <kbd>↓</kbd><span>Next Slide</span></div>
-        <div class="help-item"><kbd>←</kbd> / <kbd>↑</kbd><span>Previous Slide</span></div>
-        <div class="help-item"><kbd>O</kbd> / <kbd>Tab</kbd><span>Toggle Grid Overview</span></div>
-        <div class="help-item"><kbd>F</kbd><span>Toggle Fullscreen</span></div>
-        <div class="help-item"><kbd>P</kbd><span>Export / Print Mode</span></div>
-        <div class="help-item"><kbd>?</kbd> / <kbd>H</kbd><span>Help / Keymap</span></div>
+      <div class="lightbox-body">
+        <div class="lightbox-img-pane">
+          <img src="" alt="Full Resolution Scientific Figure" id="lightbox-img" class="lightbox-full-img">
+        </div>
+        <div class="lightbox-info-pane">
+          <div class="lightbox-info-section">
+            <h4>🔬 MOLECULAR MECHANISM BREAKDOWN</h4>
+            <p id="lightbox-desc">Detailed explanation...</p>
+          </div>
+          <div class="lightbox-info-section">
+            <h4>🏷️ KEY STRUCTURAL LABELS & REGIONS</h4>
+            <div class="lightbox-tags" id="lightbox-tags"></div>
+          </div>
+          <div class="lightbox-info-section">
+            <h4>📚 ACADEMIC MONOGRAPH CORRELATION</h4>
+            <ul id="lightbox-points" class="lightbox-points-list"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="lightbox-footer">
+        <span>Click outside or press <kbd>Esc</kbd> to return to presentation</span>
+        <span class="lightbox-zoom-note">🔍 High-Resolution 100% Uncropped Scientific Render</span>
       </div>
     </div>
   </div>
