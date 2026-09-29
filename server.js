@@ -28,8 +28,19 @@ const server = http.createServer((req, res) => {
 
   fs.stat(filePath, (err, stats) => {
     if (err) {
-      res.writeHead(404, { 'Content-Type': 'text/plain' });
-      res.end('404 Not Found');
+      const indexPath = path.join(__dirname, 'index.html');
+      fs.readFile(indexPath, (indexErr, indexContent) => {
+        if (indexErr) {
+          res.writeHead(404, { 'Content-Type': 'text/plain' });
+          res.end('404 Not Found');
+        } else {
+          res.writeHead(200, { 
+            'Content-Type': 'text/html; charset=UTF-8',
+            'Cache-Control': 'no-cache, no-store, must-revalidate'
+          });
+          res.end(indexContent);
+        }
+      });
       return;
     }
 
@@ -55,10 +66,16 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, '0.0.0.0', () => {
-  console.log(`\n======================================================`);
-  console.log(`🚀 CRISPR-Cas9 Master Presentation Server Running!`);
-  console.log(`Local Access URL: http://localhost:${PORT}`);
-  console.log(`Network URL:      http://127.0.0.1:${PORT}`);
-  console.log(`======================================================\n`);
-});
+const PORT = process.env.PORT || 5173;
+
+if (require.main === module) {
+  server.listen(PORT, '0.0.0.0', () => {
+    console.log(`\n======================================================`);
+    console.log(`🚀 CRISPR-Cas9 Master Presentation Server Running!`);
+    console.log(`Local Access URL: http://localhost:${PORT}`);
+    console.log(`Network URL:      http://127.0.0.1:${PORT}`);
+    console.log(`======================================================\n`);
+  });
+}
+
+module.exports = server;
